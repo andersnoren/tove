@@ -20,7 +20,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tove is derived from the TT1 Blocks theme, Copyright (c) 2020 WordPress.org.
 TT1 Blocks is distributed under the terms of the GNU GPL version 2.0.
 
-Eksell bundles the following third-party resources:
+Tove bundles the following third-party resources:
 
 DM Sans font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
