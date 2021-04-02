@@ -1,0 +1,69 @@
+/* --------------------------------------------------------------------------------------------- */
+/*	1. Document Setup
+/* --------------------------------------------------------------------------------------------- */
+
+
+body {
+	font-family: var( --wp--custom--font-primary );
+	letter-spacing: -0.02em;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	letter-spacing: inherit;
+}
+
+a {
+	text-underline-offset: .15em;
+	text-decoration-skip-ink: all;
+	text-decoration-style: underline;
+	text-decoration-thickness: .1rem;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	2. Element Base
+/* --------------------------------------------------------------------------------------------- */
+
+
+p {
+	margin: 0 0 1em 0;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-feature-settings: "lnum";
+	font-variant-numeric: lining-nums;
+	letter-spacing: var( --wp--custom--letter-spacing--heading );
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--unit ) );
+	margin-top: calc( 3 * var( --wp--custom--spacing--unit ) );
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	X. Media Queries
+/* --------------------------------------------------------------------------------------------- */
+
+
+@media ( min-width: 700px ) {
+
+	h1, 
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-bottom: calc( 3 * var( --wp--custom--spacing--unit ) );
+		margin-top: calc( 4 * var( --wp--custom--spacing--unit ) );
+	}
+
+}
