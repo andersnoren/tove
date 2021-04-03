@@ -21,6 +21,9 @@ if ( ! function_exists( 'tove_setup' ) ) {
 			'./assets/css/style-shared.css'
 		) );
 
+		// HTML5 semantic markup.
+		add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
+
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 

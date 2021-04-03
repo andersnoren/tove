@@ -1,47 +1,94 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header","layout":{"inherit":true}} /-->
 
-<!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
-
-<!-- wp:term-description {"textAlign":"center"} /-->
-
 <!-- wp:group {"tagName":"main"} -->
-<main class="wp-block-group"><!-- wp:query {"queryId":1,"query":{"perPage":"10","pages":"100","offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","sticky":"","inherit":true},"layout":{"type":"list","columns":3}} -->
-<!-- wp:query-loop -->
-<!-- wp:group {"layout":{"inherit":true}} -->
-<div class="wp-block-group"><!-- wp:post-featured-image /-->
+<main class="wp-block-group">
 
-<!-- wp:post-title {"isLink":true} /--></div>
-<!-- /wp:group -->
+	<!-- wp:group {"layout":{"inherit":true}} -->
+	<div class="wp-block-group">
 
-<!-- wp:group {"layout":{"inherit":true}} -->
-<div class="wp-block-group"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:post-date /--></div>
-<!-- /wp:column -->
+		<!-- wp:query-title {"type":"archive","textAlign":"center","align":"wide"} /-->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:post-hierarchical-terms {"term":"category","textAlign":"right"} /--></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
+		<!-- wp:term-description {"textAlign":"center","align":"wide"} /-->
 
-<!-- wp:spacer {"height":70} -->
-<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:group -->
-<!-- /wp:query-loop -->
+		<!-- wp:spacer {"height":64} -->
+		<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
 
-<!-- wp:group {"layout":{"inherit":true}} -->
-<div class="wp-block-group"><!-- wp:query-pagination -->
-<div class="wp-block-query-pagination"><!-- wp:query-pagination-previous /-->
+	</div>
+	<!-- /wp:group -->
+	
+	<!-- wp:query {"queryId":1,"query":{"perPage":"10","pages":"100","offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","sticky":"","inherit":true},"layout":{"type":"list","columns":3}} -->
 
-<!-- wp:query-pagination-next /--></div>
-<!-- /wp:query-pagination --></div>
-<!-- /wp:group -->
-<!-- /wp:query --></main>
+		<!-- wp:query-loop -->
+
+			<!-- wp:group {"layout":{"inherit":true}} -->
+			<div class="wp-block-group">
+				<!-- wp:post-featured-image /-->
+				<!-- wp:post-title {"isLink":true} /-->
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:group {"layout":{"inherit":true}} -->
+			<div class="wp-block-group">
+				
+				<!-- wp:columns -->
+				<div class="wp-block-columns">
+					<!-- wp:column -->
+					<div class="wp-block-column">
+						<!-- wp:post-date /-->
+					</div>
+					<!-- /wp:column -->
+
+					<!-- wp:column -->
+					<div class="wp-block-column">
+						<!-- wp:post-hierarchical-terms {"term":"category","textAlign":"right"} /-->
+					</div>
+					<!-- /wp:column -->
+
+				</div>
+				<!-- /wp:columns -->
+
+				<!-- wp:spacer {"height":64} -->
+				<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+				<!-- /wp:spacer -->
+
+			</div>
+			<!-- /wp:group -->
+
+		<!-- /wp:query-loop -->
+
+		<!-- wp:group {"layout":{"inherit":true}} -->
+		<div class="wp-block-group">
+
+			<!-- wp:separator {"align":"wide"} -->
+			<hr class="wp-block-separator alignwide"/>
+			<!-- /wp:separator -->
+
+			<!-- wp:spacer {"height":64} -->
+			<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+			<!-- /wp:spacer -->
+
+			<!-- wp:query-pagination {"align":"wide"} -->
+			<div class="wp-block-query-pagination alignwide">
+				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-next /-->
+			</div>
+			<!-- /wp:query-pagination -->
+
+			<!-- wp:spacer {"height":64} -->
+			<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+			<!-- /wp:spacer -->
+
+			<!-- wp:separator {"align":"wide"} -->
+			<hr class="wp-block-separator alignwide"/>
+			<!-- /wp:separator -->
+
+		</div>
+		<!-- /wp:group -->
+
+	<!-- /wp:query -->
+
+</main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer","layout":{"inherit":true}} /-->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
