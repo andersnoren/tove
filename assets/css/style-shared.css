@@ -18,7 +18,6 @@ a {
 	text-underline-offset: .15em;
 	text-decoration-skip-ink: all;
 	text-decoration-style: underline;
-	text-decoration-thickness: 2px;
 }
 
 a:hover {
