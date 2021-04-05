@@ -2,15 +2,19 @@
 /*	0. Document Setup
 /* --------------------------------------------------------------------------------------------- */
 
+body {
+	letter-spacing: var( --wp--custom--letter-spacing--body );
+}
+
 *,
 *:before,
 *:after {
 		-webkit-box-sizing: inherit;
 		-moz-box-sizing: inherit;
 	box-sizing: inherit;
-	letter-spacing: var( --wp--custom--letter-spacing--body );
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	letter-spacing: inherit;
 	word-break: break-word;
 }
 
@@ -33,10 +37,8 @@
 :root .entry-content > *:first-child,
 :root .comment-content > *:first-child,
 :root *[class*="_inner-container"] > *:first-child,
-:root .wp-block-group > *:first-child,
 :root fieldset > *:first-child,
 :root form > *:first-child,
-:root .wp-block-column > *:first-child,
 :root .wp-block-media-text__content > *:first-child {
 	margin-top: 0;
 }
@@ -45,10 +47,8 @@
 :root .entry-content > *:last-child,
 :root .comment-content > *:last-child,
 :root *[class*="_inner-container"] > *:last-child,
-:root .wp-block-group > *:last-child,
 :root fieldset > *:last-child,
 :root form > *:last-child,
-:root .wp-block-column > *:last-child,
 :root .wp-block-media-text__content > *:last-child {
 	margin-bottom: 0;
 }
@@ -63,6 +63,10 @@
 	width: calc( 100% - 64px );
 }
 
+.has-background > [class*="wp-container-"] > *:not(.alignfull) {
+	width: 100%;
+}
+
 
 /* --------------------------------------------------------------------------------------------- */
 /*	1. Element Base
@@ -73,18 +77,18 @@
 
 ul,
 ol {
-	margin: calc( 1.5 * var( --wp--custom--spacing--unit ) ) 0 calc( 1.5 * var( --wp--custom--spacing--unit ) ) calc( 1.5 * var( --wp--custom--spacing--unit ) ); 
+	margin: calc( 1.5 * var( --wp--custom--spacing--unit ) ) 0 calc( 1.5 * var( --wp--custom--spacing--unit ) ) 0;
 }
 
 li {
 	line-height: inherit;
-	margin: 5px 0 5px 1.5em;
+	margin: calc( .5 * var( --wp--custom--spacing--unit ) ) 0 calc( .5 * var( --wp--custom--spacing--unit ) ) 1.25em;
 }
 
 li > ul,
 li > ol {
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: calc( .5 * var( --wp--custom--spacing--unit ) );
+	margin-top: calc( .5 * var( --wp--custom--spacing--unit ) );
 }
 
 .reset-list-style,
@@ -324,46 +328,6 @@ input[type="submit"],
 
 
 /* --------------------------------------------------------------------------------------------- */
-/*	3. Blocks
-/* --------------------------------------------------------------------------------------------- */
-
-
-/* Block: Base Margins ----------------------- */
-
-.wp-block-archives,
-.wp-block-button,
-.wp-block-buttons,
-.wp-block-calendar,
-.wp-block-categories,
-.wp-block-code,
-.wp-block-columns,
-.wp-block-cover,
-.wp-block-cover-image,
-.wp-block-embed,
-.wp-block-file,
-.wp-block-gallery,
-.wp-block-group,
-.wp-block-latest-comments,
-.wp-block-latest-posts,
-.wp-block-media-text,
-.wp-block-preformatted,
-.wp-block-pullquote,
-.wp-block-quote,
-.wp-block-quote.is-large,
-.wp-block-quote.is-style-large,
-.wp-block-search,
-.wp-block-social,
-.wp-block-social-links,
-.wp-block-tag-cloud,
-.wp-block-table,
-.wp-block-verse,
-.wp-block-video {
-	margin-bottom: calc( 2 * var( --wp--custom--spacing--unit ) );
-	margin-top: calc( 2 * var( --wp--custom--spacing--unit ) );
-}
-
-
-/* --------------------------------------------------------------------------------------------- */
 /*	X. Alignments
 /* --------------------------------------------------------------------------------------------- */
 
@@ -397,36 +361,10 @@ input[type="submit"],
 
 @media ( min-width: 700px ) {
 
-	/* Blocks -------------------------------- */
+	/* Structure ----------------------------- */
 
-	.wp-block-archives,
-	.wp-block-calendar,
-	.wp-block-categories,
-	.wp-block-code,
-	.wp-block-columns,
-	.wp-block-cover,
-	.wp-block-cover-image,
-	.wp-block-embed,
-	.wp-block-file,
-	.wp-block-gallery,
-	.wp-block-group,
-	.wp-block-latest-comments,
-	.wp-block-latest-posts,
-	.wp-block-media-text,
-	.wp-block-preformatted,
-	.wp-block-pullquote,
-	.wp-block-quote,
-	.wp-block-quote.is-large,
-	.wp-block-quote.is-style-large,
-	.wp-block-search,
-	.wp-block-social,
-	.wp-block-social-links,
-	.wp-block-tag-cloud,
-	.wp-block-table,
-	.wp-block-verse,
-	.wp-block-video {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing--unit ) );
-		margin-top: calc( 3 * var( --wp--custom--spacing--unit ) );
+	[class*="wp-container-"] > *:not(.alignfull) {
+		width: calc( 100% - 128px );
 	}
 
 	/* Alignments ---------------------------- */

@@ -25,18 +25,14 @@
 	<!-- wp:post-content {"layout":{"inherit":true}} /-->
 
 	<!-- wp:group {"layout":{"inherit":true}} -->
-	<div class="wp-block-group"></div>
+	<div class="wp-block-group">
 
-		<!-- wp:group {"layout":{"inherit":true}} -->
+		<!-- wp:group -->
 		<div class="wp-block-group">
 
 			<!-- wp:group -->
 			<div class="wp-block-group">
 
-				<!-- wp:spacer {"height":48} -->
-				<div style="height:48px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-			
 				<!-- wp:post-date /-->
 
 				<!-- wp:post-hierarchical-terms {"term":"category"} /-->
@@ -52,6 +48,27 @@
 
 		</div>
 		<!-- /wp:group -->
+
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"layout":{"inherit":true}} -->
+	<div class="wp-block-group">
+
+		<!-- wp:separator {"align":"wide"} -->
+		<hr class="wp-block-separator alignwide"/>
+		<!-- /wp:separator -->
+
+		<!-- wp:query-pagination {"align":"wide"} -->
+		<div class="wp-block-query-pagination alignwide">
+			<!-- wp:post-navigation-link {"type":"previous","showTitle":true} /-->
+			<!-- wp:post-navigation-link {"type":"next","showTitle":true} /-->
+		</div>
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:separator {"align":"wide"} -->
+		<hr class="wp-block-separator alignwide"/>
+		<!-- /wp:separator -->
 
 	</div>
 	<!-- /wp:group -->
