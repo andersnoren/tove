@@ -150,7 +150,8 @@
 				]
 			},
 			"spacing": {
-				"customPadding": true
+				"customPadding": true,
+				"units": true
 			},
 			"custom": {
 				"font-primary": "\"DM Sans\", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",
@@ -243,7 +244,7 @@
 	},
 	"customTemplates": [
 		{
-			"name": "page-home",
+			"name": "page-without-title",
 			"title": "Page without title"
 		}
 	]
