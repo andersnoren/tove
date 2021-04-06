@@ -140,9 +140,9 @@ svg {
 
 figcaption {
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: inherit;
-	margin-top: 10px;
+	margin-top: calc( .5 * var( --wp--custom--spacing--unit ) );
 }
 
 figcaption a {
@@ -152,27 +152,26 @@ figcaption a {
 /* Inputs ------------------------------------ */
 
 form {
-	margin-bottom: 30px;
-	margin-top: 30px;
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--unit ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing--unit ) );
 }
 
 legend {
-	font-size: .85em;
-	font-weight: 700;
-	padding: 0 10px;
+	font-size: 16px;
+	padding: 0 calc( .5 * var( --wp--custom--spacing--unit ) );
 }
 
 label {
 	display: block;
-	font-size: 18px;
-	margin: 0 0 5px 0;
+	font-size: 16px;
+	margin: 0 0 calc( .5 * var( --wp--custom--spacing--unit ) ) 0;
 }
 
 label.inline,
 input[type="checkbox"] + label {
 	display: inline;
-	font-weight: 400;
-	margin-left: 5px;
+	margin-bottom: 0;
+	margin-left: var( --wp--custom--spacing--unit );
 }
 
 input,
@@ -296,15 +295,9 @@ tfoot {
 
 button,
 .button,
-.faux-button,
-:root .wp-block-file__button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"],
-:root .woocommerce #respond input#submit,
-:root .woocommerce a.button,
-:root .woocommerce button.button,
-:root .woocommerce input.button {
+input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background: var( --wp--preset--color--white );
@@ -326,6 +319,19 @@ input[type="submit"],
 	text-decoration-thickness: 1px;
 }
 
+button:hover,
+.button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+.button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+	text-decoration: underline;
+}
+
 
 /* --------------------------------------------------------------------------------------------- */
 /*	X. Alignments
@@ -338,7 +344,8 @@ input[type="submit"],
 .alignright,
 .alignwide,
 .alignfull {
-	margin: calc( 3 * var( --wp--custom--spacing--unit ) ) auto;
+	margin-bottom: calc( 3 * var( --wp--custom--spacing--unit ) );
+	margin-top: calc( 3 * var( --wp--custom--spacing--unit ) );
 }
 
 .alignnone,
@@ -360,6 +367,14 @@ input[type="submit"],
 /* --------------------------------------------------------------------------------------------- */
 
 @media ( min-width: 700px ) {
+
+	/* Element Base -------------------------- */
+
+	figcaption,
+	legend,
+	label {
+		font-size: 18px;
+	}
 
 	/* Structure ----------------------------- */
 

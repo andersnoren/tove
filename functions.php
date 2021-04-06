@@ -37,6 +37,7 @@ if ( ! function_exists( 'tove_setup' ) ) :
 
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
+
 	}
 	add_action( 'after_setup_theme', 'tove_setup' );
 endif;
@@ -49,24 +50,42 @@ endif;
 if ( ! function_exists( 'tove_styles' ) ) :
 	function tove_styles() {
 
-		wp_register_style( 'tove-styles-reset', get_template_directory_uri() . '/assets/css/reset.css', array(), wp_get_theme()->get( 'Version' ) );
-		wp_register_style( 'tove-google-fonts', '//fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap' );
-		wp_register_style( 'tove-styles-shared', get_template_directory_uri() . '/assets/css/shared.css', array(), wp_get_theme()->get( 'Version' ) );
-		wp_register_style( 'tove-styles-blocks', get_template_directory_uri() . '/assets/css/blocks.css', array(), wp_get_theme()->get( 'Version' ) );
-		wp_register_style( 'tove-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_register_style( 'tove-google-fonts', 	'//fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap' );
+		wp_register_style( 'tove-styles-reset', 	get_template_directory_uri() . '/assets/css/reset.css' );
+		wp_register_style( 'tove-styles-shared', 	get_template_directory_uri() . '/assets/css/shared.css' );
+		wp_register_style( 'tove-styles-blocks', 	get_template_directory_uri() . '/assets/css/blocks.css' );
+		wp_register_style( 'tove-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css' );
 
-		$dependiences = array( 'tove-styles-reset', 'tove-google-fonts', 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end' );
+		// TODO: Check if it's possible to check for DM Sans in the typography settings, and make the Google Fonts registraton conditional.
+
+		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-google-fonts', 'tove-styles-reset', 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end' ) );
 
 		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme()->get( 'Version' ) );
 
 	}
-	add_action( 'wp_enqueue_scripts', 'tove_styles', 1 );
+	add_action( 'wp_enqueue_scripts', 'tove_styles', 5 );
+endif;
+
+
+/*	-----------------------------------------------------------------------------------------------
+	ENQUEUE SCRIPTS
+--------------------------------------------------------------------------------------------------- */
+
+if ( ! function_exists( 'tove_scripts' ) ) :
+	function tove_scripts() {
+
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply' );
+		}
+
+	}
+	add_action( 'wp_enqueue_scripts', 'tove_scripts' );
 endif;
 
 
 /*	-----------------------------------------------------------------------------------------------
 	BLOCK PATTERNS
-	Register block patterns included in Tove.
+	Register theme specific block patterns.
 --------------------------------------------------------------------------------------------------- */
 
 if ( ! function_exists( 'tove_register_block_patterns' ) ) : 
@@ -105,7 +124,7 @@ endif;
 
 /*	-----------------------------------------------------------------------------------------------
 	BLOCK STYLES
-	Register block styles included in Tove.
+	Register theme specific block styles.
 --------------------------------------------------------------------------------------------------- */
 
 if ( function_exists( 'register_block_style' ) && ! function_exists( 'tove_register_block_styles' ) ) :
@@ -120,6 +139,12 @@ if ( function_exists( 'register_block_style' ) && ! function_exists( 'tove_regis
 				'label' 	=> esc_html__( 'Shaded', 'tove' ),
 			) );
 		}
+
+		// Query Pagination: Vertical borders
+		register_block_style( 'core/query-pagination', array(
+			'name'  	=> 'tove-vertical-borders',
+			'label' 	=> esc_html__( 'Vertical Borders', 'tove' ),
+		) );
 		
 	}
 	add_action( 'init', 'tove_register_block_styles' );
