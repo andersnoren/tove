@@ -29,9 +29,6 @@ if ( ! function_exists( 'tove_setup' ) ) :
 		// HTML5 semantic markup.
 		add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
 
-		// Add support for Block Styles.
-		add_theme_support( 'wp-block-styles' );
-
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 

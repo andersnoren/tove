@@ -24,6 +24,7 @@ body {
 
 /* Clearing ---------------------------------- */
 
+.entry-content:after,
 [class*="__inner-container"]:after,
 .wp-block-post-comments .navigation:after {
 	clear: both;
@@ -146,7 +147,7 @@ figcaption {
 	font-size: var( --wp--preset--font-size--small );
 	line-height: inherit;
 	margin-bottom: 0;
-	margin-top: calc( .5 * var( --wp--custom--spacing ) );
+	margin-top: calc( .75 * var( --wp--custom--spacing ) );
 }
 
 figcaption a {
@@ -246,8 +247,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
-	font-size: 16px;
-	margin: 32px auto;
+	font-size: var( --wp--preset--font-size--small );
+	margin: calc( 2 * var( --wp--custom--spacing ) ) auto;
 	max-width: 100%;
 	overflow: hidden;
 	width: 100%;
@@ -264,12 +265,12 @@ tfoot {
 th,
 td,
 caption {
-	padding: 12px;
+	padding: var( --wp--custom--spacing );
 }
 
 th,
 td {
-	border: 1px solid var( --wp--preset--color--black );
+	border: 2px solid var( --wp--preset--color--black );
 	line-height: 1.4;
 	margin: 0;
 	overflow: visible;
@@ -365,20 +366,20 @@ input[type="submit"]:focus {
 	margin-right: auto;
 }
 
+.alignleft {
+	margin: 3px calc( 1.5 * var( --wp--custom--spacing ) ) calc( 1.5 * var( --wp--custom--spacing ) ) 0;
+}
+
+.alignright {
+	margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing ) ) calc( 1.5 * var( --wp--custom--spacing ) );
+}
+
 
 /* --------------------------------------------------------------------------------------------- */
 /*	X. Media Queries
 /* --------------------------------------------------------------------------------------------- */
 
 @media ( min-width: 700px ) {
-
-	/* Element Base -------------------------- */
-
-	figcaption,
-	legend,
-	label {
-		font-size: 18px;
-	}
 
 	/* Alignments ---------------------------- */
 
