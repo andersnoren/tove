@@ -165,6 +165,11 @@
 /* Block: Cover
 /* ------------------------------------------- */
 
+.wp-block-cover, 
+.wp-block-cover-image {
+	padding: var( --wp--tove--gutter );
+}
+
 
 /* ------------------------------------------- */
 /* Block: Columns
@@ -180,6 +185,11 @@
 .wp-block-column h4,
 .wp-block-column h5,
 .wp-block-column h6,
+.wp-block-column .wp-block-group,
+.wp-block-column .wp-block-columns {
+	margin-top: calc( 2 * var( --wp--custom--spacing ) );
+}
+
 .wp-block-column .wp-block-group,
 .wp-block-column .wp-block-columns {
 	margin-bottom: calc( 2 * var( --wp--custom--spacing ) );
@@ -649,14 +659,16 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 .wp-block-image:first-child > figure { margin-top: 0; }
 .wp-block-image:last-child > figure { margin-bottom: 0; }
 
-.wp-block-image img,
 .wp-block-image img {
+	display: block;
 	height: auto;
+	margin: 0;
 }
 
 :root .wp-block-image figcaption {
 	color: inherit;
 	font-size: var( --wp--preset--font-size--small );
+	line-height: inherit;
 	margin-bottom: 0;
 	margin-top: calc( .5 * var( --wp--custom--spacing ) );
 	text-align: left;
@@ -667,7 +679,10 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 .wp-block-image.is-style-tove-shaded img {
 	border: 2px solid var( --wp--preset--color--black );
 	box-shadow: 4px 4px 0 var( --wp--preset--color--black );
-	margin-bottom: 4px;
+}
+
+.wp-block-image.is-style-tove-shaded figcaption {
+	padding-top: 4px;
 }
 
 

@@ -60,7 +60,7 @@ body {
 
 
 [class*="wp-container-"] > *:not(.alignfull) {
-	width: calc( 100% - 64px );
+	width: calc( 100% - ( 2 * var( --wp--tove--gutter ) ) );
 }
 
 [class*="wp-container-"] [class*="wp-container-"] > *:not(.alignfull) {
@@ -84,6 +84,9 @@ li {
 	line-height: inherit;
 	margin: calc( .5 * var( --wp--custom--spacing ) ) 0 calc( .5 * var( --wp--custom--spacing ) ) 1.25em;
 }
+
+li:first-child { margin-top: 0; }
+li:last-child { margin-bottom: 0; }
 
 li > ul,
 li > ol {
@@ -383,26 +386,6 @@ input[type="submit"]:focus {
 	.alignfull {
 		margin-bottom: calc( 4 * var( --wp--custom--spacing ) );
 		margin-top: calc( 4 * var( --wp--custom--spacing ) );
-	}
-
-}
-
-@media ( min-width: 1000px ) {
-
-	/* Structure ----------------------------- */
-
-	[class*="wp-container-"] > *:not(.alignfull) {
-		width: calc( 100% - 96px );
-	}
-
-}
-
-@media ( min-width: 1200px ) {
-
-	/* Structure ----------------------------- */
-
-	[class*="wp-container-"] > *:not(.alignfull) {
-		width: calc( 100% - 128px );
 	}
 
 }

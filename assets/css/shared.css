@@ -1,4 +1,42 @@
 /* --------------------------------------------------------------------------------------------- */
+/*	0. CSS Variables
+/* --------------------------------------------------------------------------------------------- */
+
+:root {
+	--wp--tove--gutter: calc( 2 * var( --wp--custom--spacing ) );
+}
+
+@media ( min-width: 1000px ) {
+	:root {
+		--wp--tove--gutter: calc( 3 * var( --wp--custom--spacing ) );
+	}
+}
+
+@media ( min-width: 1200px ) {
+	:root {
+		--wp--tove--gutter: calc( 4 * var( --wp--custom--spacing ) );
+	}
+}
+
+@media ( max-width: 700px ) {
+	:root {
+		--wp--preset--font-size--extra-small: 		14px !important;
+		--wp--preset--font-size--small: 			16px !important;
+		--wp--preset--font-size--normal: 			17px !important;
+		--wp--preset--font-size--large: 			21px !important;
+		--wp--preset--font-size--extra-large: 		24px !important;
+		--wp--preset--font-size--huge: 				48px !important;
+		--wp--preset--font-size--gigantic: 			64px !important;
+		--wp--preset--font-size--heading-1: 		36px !important;
+		--wp--preset--font-size--heading-2: 		32px !important;
+		--wp--preset--font-size--heading-3: 		28px !important;
+		--wp--preset--font-size--heading-4: 		24px !important;
+		--wp--preset--font-size--heading-5: 		21px !important;
+		--wp--preset--font-size--heading-6: 		16px !important;
+	}
+}
+
+/* --------------------------------------------------------------------------------------------- */
 /*	1. Document Setup
 /* --------------------------------------------------------------------------------------------- */
 
@@ -25,23 +63,17 @@ a:hover {
 	text-decoration: none;
 }
 
-@media ( max-width: 700px ) {
 
-	:root {
-		--wp--preset--font-size--extra-small: 		14px !important;
-		--wp--preset--font-size--small: 			16px !important;
-		--wp--preset--font-size--normal: 			17px !important;
-		--wp--preset--font-size--large: 			21px !important;
-		--wp--preset--font-size--extra-large: 		24px !important;
-		--wp--preset--font-size--huge: 				48px !important;
-		--wp--preset--font-size--gigantic: 			64px !important;
-		--wp--preset--font-size--heading-1: 		36px !important;
-		--wp--preset--font-size--heading-2: 		32px !important;
-		--wp--preset--font-size--heading-3: 		28px !important;
-		--wp--preset--font-size--heading-4: 		24px !important;
-		--wp--preset--font-size--heading-5: 		21px !important;
-		--wp--preset--font-size--heading-6: 		16px !important;
-	}
+/* --------------------------------------------------------------------------------------------- */
+/*	X. Typography
+/* --------------------------------------------------------------------------------------------- */
+
+
+.has-gigantic-font-size {
+	letter-spacing: -.04em;
+}
+
+@media ( max-width: 700px ) {
 
 	:root .has-extra-small-font-size { font-size: 	var( --wp--preset--font-size--extra-small ) !important; }
     :root .has-small-font-size { font-size: 		var( --wp--preset--font-size--small ) !important; }
@@ -57,16 +89,6 @@ a:hover {
     :root .has-heading-5-font-size { font-size: 	var( --wp--preset--font-size--heading-5 ) !important; }
     :root .has-heading-6-font-size { font-size: 	var( --wp--preset--font-size--heading-6 ) !important; }
 
-}
-
-
-/* --------------------------------------------------------------------------------------------- */
-/*	X. Typography
-/* --------------------------------------------------------------------------------------------- */
-
-
-.has-gigantic-font-size {
-	letter-spacing: -.04em;
 }
 
 
