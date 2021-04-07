@@ -29,6 +29,9 @@ if ( ! function_exists( 'tove_setup' ) ) :
 		// HTML5 semantic markup.
 		add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
 
+		// Add support for Block Styles.
+		add_theme_support( 'wp-block-styles' );
+
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
@@ -37,6 +40,12 @@ if ( ! function_exists( 'tove_setup' ) ) :
 
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
+
+		// Add support for custom line height controls.
+		add_theme_support( 'custom-line-height' );
+
+		// Add support for custom spacing controls.
+		add_theme_support( 'custom-spacing' );
 
 	}
 	add_action( 'after_setup_theme', 'tove_setup' );

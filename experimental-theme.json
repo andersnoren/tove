@@ -161,11 +161,9 @@
 				},
 				"letter-spacing": {
 					"body": "-0.01em",
-					"heading": "-0.04em"
+					"heading": "-0.03em"
 				},
-				"spacing": {
-					"unit": "16px"
-				},
+				"spacing": "16px",
 				"font-weight":{
 					"normal": "500"
 				}

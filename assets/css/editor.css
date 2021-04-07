@@ -7,8 +7,8 @@
 .wp-block[data-align="center"],
 .wp-block[data-align="wide"],
 .wp-block[data-align="full"] {
-	margin-bottom: calc( 3 * var( --wp--custom--spacing--unit ) );
-	margin-top: calc( 3 * var( --wp--custom--spacing--unit ) );
+	margin-bottom: calc( 3 * var( --wp--custom--spacing ) );
+	margin-top: calc( 3 * var( --wp--custom--spacing ) );
 }
 
 
@@ -21,8 +21,8 @@
 
 	.wp-block[data-align="wide"],
 	.wp-block[data-align="full"] {
-		margin-bottom: calc( 4 * var( --wp--custom--spacing--unit ) );
-		margin-top: calc( 4 * var( --wp--custom--spacing--unit ) );
+		margin-bottom: calc( 4 * var( --wp--custom--spacing ) );
+		margin-top: calc( 4 * var( --wp--custom--spacing ) );
 	}
 
 }

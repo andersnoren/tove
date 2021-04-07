@@ -25,6 +25,40 @@ a:hover {
 	text-decoration: none;
 }
 
+@media ( max-width: 700px ) {
+
+	:root {
+		--wp--preset--font-size--extra-small: 		14px !important;
+		--wp--preset--font-size--small: 			16px !important;
+		--wp--preset--font-size--normal: 			17px !important;
+		--wp--preset--font-size--large: 			21px !important;
+		--wp--preset--font-size--extra-large: 		24px !important;
+		--wp--preset--font-size--huge: 				48px !important;
+		--wp--preset--font-size--gigantic: 			64px !important;
+		--wp--preset--font-size--heading-1: 		36px !important;
+		--wp--preset--font-size--heading-2: 		32px !important;
+		--wp--preset--font-size--heading-3: 		28px !important;
+		--wp--preset--font-size--heading-4: 		24px !important;
+		--wp--preset--font-size--heading-5: 		21px !important;
+		--wp--preset--font-size--heading-6: 		16px !important;
+	}
+
+	:root .has-extra-small-font-size { font-size: 	var( --wp--preset--font-size--extra-small ) !important; }
+    :root .has-small-font-size { font-size: 		var( --wp--preset--font-size--small ) !important; }
+    :root .has-normal-font-size { font-size: 		var( --wp--preset--font-size--normal ) !important; }
+    :root .has-large-font-size { font-size: 		var( --wp--preset--font-size--large ) !important; }
+    :root .has-extra-large-font-size { font-size: 	var( --wp--preset--font-size--extra-large ) !important; }
+    :root .has-huge-font-size { font-size: 			var( --wp--preset--font-size--huge ) !important; }
+    :root .has-gigantic-font-size { font-size: 		var( --wp--preset--font-size--gigantic ) !important; }
+    :root .has-heading-1-font-size { font-size: 	var( --wp--preset--font-size--heading-1 ) !important; }
+    :root .has-heading-2-font-size { font-size: 	var( --wp--preset--font-size--heading-2 ) !important; }
+    :root .has-heading-3-font-size { font-size: 	var( --wp--preset--font-size--heading-3 ) !important; }
+    :root .has-heading-4-font-size { font-size: 	var( --wp--preset--font-size--heading-4 ) !important; }
+    :root .has-heading-5-font-size { font-size: 	var( --wp--preset--font-size--heading-5 ) !important; }
+    :root .has-heading-6-font-size { font-size: 	var( --wp--preset--font-size--heading-6 ) !important; }
+
+}
+
 
 /* --------------------------------------------------------------------------------------------- */
 /*	X. Typography
