@@ -64,7 +64,7 @@ body {
 	width: calc( 100% - ( 2 * var( --wp--tove--gutter ) ) );
 }
 
-[class*="wp-container-"] [class*="wp-container-"] > *:not(.alignfull) {
+[class*="wp-container-"] [class*="wp-container-"] > * {
 	width: 100%;
 }
 
@@ -152,6 +152,15 @@ figcaption {
 
 figcaption a {
 	color: inherit;
+}
+
+/* Quotes ------------------------------------ */
+
+cite {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: .04em;
+	text-transform: uppercase;
 }
 
 /* Inputs ------------------------------------ */
@@ -351,6 +360,11 @@ input[type="submit"]:focus {
 .alignfull {
 	margin-bottom: calc( 3 * var( --wp--custom--spacing ) );
 	margin-top: calc( 3 * var( --wp--custom--spacing ) );
+}
+
+.alignfull > figcaption {
+	padding-left: var( --wp--tove--gutter );
+	padding-right: var( --wp--tove--gutter );
 }
 
 .alignnone,
