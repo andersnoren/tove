@@ -161,7 +161,8 @@
 				},
 				"letter-spacing": {
 					"body": "-0.01em",
-					"heading": "-0.03em"
+					"heading": "-0.03em",
+					"uppercase": "0.04em"
 				},
 				"spacing": "16px",
 				"font-weight":{
@@ -224,9 +225,10 @@
 		},
 		"core/heading/h6": {
 			"typography": {
-				"fontSize": "var(--wp--preset--font-size--extra-heading-6)",
+				"fontSize": "var(--wp--preset--font-size--heading-6)",
 				"lineHeight": "var(--wp--custom--line-height--heading)",
-				"textTransform": "uppercase"
+				"textTransform": "uppercase",
+				"letterSpacing": "var( --wp--custom--letter-spacing--uppercase )"
 			}
 		},
 		"core/site-title": {
