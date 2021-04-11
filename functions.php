@@ -146,10 +146,16 @@ if ( function_exists( 'register_block_style' ) && ! function_exists( 'tove_regis
 			) );
 		}
 
-		// Query Pagination: Vertical borders
+		// Query Pagination: Vertical separators
 		register_block_style( 'core/query-pagination', array(
-			'name'  	=> 'tove-vertical-borders',
-			'label' 	=> esc_html__( 'Vertical Borders', 'tove' ),
+			'name'  	=> 'tove-vertical-separators',
+			'label' 	=> esc_html__( 'Vertical Separators', 'tove' ),
+		) );
+
+		// Columns: Separators
+		register_block_style( 'core/columns', array(
+			'name'  	=> 'tove-horizontal-separators',
+			'label' 	=> esc_html__( 'Horizontal Separators', 'tove' ),
 		) );
 		
 	}

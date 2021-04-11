@@ -154,22 +154,6 @@ figcaption a {
 	color: inherit;
 }
 
-/* Quotes ------------------------------------ */
-
-blockquote {
-	border-color: currentColor;
-	border-style: solid;
-	border-width: 0 0 0 2px;
-	padding: 0 0 0 var( --wp--custom--spacing );
-}
-
-cite {
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
-	text-transform: uppercase;
-}
-
 /* Preformatted Text ------------------------- */
 
 pre {
