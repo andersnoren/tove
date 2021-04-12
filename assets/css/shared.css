@@ -45,7 +45,7 @@
 
 body {
 	font-family: var( --wp--custom--font-primary );
-	letter-spacing: -0.02em;
+	letter-spacing: var( --wp--custom--letter-spacing--body );
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -83,7 +83,7 @@ blockquote {
 
 cite {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
 	text-transform: uppercase;
 }
@@ -93,7 +93,24 @@ cite {
 	blockquote {
 		padding: 0 0 0 calc( 2 * var( --wp--custom--spacing ) );
 	}
-	
+
+}
+
+/* Separator --------------------------------- */
+
+hr {
+	background-color: var( --wp--preset--color--black );
+	border: none;
+	height: 2px;
+	margin-bottom: calc( 2 * var( --wp--custom--spacing ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing ) );
+}
+
+@media ( min-width: 700px ) {
+	hr {
+		margin-bottom: calc( 3 * var( --wp--custom--spacing ) );
+		margin-top: calc( 3 * var( --wp--custom--spacing ) );
+	}
 }
 
 

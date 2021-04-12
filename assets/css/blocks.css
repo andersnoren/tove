@@ -124,14 +124,14 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background: var( --wp--preset--color--white );
-	border: 2px solid currentColor;
-	box-shadow: 4px 4px 0 currentColor;
+	border: var( --wp--custom--shaded-style--border--width ) var( --wp--custom--shaded-style--border--style ) currentColor;
+	box-shadow: var( --wp--custom--shaded-style--box-shadow--x ) var( --wp--custom--shaded-style--box-shadow--y ) var( --wp--custom--shaded-style--box-shadow--blur ) currentColor;
 	border-radius: 0;
 	color: var( --wp--preset--color--black );
 	cursor: pointer;
 	display: inline-flex;
 	font-size: var( --wp--preset--font-size--small );
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	justify-content: center;
 	line-height: 1.25;
 	margin: 0;
@@ -210,7 +210,7 @@
 
 :root .wp-block-calendar table th {
 	background-color: transparent;
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 }
 
 .wp-block-calendar nav {
@@ -436,11 +436,11 @@ section.wp-block-cover-image > h2 {
 	border: 1px solid var( --wp--preset--color--black );
 	box-shadow: 2px 2px 0 var( --wp--preset--color--black );
 	font-size: 12px;
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	padding: .2em .6em .225em;
 	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: .04em;
+	letter-spacing: var( --wp--custom--letter-spacing--heading );
 }
 
 .comment-reply-link:hover,
@@ -712,7 +712,7 @@ section.wp-block-cover-image > h2 {
 	cursor: pointer;
 	display: inline-flex;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	justify-content: center;
 	line-height: 1.25;
 	margin: 0;
@@ -1011,7 +1011,7 @@ p.has-background {
 	box-shadow: 4px 4px 0 currentColor;
 	color: var( --wp--preset--color--black );
     font-size: 2.75em;
-    font-weight: 700;
+    font-weight: var( --wp--custom--font-weight--bold );
 	margin: .09em 1rem .5rem 0;
 	min-width: .6875em;
 	padding: 0.3em;
@@ -1113,7 +1113,7 @@ p.has-background {
 
 .wp-block-pullquote blockquote p {
 	font-size: inherit;
-	letter-spacing: -0.03em;
+	letter-spacing: var( --wp--custom--letter-spacing--heading );
 	line-height: inherit;
 }
 
@@ -1126,7 +1126,7 @@ p.has-background {
 	display: block;
 	font-size: 14px;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
 	margin-top: var( --wp--custom--spacing );
 	text-transform: uppercase;
@@ -1292,7 +1292,7 @@ ul.wp-block-query-loop > li > *:last-child { margin-bottom: 0; }
 	display: block;
 	font-size: 14px;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
 	margin-top: var( --wp--custom--spacing );
 	text-align: inherit;
@@ -1310,7 +1310,7 @@ ul.wp-block-query-loop > li > *:last-child { margin-bottom: 0; }
 .wp-block-quote.is-style-large p {
 	font-size: var( --wp--preset--font-size--large );
 	font-style: normal;
-	line-height: 1.5;
+	line-height: inherit;
 }
 
 @media ( min-width: 700px ) {

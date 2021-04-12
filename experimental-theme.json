@@ -46,9 +46,64 @@
 				],
 				"gradients": [
 					{
-						"slug": "purple-to-yellow",
-						"gradient": "linear-gradient(160deg, var(--wp--preset--color--purple), var(--wp--preset--color--yellow))",
-						"name": "Purple to Yellow"
+						"slug": "pale-red-to-pale-violet",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-red), var(--wp--preset--color--pale-violet))",
+						"name": "Pale Red to Pale Violet"
+					},
+					{
+						"slug": "pale-red-to-pale-cyan",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-red), var(--wp--preset--color--pale-cyan))",
+						"name": "Pale Red to Pale Cyan"
+					},
+					{
+						"slug": "pale-red-to-pale-yellow",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-red), var(--wp--preset--color--pale-yellow))",
+						"name": "Pale Red to Pale Yellow"
+					},
+					{
+						"slug": "pale-cyan-to-pale-red",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-cyan), var(--wp--preset--color--pale-red))",
+						"name": "Pale Cyan to Pale Red"
+					},
+					{
+						"slug": "pale-cyan-to-pale-violet",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-cyan), var(--wp--preset--color--pale-violet))",
+						"name": "Pale Cyan to Pale Violet"
+					},
+					{
+						"slug": "pale-cyan-to-pale-yellow",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-cyan), var(--wp--preset--color--pale-yellow))",
+						"name": "Pale Cyan to Pale Yellow"
+					},
+					{
+						"slug": "pale-yellow-to-pale-red",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-yellow), var(--wp--preset--color--pale-red))",
+						"name": "Pale Yellow to Pale Red"
+					},
+					{
+						"slug": "pale-yellow-to-pale-violet",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-yellow), var(--wp--preset--color--pale-violet))",
+						"name": "Pale Yellow to Pale Violet"
+					},
+					{
+						"slug": "pale-yellow-to-pale-cyan",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-yellow), var(--wp--preset--color--pale-cyan))",
+						"name": "Pale Yellow to Pale Cyan"
+					},
+					{
+						"slug": "pale-violet-to-pale-red",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-violet), var(--wp--preset--color--pale-red))",
+						"name": "Pale Violet to Pale Red"
+					},
+					{
+						"slug": "pale-violet-to-pale-cyan",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-violet), var(--wp--preset--color--pale-cyan))",
+						"name": "Pale Violet to Pale Cyan"
+					},
+					{
+						"slug": "pale-violet-to-pale-yellow",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--pale-violet), var(--wp--preset--color--pale-yellow))",
+						"name": "Pale Violet to Pale Yellow"
 					}
 				]
 			},
@@ -178,8 +233,9 @@
 					"uppercase": "0.04em"
 				},
 				"spacing": "16px",
-				"font-weight":{
-					"normal": "500"
+				"font-weight": {
+					"normal": "500",
+					"bold": "700"
 				}
 			}
 		}

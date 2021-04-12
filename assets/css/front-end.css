@@ -2,10 +2,6 @@
 /*	0. Document Setup
 /* --------------------------------------------------------------------------------------------- */
 
-body {
-	letter-spacing: var( --wp--custom--letter-spacing--body );
-}
-
 *,
 *:before,
 *:after {
@@ -108,11 +104,11 @@ li > ol {
 
 dt,
 dd {
-	line-height: 1.5;
+	line-height: var( --wp--custom--line-height--body );
 }
 
 dt {
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 }
 
 dt + dd { margin-top: 5px; }
@@ -158,23 +154,6 @@ figcaption a {
 
 pre {
 	font-size: var( --wp--preset--font-size--small );
-}
-
-/* Separator --------------------------------- */
-
-hr {
-	background-color: var( --wp--preset--color--black );
-	border: none;
-	height: 2px;
-	margin-bottom: calc( 2 * var( --wp--custom--spacing ) );
-	margin-top: calc( 2 * var( --wp--custom--spacing ) );
-}
-
-@media ( min-width: 700px ) {
-	hr {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing ) );
-		margin-top: calc( 3 * var( --wp--custom--spacing ) );
-	}
 }
 
 /* Inputs ------------------------------------ */
@@ -248,7 +227,7 @@ textarea {
 
 textarea {
 	height: 120px;
-	line-height: 1.5;
+	line-height: var( --wp--custom--line-height--body );
 	width: 100%;
 }
 
@@ -288,24 +267,24 @@ tfoot {
 th,
 td,
 caption {
+	line-height: var( --wp--custom--line-height--body );
 	padding: var( --wp--custom--spacing );
 }
 
 th,
 td {
 	border: 2px solid var( --wp--preset--color--black );
-	line-height: 1.4;
 	margin: 0;
 	overflow: visible;
 }
 
 th {
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 }
 
 caption {
 	background-color: var( --wp--preset--color--black );
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	text-align: center;
 }
 
@@ -336,7 +315,7 @@ input[type="submit"] {
 	cursor: pointer;
 	display: inline-flex;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: var( --wp--custom--font-weight--bold );
 	justify-content: center;
 	line-height: 1.25;
 	margin: 0;
