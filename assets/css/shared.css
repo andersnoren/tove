@@ -3,9 +3,15 @@
 /* --------------------------------------------------------------------------------------------- */
 
 :root {
-	--wp--tove--gutter: calc( 2 * var( --wp--custom--spacing ) );
+	--wp--tove--gutter: calc( 1.5 * var( --wp--custom--spacing ) );
 	--wp--custom--shaded-style--box-shadow: var( --wp--custom--shaded-style--box-shadow--x ) var( --wp--custom--shaded-style--box-shadow--y ) var( --wp--custom--shaded-style--box-shadow--blur ) var( --wp--custom--shaded-style--box-shadow--color );
 	--wp--custom--shaded-style--border: var( --wp--custom--shaded-style--border--width ) var( --wp--custom--shaded-style--border--style ) var( --wp--custom--shaded-style--border--color );
+}
+
+@media ( min-width: 370px ) {
+	:root {
+		--wp--tove--gutter: calc( 2 * var( --wp--custom--spacing ) );
+	}
 }
 
 @media ( min-width: 1000px ) {

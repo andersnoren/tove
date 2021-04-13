@@ -951,10 +951,6 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 	margin-top: calc( -1 * var( --wp--custom--spacing ) );
 }
 
-.wp-block-navigation .wp-block-navigation__container {
-	margin-right: calc( -2 * var( --wp--custom--spacing ) );
-}
-
 .wp-block-navigation.items-justified-center .wp-block-navigation__container {
 	margin-left: calc( -1 * var( --wp--custom--spacing ) );
 	margin-right: calc( -1 * var( --wp--custom--spacing ) );
@@ -968,6 +964,11 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 .wp-block-navigation.items-justified-center .wp-block-navigation-link, 
 .wp-block-navigation.items-justified-center .wp-block-pages-list__item {
 	margin: 0 calc( 1 * var( --wp--custom--spacing ) ) 0 calc( 1 * var( --wp--custom--spacing ) );
+}
+
+.wp-block-navigation .wp-block-navigation-link:first-child, 
+.wp-block-navigation .wp-block-pages-list__item:first-child {
+	margin-left: 0;
 }
 
 .wp-block-navigation > ul > li > .wp-block-navigation-link__content {
