@@ -137,7 +137,7 @@ if ( function_exists( 'register_block_style' ) && ! function_exists( 'tove_regis
 	function tove_register_block_styles() {
 
 		// Shared: Shaded.
-		$shaded_style_supports = array( 'core/group', 'core/image' );
+		$shaded_style_supports = array( 'core/group', 'core/image', 'core/social-links' );
 
 		foreach ( $shaded_style_supports as $block_name ) {
 			register_block_style( $block_name, array(
