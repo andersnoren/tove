@@ -1436,6 +1436,12 @@ ul.wp-block-query-loop > li > *:last-child { margin-bottom: 0; }
 /* Block: Social Links
 /* ------------------------------------------- */
 
+.wp-block-social-links.items-justified-center .wp-social-link.wp-social-link.wp-social-link {
+	margin: 4px;
+}
+
+/* Style: Shaded ------------------- */
+
 .wp-block-social-links.is-style-tove-shaded .wp-social-link.wp-social-link.wp-social-link {
 	border: var( --wp--custom--shaded-style--border--width ) var( --wp--custom--shaded-style--border--style ) currentColor;
 	border-radius: 0;

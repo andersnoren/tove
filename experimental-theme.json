@@ -228,8 +228,9 @@
 					}
 				},
 				"letter-spacing": {
-					"body": "-0.01em",
+					"gigantic": "-0.04em",
 					"heading": "-0.03em",
+					"body": "-0.01em",
 					"uppercase": "0.04em"
 				},
 				"spacing": "16px",

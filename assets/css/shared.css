@@ -136,7 +136,7 @@ hr {
 
 
 .has-gigantic-font-size {
-	letter-spacing: var( --wp--custom--letter-spacing--heading );
+	letter-spacing: var( --wp--custom--letter-spacing--gigantic );
 }
 
 @media ( max-width: 700px ) {
