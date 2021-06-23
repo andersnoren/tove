@@ -237,7 +237,7 @@
 .wp-block-cover, 
 .wp-block-cover-image {
 	color: #fff;
-	padding: var( --wp--tove--gutter );
+	padding: var( --wp--custom--gutter );
 }
 
 .wp-block-cover-image .wp-block-cover-image-text, 
@@ -937,8 +937,8 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 /* ------------------------------------------- */
 
 .wp-block-media-text .wp-block-media-text__content {
-	padding-left: var( --wp--tove--gutter );
-	padding-right: var( --wp--tove--gutter );
+	padding-left: var( --wp--custom--gutter );
+	padding-right: var( --wp--custom--gutter );
 }
 
 

@@ -57,7 +57,7 @@
 
 
 [class*="wp-container-"] > *:not(.alignfull) {
-	width: calc( 100% - ( 2 * var( --wp--tove--gutter ) ) );
+	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
 [class*="wp-container-"] [class*="wp-container-"] > * {
@@ -356,8 +356,8 @@ input[type="submit"]:focus {
 }
 
 .alignfull > figcaption {
-	padding-left: var( --wp--tove--gutter );
-	padding-right: var( --wp--tove--gutter );
+	padding-left: var( --wp--custom--gutter );
+	padding-right: var( --wp--custom--gutter );
 }
 
 .alignnone,

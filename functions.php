@@ -64,9 +64,9 @@ if ( ! function_exists( 'tove_styles' ) ) :
 
 		// TODO: Check if it's possible to check for DM Sans in the typography settings, and make the Google Fonts registraton conditional.
 
-		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-google-fonts', 'tove-styles-reset', 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end' ) );
+		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-google-fonts', 'tove-styles-reset', 'tove-styles-blocks', 'tove-styles-front-end', 'tove-styles-shared' ) );
 
-		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme( 'Tove' )->get( 'Version' ) );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'tove_styles', 5 );

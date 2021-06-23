@@ -2,32 +2,32 @@
 /*	0. CSS Variables
 /* --------------------------------------------------------------------------------------------- */
 
-:root {
-	--wp--tove--gutter: calc( 1.5 * var( --wp--custom--spacing ) );
+body {
+	--wp--custom--gutter: calc( 1.5 * var( --wp--custom--spacing ) );
 	--wp--custom--shaded-style--box-shadow: var( --wp--custom--shaded-style--box-shadow--x ) var( --wp--custom--shaded-style--box-shadow--y ) var( --wp--custom--shaded-style--box-shadow--blur ) var( --wp--custom--shaded-style--box-shadow--color );
 	--wp--custom--shaded-style--border: var( --wp--custom--shaded-style--border--width ) var( --wp--custom--shaded-style--border--style ) var( --wp--custom--shaded-style--border--color );
 }
 
 @media ( min-width: 370px ) {
-	:root {
-		--wp--tove--gutter: calc( 2 * var( --wp--custom--spacing ) );
+	body {
+		--wp--custom--gutter: calc( 2 * var( --wp--custom--spacing ) );
 	}
 }
 
 @media ( min-width: 1000px ) {
-	:root {
-		--wp--tove--gutter: calc( 3 * var( --wp--custom--spacing ) );
+	body {
+		--wp--custom--gutter: calc( 3 * var( --wp--custom--spacing ) );
 	}
 }
 
 @media ( min-width: 1200px ) {
-	:root {
-		--wp--tove--gutter: calc( 4 * var( --wp--custom--spacing ) );
+	body {
+		--wp--custom--gutter: calc( 4 * var( --wp--custom--spacing ) );
 	}
 }
 
 @media ( max-width: 700px ) {
-	:root {
+	body {
 		--wp--preset--font-size--extra-small: 	13px !important;
 		--wp--preset--font-size--small: 		15px !important;
 		--wp--preset--font-size--normal: 		17px !important;
@@ -43,6 +43,7 @@
 		--wp--preset--font-size--heading-6: 	16px !important;
 	}
 }
+
 
 /* --------------------------------------------------------------------------------------------- */
 /*	1. Document Setup
@@ -128,7 +129,7 @@ hr {
 .wp-block.entry-content > *:not([data-align="full"]) {
 	margin-left: auto;
 	margin-right: auto;
-	width: calc( 100% - ( 2 * var( --wp--tove--gutter ) ) );
+	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
 [class*="wp-container-"] [class*="wp-container-"] > * {
