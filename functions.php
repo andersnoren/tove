@@ -68,22 +68,7 @@ if ( ! function_exists( 'tove_styles' ) ) :
 		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme( 'Tove' )->get( 'Version' ) );
 
 	}
-endif;
-
-
-/*	-----------------------------------------------------------------------------------------------
-	ENQUEUE SCRIPTS
---------------------------------------------------------------------------------------------------- */
-
-if ( ! function_exists( 'tove_scripts' ) ) :
-	function tove_scripts() {
-
-		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-			wp_enqueue_script( 'comment-reply' );
-		}
-
-	}
-	add_action( 'wp_enqueue_scripts', 'tove_scripts' );
+	add_action( 'wp_enqueue_scripts', 'tove_styles' );
 endif;
 
 
