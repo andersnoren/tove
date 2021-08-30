@@ -2,6 +2,12 @@
 /*	0. Document Setup
 /* --------------------------------------------------------------------------------------------- */
 
+html, body {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -75,6 +81,7 @@
 ul,
 ol {
 	margin: calc( 1.5 * var( --wp--custom--spacing ) ) 0 calc( 1.5 * var( --wp--custom--spacing ) ) 0;
+	padding: 0;
 }
 
 li {
