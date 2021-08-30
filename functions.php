@@ -56,20 +56,18 @@ endif;
 if ( ! function_exists( 'tove_styles' ) ) :
 	function tove_styles() {
 
-		wp_register_style( 'tove-google-fonts', 	'//fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap' );
-		wp_register_style( 'tove-styles-reset', 	get_template_directory_uri() . '/assets/css/reset.css' );
+		wp_register_style( 'tove-styles-google-fonts', 	'//fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap' );
 		wp_register_style( 'tove-styles-shared', 	get_template_directory_uri() . '/assets/css/shared.css' );
 		wp_register_style( 'tove-styles-blocks', 	get_template_directory_uri() . '/assets/css/blocks.css' );
 		wp_register_style( 'tove-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css' );
 
 		// TODO: Check if it's possible to check for DM Sans in the typography settings, and make the Google Fonts registraton conditional.
 
-		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-google-fonts', 'tove-styles-reset', 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end' ) );
+		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-styles-google-fonts', 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end' ) );
 
 		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme( 'Tove' )->get( 'Version' ) );
 
 	}
-	add_action( 'wp_enqueue_scripts', 'tove_styles', 5 );
 endif;
 
 
