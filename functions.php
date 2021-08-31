@@ -24,9 +24,6 @@ if ( ! function_exists( 'tove_setup' ) ) :
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
-		// Add support for experimental link color control.
-		add_theme_support( 'experimental-link-color' );
-
 	}
 	add_action( 'after_setup_theme', 'tove_setup' );
 endif;
