@@ -197,7 +197,7 @@ button {
 
 input,
 textarea {
-	background-color: var( --wp--preset--color--white );
+	background-color: var( --wp--preset--color--background );
 	border-color: var( --wp--preset--color--foreground );
 }
 
@@ -314,7 +314,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: var( --wp--preset--color--white );
+	background: var( --wp--preset--color--background );
 	border: 2px solid currentColor;
 	box-shadow: 4px 4px 0 currentColor;
 	border-radius: 0;

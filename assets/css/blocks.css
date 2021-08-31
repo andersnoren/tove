@@ -108,8 +108,9 @@
 	text-decoration-thickness: 1px;
 }
 
-.wp-block-button__link:hover,
-.wp-block-button__link:focus {
+:root .wp-block-button__link:hover,
+:root .wp-block-button__link:focus {
+	color: var( --wp--preset--color--foreground );
 	text-decoration: underline;
 }
 
@@ -123,7 +124,7 @@
 }
 
 .wp-block-calendar table {
-	background-color: var( --wp--preset--color--white );
+	background-color: var( --wp--preset--color--background );
 	color: var( --wp--preset--color--foreground );
 	font-size: inherit;
 	margin: 0;
@@ -138,7 +139,7 @@
 }
 
 :root .wp-calendar-table caption {
-	background-color: var( --wp--preset--color--tertiary );
+	background-color: var( --wp--preset--color--primary );
 	border-bottom: none;
 	font-size: var( --wp--preset--font-size--small );
 	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
@@ -389,7 +390,7 @@ section.wp-block-cover-image > h2 {
 }
 
 .comment-reply-link {
-	background-color: var( --wp--preset--color--tertiary );
+	background-color: var( --wp--preset--color--primary );
 	border: 1px solid var( --wp--preset--color--foreground );
 	box-shadow: 2px 2px 0 var( --wp--preset--color--foreground );
 	font-size: 12px;
@@ -436,7 +437,7 @@ section.wp-block-cover-image > h2 {
 /* Comment Respond ----------------- */
 
 .comment-respond {
-	background-color: var( --wp--preset--color--white );
+	background-color: var( --wp--preset--color--background );
 	border: 2px solid currentColor;
 	box-shadow: 4px 4px 0 currentColor;
 	padding: calc( 2 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) );
@@ -504,7 +505,7 @@ section.wp-block-cover-image > h2 {
 }
 
 .comment-respond #submit {
-	background-color: var( --wp--preset--color--tertiary );
+	background-color: var( --wp--preset--color--primary );
 	display: block;
 	margin-left: auto;
 	width: 100%;
@@ -666,7 +667,7 @@ section.wp-block-cover-image > h2 {
 .wp-block-file__button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: var( --wp--preset--color--white );
+	background: var( --wp--preset--color--background );
 	border: 2px solid currentColor;
 	box-shadow: 4px 4px 0 currentColor;
 	border-radius: 0;
@@ -1053,7 +1054,7 @@ p.has-background {
 /* Drop Cap ------------------------ */
 
 .has-drop-cap:not(:focus):first-letter {
-	background-color: var( --wp--preset--color--white );
+	background-color: var( --wp--preset--color--background );
 	border: var( --wp--custom--shaded-style--border );
 	box-shadow: var( --wp--custom--shaded-style--box-shadow );
 	color: var( --wp--preset--color--foreground );
@@ -1393,7 +1394,7 @@ ul.wp-block-query-loop > li > *:last-child { margin-bottom: 0; }
 
 .wp-block-search .wp-block-search__button {
 	align-items: center;
-	background-color: var( --wp--preset--color--white );
+	background-color: var( --wp--preset--color--background );
 	color: inherit;
 	display: flex;
 	flex-shrink: 0;
@@ -1548,7 +1549,7 @@ figure.wp-block-table table {
 /* Style: Stripes ------------------ */
 
 :root .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-	background-color: var( --wp--preset--color--white );
+	background-color: var( --wp--preset--color--background );
 }
 
 :root figure.wp-block-table.is-style-stripes {
