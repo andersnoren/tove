@@ -20,10 +20,10 @@ if ( ! function_exists( 'tove_setup' ) ) :
 
 		// Enqueue editor styles.
 		add_editor_style( array( 
-			tove_get_google_fonts_url(),
 			'./assets/css/editor.css',
 			'./assets/css/blocks.css',
 			'./assets/css/shared.css',
+			tove_get_google_fonts_url()
 		) );
 
 		// HTML5 semantic markup.
@@ -34,15 +34,6 @@ if ( ! function_exists( 'tove_setup' ) ) :
 
 		// Add support for experimental link color control.
 		add_theme_support( 'experimental-link-color' );
-
-		// Add support for custom units.
-		add_theme_support( 'custom-units' );
-
-		// Add support for custom line height controls.
-		add_theme_support( 'custom-line-height' );
-
-		// Add support for custom spacing controls.
-		add_theme_support( 'custom-spacing' );
 
 	}
 	add_action( 'after_setup_theme', 'tove_setup' );
@@ -63,7 +54,7 @@ if ( ! function_exists( 'tove_styles' ) ) :
 
 		// TODO: Check if it's possible to check for DM Sans in the typography settings, and make the Google Fonts registraton conditional.
 
-		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-styles-google-fonts', 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end' ) );
+		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-styles-shared', 'tove-styles-front-end', 'tove-styles-blocks', 'tove-styles-google-fonts' ) );
 
 		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme( 'Tove' )->get( 'Version' ) );
 
@@ -75,7 +66,7 @@ endif;
 /*	-----------------------------------------------------------------------------------------------
 	GET GOOGLE FONTS URL
 	Builds a Google Fonts request URL from the Google Fonts families used in theme.json.
-	Based on a solution in Automattics Blockbase theme (see readme.txt for licensing info).
+	Based on a solution in the Blockbase theme (see readme.txt for licensing info).
  
  	@return $fonts_url
 --------------------------------------------------------------------------------------------------- */
@@ -118,32 +109,28 @@ endif;
 if ( ! function_exists( 'tove_register_block_patterns' ) ) : 
 	function tove_register_block_patterns() {
 
+		if ( ! ( function_exists( 'register_block_pattern_category' ) && function_exists( 'register_block_pattern' ) ) ) return;
+
 		// Register block pattern categories.
-		if ( function_exists( 'register_block_pattern_category' ) ) :
-			register_block_pattern_category( 'tove', array( 
-				'label' 	=> esc_html__( 'Tove', 'tove' ) 
-			) );
-		endif;
+		register_block_pattern_category( 'tove', array( 
+			'label' 	=> esc_html__( 'Tove', 'tove' ) 
+		) );
 
 		// Register block patterns.
-		if ( function_exists( 'register_block_pattern' ) ) :
+		/*
 
-			/*
+		// Name.
+		register_block_pattern(
+			'tove/slug',
+			array(
+				'title'         => esc_html__( 'Name', 'tove' ),
+				'categories'    => array( 'tove' ),
+				'viewportWidth' => 1440,
+				'content'       => '',
+			)
+		);
 
-			// Name.
-			register_block_pattern(
-				'tove/slug',
-				array(
-					'title'         => esc_html__( 'Name', 'tove' ),
-					'categories'    => array( 'tove' ),
-					'viewportWidth' => 1440,
-					'content'       => '',
-				)
-			);
-
-			*/
-
-		endif;
+		*/
 	
 	}
 endif;
@@ -154,13 +141,15 @@ endif;
 	Register theme specific block styles.
 --------------------------------------------------------------------------------------------------- */
 
-if ( function_exists( 'register_block_style' ) && ! function_exists( 'tove_register_block_styles' ) ) :
+if ( ! function_exists( 'tove_register_block_styles' ) ) :
 	function tove_register_block_styles() {
 
-		// Shared: Shaded.
-		$shaded_style_supports = array( 'core/group', 'core/image', 'core/social-links' );
+		if ( ! function_exists( 'register_block_style' ) ) return;
 
-		foreach ( $shaded_style_supports as $block_name ) {
+		// Shared: Shaded.
+		$supports_shaded_block_style = apply_filters( 'tove_supports_shaded_block_style', array( 'core/group', 'core/image', 'core/social-links' ) );
+
+		foreach ( $supports_shaded_block_style as $block_name ) {
 			register_block_style( $block_name, array(
 				'name'  	=> 'tove-shaded',
 				'label' 	=> esc_html__( 'Shaded', 'tove' ),

@@ -102,11 +102,8 @@
 /* BUTTON STYLES */
 
 .wp-block-button__link {
-	-webkit-appearance: none;
-	-moz-appearance: none;
 	box-shadow: var( --wp--custom--shaded-style--box-shadow );
 	text-align: center;
-	text-decoration: none;
 	text-underline-offset: .25em;
 	text-decoration-thickness: 1px;
 }
