@@ -42,7 +42,8 @@ html, body {
 :root *[class*="_inner-container"] > *:first-child,
 :root fieldset > *:first-child,
 :root form > *:first-child,
-:root .wp-block-media-text__content > *:first-child {
+:root .wp-block-media-text__content > *:first-child,
+.wp-block-group > *:first-child {
 	margin-top: 0;
 }
 
@@ -52,7 +53,8 @@ html, body {
 :root *[class*="_inner-container"] > *:last-child,
 :root fieldset > *:last-child,
 :root form > *:last-child,
-:root .wp-block-media-text__content > *:last-child {
+:root .wp-block-media-text__content > *:last-child,
+.wp-block-group > *:last-child {
 	margin-bottom: 0;
 }
 
@@ -63,6 +65,8 @@ html, body {
 
 
 [class*="wp-container-"] > *:not(.alignfull) {
+	margin-left: auto;
+	margin-right: auto;
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
@@ -358,8 +362,8 @@ input[type="submit"]:focus {
 .alignright,
 .alignwide,
 .alignfull {
-	margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
 
 .alignfull > figcaption {

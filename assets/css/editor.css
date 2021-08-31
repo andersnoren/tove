@@ -37,12 +37,6 @@ body {
 	margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
 }
 
-
-/* ------------------------------------------- */
-/*	X. Media Queries
-/* ------------------------------------------- */
-
-
 @media ( min-width: 700px ) {
 
 	.wp-block[data-align="wide"],
