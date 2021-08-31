@@ -18,14 +18,6 @@ if ( ! function_exists( 'tove_setup' ) ) :
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
 
-		// Enqueue editor styles.
-		add_editor_style( array( 
-			'./assets/css/editor.css',
-			'./assets/css/blocks.css',
-			'./assets/css/shared.css',
-			tove_get_google_fonts_url()
-		) );
-
 		// HTML5 semantic markup.
 		add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
 
@@ -47,19 +39,35 @@ endif;
 if ( ! function_exists( 'tove_styles' ) ) :
 	function tove_styles() {
 
-		wp_register_style( 'tove-styles-google-fonts', tove_get_google_fonts_url() );
-		wp_register_style( 'tove-styles-shared', 	get_template_directory_uri() . '/assets/css/shared.css' );
-		wp_register_style( 'tove-styles-blocks', 	get_template_directory_uri() . '/assets/css/blocks.css' );
-		wp_register_style( 'tove-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css' );
+		wp_register_style( 'tove-styles-google-fonts', 	tove_get_google_fonts_url() );
+		wp_register_style( 'tove-styles-shared', 		get_template_directory_uri() . '/assets/css/shared.css' );
+		wp_register_style( 'tove-styles-blocks', 		get_template_directory_uri() . '/assets/css/blocks.css' );
+		wp_register_style( 'tove-styles-front-end', 	get_template_directory_uri() . '/assets/css/front-end.css' );
 
-		// TODO: Check if it's possible to check for DM Sans in the typography settings, and make the Google Fonts registraton conditional.
-
-		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-styles-shared', 'tove-styles-front-end', 'tove-styles-blocks', 'tove-styles-google-fonts' ) );
-
+		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end', 'tove-styles-google-fonts' ) );
 		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme( 'Tove' )->get( 'Version' ) );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'tove_styles' );
+endif;
+
+
+/*	-----------------------------------------------------------------------------------------------
+	ENQUEUE EDITOR STYLES
+--------------------------------------------------------------------------------------------------- */
+
+if ( ! function_exists( 'tove_editor_styles' ) ) :
+	function tove_editor_styles() {
+
+		add_editor_style( array( 
+			'./assets/css/editor.css',
+			'./assets/css/blocks.css',
+			'./assets/css/shared.css',
+			tove_get_google_fonts_url()
+		) );
+
+	}
+	add_action( 'admin_init', 'tove_editor_styles' );
 endif;
 
 
