@@ -1,39 +1,54 @@
-/* --------------------------------------------------------------------------------------------- */
-/*	X. Blocks
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
+/*	X. Structure
+/* ------------------------------------------- */
 
-/* Block: Image ------------------------------ */
+
+body {
+	padding: 0;
+}
+
+.is-root-container > .wp-block:not([data-align="full"]) {
+	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
+}
+
+
+/* ------------------------------------------- */
+/*	X. Blocks
+/* ------------------------------------------- */
+
+
+/* Block: Image -------------------- */
 
 :root .wp-block.wp-block-image figcaption {
 	margin-top: 0;
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Alignments
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
 .wp-block[data-align="none"],
 .wp-block[data-align="center"],
 .wp-block[data-align="wide"],
 .wp-block[data-align="full"] {
-	margin-bottom: calc( 3 * var( --wp--custom--spacing ) );
-	margin-top: calc( 3 * var( --wp--custom--spacing ) );
+	margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Media Queries
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
 @media ( min-width: 700px ) {
 
 	.wp-block[data-align="wide"],
 	.wp-block[data-align="full"] {
-		margin-bottom: calc( 4 * var( --wp--custom--spacing ) );
-		margin-top: calc( 4 * var( --wp--custom--spacing ) );
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
 	}
 
 }

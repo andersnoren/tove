@@ -1,34 +1,34 @@
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	0. CSS Variables
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 body {
-	--wp--custom--gutter: calc( 1.5 * var( --wp--custom--spacing ) );
+	--wp--custom--gutter: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
 	--wp--custom--shaded-style--box-shadow: var( --wp--custom--shaded-style--box-shadow--x ) var( --wp--custom--shaded-style--box-shadow--y ) var( --wp--custom--shaded-style--box-shadow--blur ) var( --wp--custom--shaded-style--box-shadow--color );
 	--wp--custom--shaded-style--border: var( --wp--custom--shaded-style--border--width ) var( --wp--custom--shaded-style--border--style ) var( --wp--custom--shaded-style--border--color );
 }
 
 @media ( min-width: 370px ) {
 	body {
-		--wp--custom--gutter: calc( 2 * var( --wp--custom--spacing ) );
+		--wp--custom--gutter: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	}
 }
 
 @media ( min-width: 1000px ) {
 	body {
-		--wp--custom--gutter: calc( 3 * var( --wp--custom--spacing ) );
+		--wp--custom--gutter: calc( 3 * var( --wp--custom--spacing--baseline ) );
 	}
 }
 
 @media ( min-width: 1200px ) {
 	body {
-		--wp--custom--gutter: calc( 4 * var( --wp--custom--spacing ) );
+		--wp--custom--gutter: calc( 4 * var( --wp--custom--spacing--baseline ) );
 	}
 }
 
 @media ( max-width: 700px ) {
 	body {
-		--wp--preset--font-size--extra-small: 	13px !important;
+		--wp--preset--font-size--tiny:			13px !important;
 		--wp--preset--font-size--small: 		15px !important;
 		--wp--preset--font-size--normal: 		17px !important;
 		--wp--preset--font-size--large: 		21px !important;
@@ -45,9 +45,9 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	1. Document Setup
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
 body {
@@ -73,19 +73,19 @@ a:hover {
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Element Base
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
-/* Quotes ------------------------------------ */
+/* Quotes -------------------------- */
 
 blockquote {
 	border-color: currentColor;
 	border-style: solid;
 	border-width: 0 0 0 2px;
 	margin: 0 0 1em 0;
-	padding: 0 0 0 var( --wp--custom--spacing );
+	padding: 0 0 0 var( --wp--custom--spacing--baseline );
 }
 
 cite {
@@ -98,32 +98,32 @@ cite {
 @media ( min-width: 700px ) {
 
 	blockquote {
-		padding: 0 0 0 calc( 2 * var( --wp--custom--spacing ) );
+		padding: 0 0 0 calc( 2 * var( --wp--custom--spacing--baseline ) );
 	}
 
 }
 
-/* Separator --------------------------------- */
+/* Separator ----------------------- */
 
 hr {
 	background-color: var( --wp--preset--color--black );
 	border: none;
 	height: 2px;
-	margin-bottom: calc( 2 * var( --wp--custom--spacing ) );
-	margin-top: calc( 2 * var( --wp--custom--spacing ) );
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
 
 @media ( min-width: 700px ) {
 	hr {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing ) );
-		margin-top: calc( 3 * var( --wp--custom--spacing ) );
+		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
 	}
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Structure
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 .wp-block-template-part > *:not([data-align="full"]),
 .wp-block.entry-content > *:not([data-align="full"]) {
@@ -137,9 +137,9 @@ hr {
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Typography
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
 .has-gigantic-font-size {
@@ -148,7 +148,7 @@ hr {
 
 @media ( max-width: 700px ) {
 
-	:root .has-extra-small-font-size { font-size: 	var( --wp--preset--font-size--extra-small ) !important; }
+	:root .has-tiny-font-size { font-size: 	var( --wp--preset--font-size--tiny ) !important; }
     :root .has-small-font-size { font-size: 		var( --wp--preset--font-size--small ) !important; }
     :root .has-normal-font-size { font-size: 		var( --wp--preset--font-size--normal ) !important; }
     :root .has-large-font-size { font-size: 		var( --wp--preset--font-size--large ) !important; }
@@ -165,6 +165,6 @@ hr {
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Media Queries
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */

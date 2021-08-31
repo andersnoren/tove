@@ -38,7 +38,7 @@ html, body {
 
 :root .contain-margins > *:first-child,
 :root .entry-content > *:first-child,
-:root .comment-content > *:first-child,
+:root .wp-block-post-comments .comment-content > *:first-child,
 :root *[class*="_inner-container"] > *:first-child,
 :root fieldset > *:first-child,
 :root form > *:first-child,
@@ -48,7 +48,7 @@ html, body {
 
 :root .contain-margins > *:last-child,
 :root .entry-content > *:last-child,
-:root .comment-content > *:last-child,
+:root .wp-block-post-comments .comment-content > *:last-child,
 :root *[class*="_inner-container"] > *:last-child,
 :root fieldset > *:last-child,
 :root form > *:last-child,
@@ -80,13 +80,13 @@ html, body {
 
 ul,
 ol {
-	margin: calc( 1.5 * var( --wp--custom--spacing ) ) 0 calc( 1.5 * var( --wp--custom--spacing ) ) 0;
+	margin: calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0;
 	padding: 0;
 }
 
 li {
 	line-height: inherit;
-	margin: calc( .5 * var( --wp--custom--spacing ) ) 0 calc( .5 * var( --wp--custom--spacing ) ) 1.25em;
+	margin: calc( .5 * var( --wp--custom--spacing--baseline ) ) 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 1.25em;
 }
 
 li:first-child { margin-top: 0; }
@@ -94,8 +94,8 @@ li:last-child { margin-bottom: 0; }
 
 li > ul,
 li > ol {
-	margin-bottom: calc( .5 * var( --wp--custom--spacing ) );
-	margin-top: calc( .5 * var( --wp--custom--spacing ) );
+	margin-bottom: calc( .5 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( .5 * var( --wp--custom--spacing--baseline ) );
 }
 
 .reset-list-style,
@@ -150,7 +150,7 @@ figcaption {
 	font-size: var( --wp--preset--font-size--small );
 	line-height: inherit;
 	margin-bottom: 0;
-	margin-top: calc( .75 * var( --wp--custom--spacing ) );
+	margin-top: calc( .75 * var( --wp--custom--spacing--baseline ) );
 }
 
 figcaption a {
@@ -166,26 +166,26 @@ pre {
 /* Inputs ------------------------------------ */
 
 form {
-	margin-bottom: calc( 2 * var( --wp--custom--spacing ) );
-	margin-top: calc( 2 * var( --wp--custom--spacing ) );
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
 
 legend {
 	font-size: 16px;
-	padding: 0 calc( .5 * var( --wp--custom--spacing ) );
+	padding: 0 calc( .5 * var( --wp--custom--spacing--baseline ) );
 }
 
 label {
 	display: block;
 	font-size: var( --wp--preset--font-size--small );
-	margin: 0 0 calc( .5 * var( --wp--custom--spacing ) ) 0;
+	margin: 0 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 0;
 }
 
 label.inline,
 input[type="checkbox"] + label {
 	display: inline;
 	margin-bottom: 0;
-	margin-left: var( --wp--custom--spacing );
+	margin-left: var( --wp--custom--spacing--baseline );
 }
 
 input,
@@ -257,7 +257,7 @@ table {
 	border-spacing: 0;
 	empty-cells: show;
 	font-size: var( --wp--preset--font-size--small );
-	margin: calc( 2 * var( --wp--custom--spacing ) ) auto;
+	margin: calc( 2 * var( --wp--custom--spacing--baseline ) ) auto;
 	max-width: 100%;
 	overflow: hidden;
 	width: 100%;
@@ -275,7 +275,7 @@ th,
 td,
 caption {
 	line-height: var( --wp--custom--line-height--body );
-	padding: var( --wp--custom--spacing );
+	padding: var( --wp--custom--spacing--baseline );
 }
 
 th,
@@ -358,8 +358,8 @@ input[type="submit"]:focus {
 .alignright,
 .alignwide,
 .alignfull {
-	margin-bottom: calc( 3 * var( --wp--custom--spacing ) );
-	margin-top: calc( 3 * var( --wp--custom--spacing ) );
+	margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
 }
 
 .alignfull > figcaption {
@@ -381,11 +381,11 @@ input[type="submit"]:focus {
 }
 
 .alignleft {
-	margin: 3px calc( 1.5 * var( --wp--custom--spacing ) ) calc( 1.5 * var( --wp--custom--spacing ) ) 0;
+	margin: 3px calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0;
 }
 
 .alignright {
-	margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing ) ) calc( 1.5 * var( --wp--custom--spacing ) );
+	margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) );
 }
 
 
@@ -413,8 +413,8 @@ input[type="submit"]:focus {
 
 	.alignwide,
 	.alignfull {
-		margin-bottom: calc( 4 * var( --wp--custom--spacing ) );
-		margin-top: calc( 4 * var( --wp--custom--spacing ) );
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
 	}
 
 }
