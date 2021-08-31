@@ -198,7 +198,7 @@ button {
 input,
 textarea {
 	background-color: var( --wp--preset--color--white );
-	border-color: var( --wp--preset--color--black );
+	border-color: var( --wp--preset--color--foreground );
 }
 
 input[type="text"],
@@ -268,7 +268,7 @@ thead,
 th,
 td,
 tfoot {
-	border-color: var( --wp--preset--color--black );
+	border-color: var( --wp--preset--color--foreground );
 }
 
 th,
@@ -280,7 +280,7 @@ caption {
 
 th,
 td {
-	border: 2px solid var( --wp--preset--color--black );
+	border: 2px solid var( --wp--preset--color--foreground );
 	margin: 0;
 	overflow: visible;
 }
@@ -290,18 +290,18 @@ th {
 }
 
 caption {
-	background-color: var( --wp--preset--color--black );
+	background-color: var( --wp--preset--color--foreground );
 	font-weight: var( --wp--custom--font-weight--bold );
 	text-align: center;
 }
 
 thead {
-	border-bottom: 2px solid var( --wp--preset--color--black );
+	border-bottom: 2px solid var( --wp--preset--color--foreground );
 	white-space: nowrap;
 }
 
 tfoot {
-	border-top: 2px solid var( --wp--preset--color--black );
+	border-top: 2px solid var( --wp--preset--color--foreground );
 	font-style: italic;
 }
 
@@ -318,7 +318,7 @@ input[type="submit"] {
 	border: 2px solid currentColor;
 	box-shadow: 4px 4px 0 currentColor;
 	border-radius: 0;
-	color: var( --wp--preset--color--black );
+	color: var( --wp--preset--color--foreground );
 	cursor: pointer;
 	display: inline-flex;
 	font-size: 18px;

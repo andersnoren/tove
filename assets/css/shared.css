@@ -106,7 +106,7 @@ cite {
 /* Separator ----------------------- */
 
 hr {
-	background-color: var( --wp--preset--color--black );
+	background-color: var( --wp--preset--color--foreground );
 	border: none;
 	height: 2px;
 	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
