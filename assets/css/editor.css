@@ -7,7 +7,7 @@ body {
 	padding: 0;
 }
 
-.is-root-container > .wp-block:not([data-align="full"]) {
+.is-root-container > .wp-block:not([data-align="full"]):not(.block-editor-block-list__layout) {
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
@@ -33,8 +33,8 @@ body {
 .wp-block[data-align="center"],
 .wp-block[data-align="wide"],
 .wp-block[data-align="full"] {
-	margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
 
 @media ( min-width: 700px ) {

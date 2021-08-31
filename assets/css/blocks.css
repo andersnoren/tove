@@ -1356,6 +1356,13 @@ ul.wp-block-post-template > li > *:last-child { margin-bottom: 0; }
 /* ------------------------------------------- */
 
 
+.wp-block-search .wp-block-search__label {
+	display: block;
+	font-size: var( --wp--preset--font-size--small );
+	font-weight: var( --wp--custom--font-weight--normal );
+	margin: 0 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 0;
+}
+
 .wp-block-search .wp-block-search__input,
 .wp-block-search .wp-block-search__button {
 	border: 2px solid var( --wp--preset--color--foreground );
