@@ -26,6 +26,12 @@ DM Sans font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://fonts.google.com/specimen/DM+Sans/
 
+Code from Blockbase
+Copyright (c) 2021 Automattic Inc.
+License: GPLv2, https://www.gnu.org/licenses/gpl-2.0.html
+Source: https://wordpress.org/themes/blockbase/
+Included as part of:
+	- tove_get_google_fonts_url(), for building a Google Fonts request URL from fonts set in theme.json
 
 == Changelog ==
 

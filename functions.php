@@ -20,7 +20,7 @@ if ( ! function_exists( 'tove_setup' ) ) :
 
 		// Enqueue editor styles.
 		add_editor_style( array( 
-			'https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap',
+			tove_get_google_fonts_url(),
 			'./assets/css/editor.css',
 			'./assets/css/blocks.css',
 			'./assets/css/shared.css',
@@ -56,7 +56,7 @@ endif;
 if ( ! function_exists( 'tove_styles' ) ) :
 	function tove_styles() {
 
-		wp_register_style( 'tove-styles-google-fonts', 	'//fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap' );
+		wp_register_style( 'tove-styles-google-fonts', tove_get_google_fonts_url() );
 		wp_register_style( 'tove-styles-shared', 	get_template_directory_uri() . '/assets/css/shared.css' );
 		wp_register_style( 'tove-styles-blocks', 	get_template_directory_uri() . '/assets/css/blocks.css' );
 		wp_register_style( 'tove-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css' );
@@ -69,6 +69,44 @@ if ( ! function_exists( 'tove_styles' ) ) :
 
 	}
 	add_action( 'wp_enqueue_scripts', 'tove_styles' );
+endif;
+
+
+/*	-----------------------------------------------------------------------------------------------
+	GET GOOGLE FONTS URL
+	Builds a Google Fonts request URL from the Google Fonts families used in theme.json.
+	Based on a solution in Automattics Blockbase theme (see readme.txt for licensing info).
+ 
+ 	@return $fonts_url
+--------------------------------------------------------------------------------------------------- */
+
+if ( ! function_exists( 'tove_get_google_fonts_url' ) ) : 
+	function tove_get_google_fonts_url() {
+
+		if ( ! class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) return '';
+
+		$theme_data = WP_Theme_JSON_Resolver_Gutenberg::get_merged_data()->get_settings();
+
+		if ( empty( $theme_data['typography']['fontFamilies'] ) ) return '';
+
+		$theme_families 	= ! empty( $theme_data['typography']['fontFamilies']['theme'] ) ? $theme_data['typography']['fontFamilies']['theme'] : array();
+		$user_families 		= ! empty( $theme_data['typography']['fontFamilies']['user'] ) ? $theme_data['typography']['fontFamilies']['user'] : array();
+		$font_families 		= array_merge( $theme_families, $user_families );
+
+		if ( ! $font_families ) return '';
+
+		$font_family_urls = array();
+
+		foreach ( $font_families as $font_family ) {
+			if ( ! empty( $font_family['google'] ) ) $font_family_urls[] = $font_family['google'];
+		}
+
+		if ( ! $font_family_urls ) return '';
+
+		// Return a single request URL for all of the font families.
+		return apply_filters( 'tove_google_fonts_url', esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', $font_family_urls ) . '&display=swap' ) );
+
+	}
 endif;
 
 
