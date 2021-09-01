@@ -1,6 +1,7 @@
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	0. Document Setup
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
+
 
 html, body {
 	border: none;
@@ -24,7 +25,7 @@ html, body {
 	outline: none;
 }
 
-/* Clearing ---------------------------------- */
+/* Clearing ------------------------ */
 
 .entry-content:after,
 [class*="__inner-container"]:after,
@@ -34,7 +35,7 @@ html, body {
 	display: block;
 }
 
-/* Contain Margins --------------------------- */
+/* Contain Margins ----------------- */
 
 :root .contain-margins > *:first-child,
 :root .entry-content > *:first-child,
@@ -59,9 +60,9 @@ html, body {
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Structure
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
 [class*="wp-container-"] > *:not(.alignfull) {
@@ -70,17 +71,17 @@ html, body {
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
-[class*="wp-container-"] [class*="wp-container-"] > * {
+[class*="wp-container-"] [class*="wp-container-"] > *:not([class*="align"]) {
 	width: 100%;
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	1. Element Base
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
-/* Lists ------------------------------------- */
+/* Lists --------------------------- */
 
 ul,
 ol {
@@ -125,7 +126,7 @@ dt {
 dt + dd { margin-top: 5px; }
 dd + dt { margin-top: 15px; }
 
-/* Media ------------------------------------- */
+/* Media --------------------------- */
 
 figure {
 	margin: 0;
@@ -161,13 +162,13 @@ figcaption a {
 	color: inherit;
 }
 
-/* Preformatted Text ------------------------- */
+/* Preformatted Text --------------- */
 
 pre {
 	font-size: var( --wp--preset--font-size--small );
 }
 
-/* Inputs ------------------------------------ */
+/* Inputs -------------------------- */
 
 form {
 	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
@@ -201,7 +202,7 @@ button {
 
 input,
 textarea {
-	background-color: var( --wp--preset--color--background );
+	background-color: var( --wp--preset--color--senary );
 	border-color: var( --wp--preset--color--foreground );
 }
 
@@ -254,7 +255,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	display: none;
 }
 
-/* Tables ------------------------------------ */
+/* Tables -------------------------- */
 
 table {
 	border-collapse: collapse;
@@ -309,7 +310,7 @@ tfoot {
 	font-style: italic;
 }
 
-/* Buttons ----------------------------------- */
+/* Buttons ------------------------- */
 
 button,
 .button,
@@ -318,7 +319,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: var( --wp--preset--color--background );
+	background: var( --wp--preset--color--senary );
 	border: 2px solid currentColor;
 	box-shadow: 4px 4px 0 currentColor;
 	border-radius: 0;
@@ -351,17 +352,15 @@ input[type="submit"]:focus {
 }
 
 
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 /*	X. Alignments
-/* --------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- */
 
 
-.alignnone,
-.aligncenter,
-.alignleft,
-.alignright,
-.alignwide,
-.alignfull {
+:root .alignnone,
+:root .aligncenter,
+:root .alignwide,
+:root .alignfull {
 	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
@@ -384,39 +383,13 @@ input[type="submit"]:focus {
 	margin-right: auto;
 }
 
-.alignleft {
-	margin: 3px calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0;
-}
-
-.alignright {
-	margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) );
-}
-
-
-/* --------------------------------------------------------------------------------------------- */
-/*	X. Site Footer
-/* --------------------------------------------------------------------------------------------- */
-
-.theme-by a { 
-	text-decoration: none; 
-}
-
-.theme-by a:hover,
-.theme-by a:focus { 
-	text-decoration: underline; 
-}
-
-
-/* --------------------------------------------------------------------------------------------- */
-/*	X. Media Queries
-/* --------------------------------------------------------------------------------------------- */
+:root .alignleft { margin: 3px calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0; }
+:root .alignright { margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ); }
 
 @media ( min-width: 700px ) {
 
-	/* Alignments ---------------------------- */
-
-	.alignwide,
-	.alignfull {
+	:root .alignwide,
+	:root .alignfull {
 		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
 		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
 	}

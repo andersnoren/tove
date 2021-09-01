@@ -90,12 +90,12 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#000000",
+					"color": "#374AC8",
 					"name": "Foreground"
 				},
 				{
 					"slug": "background",
-					"color": "#FFFFFF",
+					"color": "#FBF4EF",
 					"name": "Background"
 				},
 				{
@@ -117,6 +117,16 @@
 					"slug": "quaternary",
 					"color": "#C3FFF3",
 					"name": "Quaternary"
+				},
+				{
+					"slug": "quinary",
+					"color": "#000000",
+					"name": "Quinary"
+				},
+				{
+					"slug": "senary",
+					"color": "#FFFFFF",
+					"name": "Senary"
 				}
 			]
 		},
@@ -140,13 +150,13 @@
 				"border": {
 					"width": "2px",
 					"style": "solid",
-					"color": "var(--wp--preset--color--foreground)"
+					"color": "currentColor"
 				},
 				"box-shadow": {
 					"x": "4px",
 					"y": "4px",
 					"blur": 0,
-					"color": "var(--wp--preset--color--foreground)"
+					"color": "currentColor"
 				}
 			},
 			"spacing": {
@@ -155,9 +165,10 @@
 		},
 		"layout": {
 			"contentSize": "640px",
-			"wideSize": "2048px"
+			"wideSize": "2560px"
 		},
 		"spacing": {
+			"blockGap": true,
 			"customPadding": true,
 			"customMargin": true,
 			"units": [ "px", "em", "rem", "vh", "vw" ]
@@ -262,7 +273,7 @@
 		"blocks": {
 			"core/button": {
 				"border": {
-					"color": "var(--wp--custom--shaded-style--border--color)",
+					"color": "currentColor",
 					"radius": "0px",
 					"style": "var(--wp--custom--shaded-style--border--style)",
 					"width": "var(--wp--custom--shaded-style--border--width)"
@@ -303,7 +314,8 @@
 			},
 			"core/file": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontWeight": "var(--wp--custom--font-weight--bold)"
 				}
 			},
 			"core/paragraph": {
@@ -364,7 +376,7 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--secondary)",
+			"background": "var(--wp--preset--color--background)",
 			"text": "var(--wp--preset--color--foreground)",
 			"link": "var(--wp--preset--color--foreground)"
 		},
@@ -420,6 +432,9 @@
 					"text": "inherit"
 				}
 			}
+		},
+		"spacing": { 
+			"blockGap": "1em"
 		},
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--normal)",

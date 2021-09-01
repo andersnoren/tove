@@ -137,6 +137,17 @@ hr {
 
 
 /* ------------------------------------------- */
+/*	X. Helper Classes
+/* ------------------------------------------- */
+
+:root .no-margin.no-margin { margin: 0 !important; }
+:root .no-margin-bottom.no-margin-bottom, :root .no-margin-vertical.no-margin-vertical { margin-bottom: 0 !important; }
+:root .no-margin-left.no-margin-left, :root .no-margin-horizontal.no-margin-horizontal { margin-left: 0 !important; }
+:root .no-margin-right.no-margin-right, :root .no-margin-horizontal.no-margin-horizontal { margin-right: 0 !important; }
+:root .no-margin-top.no-margin-top, :root .no-margin-vertical.no-margin-vertical { margin-top: 0 !important; }
+
+
+/* ------------------------------------------- */
 /*	X. Typography
 /* ------------------------------------------- */
 
