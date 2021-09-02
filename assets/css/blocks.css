@@ -699,7 +699,7 @@
 
 
 :root .wp-block-group.has-background {
-	padding: calc( 2 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) );
+	padding: calc( 2 * var( --wp--custom--spacing--baseline ) ) 0 );
 }
 
 /* Style: Shaded ------------------- */
@@ -908,13 +908,6 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 	margin: calc( -.5 * var( --wp--custom--spacing--baseline ) ) calc( -2 * var( --wp--custom--spacing--baseline ) ) calc( -.5 * var( --wp--custom--spacing--baseline ) ) 0;
 }
 
-.wp-block-navigation:not(.has-background) .submenu-container, 
-.wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container,
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-	background-color: var( --wp--preset--color--senary );
-	color: var( --wp--preset--color--foreground );
-}
-
 /* Navigation List ----------------- */
 
 .wp-block-navigation li {
@@ -975,7 +968,9 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 
 .wp-block-navigation:not(.has-background) .submenu-container, 
 .wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container {
+	background-color: var( --wp--preset--color--senary );
 	border: 2px solid currentColor;
+	color: var( --wp--preset--color--foreground );
 }
 
 .wp-block-navigation :where(.submenu-container, .wp-block-navigation-link__container) a {
@@ -1009,6 +1004,11 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 
 .wp-block-navigation__responsive-container.is-menu-open {
 	padding: calc( 2 * var( --wp--custom--spacing--baseline ) ) var( --wp--custom--gutter );
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+	background-color: var( --wp--preset--color--background );
+	color: var( --wp--preset--color--foreground );
 }
 
 .wp-block-navigation__responsive-close {
