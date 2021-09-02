@@ -135,6 +135,12 @@ hr {
 	width: 100%;
 }
 
+:root .wp-block[data-align="full"] > * > figcaption,
+:root .alignfull > figcaption {
+	padding-left: var( --wp--custom--gutter );
+	padding-right: var( --wp--custom--gutter );
+}
+
 
 /* ------------------------------------------- */
 /*	X. Helper Classes

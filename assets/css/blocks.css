@@ -970,6 +970,8 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 	width: .66em;
 }
 
+.wp-block-navigation .current-menu-item,
+.wp-block-navigation .wp-block-navigation-link a:focus,
 .wp-block-navigation .wp-block-navigation-link a:hover {
 	text-decoration: underline;
 }
@@ -1544,6 +1546,23 @@ figure.wp-block-table table {
 :root figure.wp-block-table.is-style-stripes {
 	border-bottom: none;
 }
+
+
+/* ------------------------------------------- */
+/* Block: Template Part
+/* ------------------------------------------- */
+
+
+:root .wp-block-template-part.has-background {
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: var( --wp--custom--gutter ) 0;
+}
+
+:root .wp-block-template-part.has-background > *:first-child,
+:root .wp-block-template-part.has-background > .wp-block:first-child > *:first-child { margin-top: 0; }
+:root .wp-block-template-part.has-background > *:last-child,
+:root .wp-block-template-part.has-background > .wp-block:last-child > *:last-child { margin-bottom: 0; }
 
 
 /* ------------------------------------------- */
