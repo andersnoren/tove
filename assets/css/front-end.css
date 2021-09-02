@@ -39,23 +39,17 @@ html, body {
 
 :root .contain-margins > *:first-child,
 :root .entry-content > *:first-child,
-:root .wp-block-post-comments .comment-content > *:first-child,
 :root *[class*="_inner-container"] > *:first-child,
 :root fieldset > *:first-child,
-:root form > *:first-child,
-:root .wp-block-media-text__content > *:first-child,
-.wp-block-group > *:first-child {
+:root form > *:first-child {
 	margin-top: 0;
 }
 
 :root .contain-margins > *:last-child,
 :root .entry-content > *:last-child,
-:root .wp-block-post-comments .comment-content > *:last-child,
 :root *[class*="_inner-container"] > *:last-child,
 :root fieldset > *:last-child,
-:root form > *:last-child,
-:root .wp-block-media-text__content > *:last-child,
-.wp-block-group > *:last-child {
+:root form > *:last-child {
 	margin-bottom: 0;
 }
 
