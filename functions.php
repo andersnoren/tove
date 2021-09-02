@@ -116,27 +116,74 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 		if ( ! ( function_exists( 'register_block_pattern_category' ) && function_exists( 'register_block_pattern' ) ) ) return;
 
+		// The block pattern categories included in Tove.
+		$tove_block_pattern_categories = apply_filters( 'tove_block_pattern_categories', array(
+			'tove-banner' => array(
+				'label'			=> esc_html__( 'Tove Banner', 'tove' ),
+			),
+			'tove-cta'  => array(
+				'label'			=> esc_html__( 'Tove Call to Action', 'tove' ),
+			),
+			'tove-footer' => array(
+				'label'			=> esc_html__( 'Tove Footer', 'tove' ),
+			),
+			'tove-query' => array(
+				'label'			=> esc_html__( 'Tove Post Template', 'tove' ),
+			),
+			'tove-header' => array(
+				'label'			=> esc_html__( 'Tove Header', 'tove' ),
+			),
+			'tove-hero' => array(
+				'label'			=> esc_html__( 'Tove Hero', 'tove' ),
+			),
+		) );
+
+		// Sort the block pattern categories alphabetically based on the label value, to ensure alphabetized order when the strings are localized.
+		uasort( $tove_block_pattern_categories, function( $a, $b ) { 
+			return strcmp( $a["label"], $b["label"] ); }
+		);
+
 		// Register block pattern categories.
-		register_block_pattern_category( 'tove', array( 
-			'label' 	=> esc_html__( 'Tove', 'tove' ) 
+		foreach ( $tove_block_pattern_categories as $slug => $settings ) {
+			register_block_pattern_category( $slug, $settings );
+		}
+
+		// The block patterns included in Tove.
+		$tove_block_patterns = apply_filters( 'tove_block_patterns', array(
+			'tove/slug' => array(
+				'title'         => esc_html__( 'Tove Block Pattern', 'tove' ),
+				'categories'    => array( 'tove-banner', 'tove-cta', 'tove-footer', 'tove-query', 'tove-header', 'tove-hero' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'block-pattern' ),
+			)
 		) );
 
 		// Register block patterns.
-		/*
-
-		// Name.
-		register_block_pattern(
-			'tove/slug',
-			array(
-				'title'         => esc_html__( 'Name', 'tove' ),
-				'categories'    => array( 'tove' ),
-				'viewportWidth' => 1440,
-				'content'       => '',
-			)
-		);
-
-		*/
+		foreach ( $tove_block_patterns as $slug => $settings ) {
+			register_block_pattern( $slug, $settings );
+		}
 	
+	}
+	add_action( 'init', 'tove_register_block_patterns' );
+endif;
+
+
+/*	-----------------------------------------------------------------------------------------------
+	GET BLOCK PATTERN MARKUP
+	Returns the markup of the block pattern at the specified theme path.
+--------------------------------------------------------------------------------------------------- */
+
+if ( ! function_exists( 'tove_get_block_pattern_markup' ) ) : 
+	function tove_get_block_pattern_markup( $pattern_name ) {
+
+		$path = 'inc/block-patterns/' . $pattern_name . '.php';
+
+		if ( ! locate_template( $path ) ) return;
+
+		ob_start();
+		include( locate_template( $path ) );
+		return ob_get_clean();
+
 	}
 endif;
 
