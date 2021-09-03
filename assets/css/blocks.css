@@ -43,49 +43,11 @@
 	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
 
-@media ( min-width: 700px ) {
-
-	.wp-block-post-excerpt {
-		margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	}
-
-	.wp-block-archives,
-	.wp-block-calendar,
-	.wp-block-categories,
-	.wp-block-code,
-	.wp-block-columns,
-	.wp-block-cover,
-	.wp-block-cover-image,
-	.wp-block-embed,
-	.wp-block-file,
-	.wp-block-gallery,
-	.wp-block-group,
-	.wp-block-latest-comments,
-	.wp-block-latest-posts,
-	.wp-block-media-text,
-	.wp-block-preformatted,
-	.wp-block-pullquote,
-	.wp-block-quote,
-	.wp-block-quote.is-large,
-	.wp-block-quote.is-style-large,
-	.wp-block-search,
-	.wp-block-separator,
-	.wp-block-social,
-	.wp-block-social-links,
-	.wp-block-tag-cloud,
-	.wp-block-table,
-	.wp-block-verse,
-	.wp-block-video {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
-	}
-	
-}
 
 /* ------------------------------------------- */
 /* Block: Buttons
 /* ------------------------------------------- */
+
 
 /* STRUCTURE */
 
@@ -858,13 +820,13 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 	.wp-block-image:not(:first-child):not(.alignwide):not(.alignfull):not(.alignnone) figure:not(.alignleft):not(.alignright):not(.aligncenter),
 	.wp-block-image:not(:first-child):not(.alignwide):not(.alignfull):not(.alignnone) > img:first-child,
 	.wp-block-image:not(:first-child):not(.alignwide):not(.alignfull):not(.alignnone) > img:only-child {
-		margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	}
 
 	.wp-block-image:not(:last-child):not(.alignwide):not(.alignfull):not(.alignnone) figure:not(.alignleft):not(.alignright):not(.aligncenter),
 	.wp-block-image:not(:last-child):not(.alignwide):not(.alignfull):not(.alignnone) > figcaption:last-child,
 	.wp-block-image:not(:last-child):not(.alignwide):not(.alignfull):not(.alignnone) > img:only-child {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
+		margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	}
 
 }

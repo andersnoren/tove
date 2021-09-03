@@ -351,14 +351,6 @@ input[type="submit"]:focus {
 /* ------------------------------------------- */
 
 
-:root .alignnone,
-:root .aligncenter,
-:root .alignwide,
-:root .alignfull {
-	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
-}
-
 .alignfull > figcaption {
 	padding-left: var( --wp--custom--gutter );
 	padding-right: var( --wp--custom--gutter );
@@ -384,8 +376,8 @@ input[type="submit"]:focus {
 
 	:root .alignwide,
 	:root .alignfull {
-		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
+		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
 	}
 
 }

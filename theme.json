@@ -385,7 +385,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-1)",
 					"fontWeight": "var(--wp--custom--font-weight--bold)",
-					"letterSpacing": "var(--wp--custom--letter-spacing--gigantic)",
+					"letterSpacing": "var(--wp--custom--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				}
 			},
