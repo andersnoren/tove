@@ -11,8 +11,8 @@
 	</div>
 	<!-- /wp:column -->
 
-	<!-- wp:column {"verticalAlignment":"center","width":"163px","className":"hide-mobile"} -->
-	<div class="wp-block-column is-vertically-aligned-center hide-mobile" style="flex-basis:163px">
+	<!-- wp:column {"verticalAlignment":"center","width":"163px","className":"hide-tablet-portrait"} -->
+	<div class="wp-block-column is-vertically-aligned-center hide-tablet-portrait" style="flex-basis:163px">
 
 		<!-- wp:buttons {"contentJustification":"right"} -->
 		<div class="wp-block-buttons is-content-justification-right">

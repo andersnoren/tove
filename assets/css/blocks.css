@@ -195,7 +195,7 @@
 }
 
 @media ( max-width: 781px ) and ( min-width: 600px ) {
-	.wp-block-columns > .wp-block-column:nth-child(2n) {
+	:root .wp-block-columns.is-not-stacked-on-mobile>.wp-block-column:not(:first-child) {
 		margin-left: var( --wp--columns--gutter );
 	}
 
