@@ -106,10 +106,11 @@ cite {
 
 hr {
 	background-color: var( --wp--preset--color--foreground );
-	border: none;
+	border: none !important;
 	height: 2px;
 	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	opacity: 1;
 }
 
 @media ( min-width: 700px ) {
@@ -145,6 +146,22 @@ hr {
 /* ------------------------------------------- */
 /*	X. Helper Classes
 /* ------------------------------------------- */
+
+/* Hiding and Showing -------------- */
+
+@media ( max-width: 1100px ) {
+	.hide-tablet-landscape { display: none !important; }
+}
+
+@media ( max-width: 900px ) {
+	.hide-tablet-portrait { display: none !important; }
+}
+
+@media ( max-width: 700px ) {
+	.hide-mobile { display: none !important; }
+}
+
+/* Margins ------------------------- */
 
 :root .no-margin.no-margin { margin: 0 !important; }
 :root .no-margin-bottom.no-margin-bottom, :root .no-margin-vertical.no-margin-vertical { margin-bottom: 0 !important; }

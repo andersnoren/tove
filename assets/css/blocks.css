@@ -934,7 +934,7 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 
 .wp-block-navigation__container,
 .wp-block-page-list {
-	margin: calc( -.5 * var( --wp--custom--spacing--baseline ) ) calc( -2 * var( --wp--custom--spacing--baseline ) ) calc( -.5 * var( --wp--custom--spacing--baseline ) ) 0;
+	margin: calc( -.5 * var( --wp--custom--spacing--baseline ) ) 0;
 }
 
 /* Navigation List ----------------- */
@@ -1033,7 +1033,13 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 
 .wp-block-navigation__responsive-container-close, 
 .wp-block-navigation__responsive-container-open {
+	align-items: center;
+	background-color: var( --wp--preset--color--senary );
+	border-radius: 50%;
 	box-shadow: none;
+	color: var( --wp--preset--color--foreground );
+	height: 36px;
+	width: 36px;
 }
 
 .wp-block-navigation__responsive-container-close {
