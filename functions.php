@@ -150,12 +150,18 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 		// The block patterns included in Tove.
 		$tove_block_patterns = apply_filters( 'tove_block_patterns', array(
-			'tove/slug' => array(
-				'title'         => esc_html__( 'Tove Block Pattern', 'tove' ),
-				'categories'    => array( 'tove-banner', 'tove-cta', 'tove-footer', 'tove-query', 'tove-header', 'tove-hero' ),
+			'tove/header-horizontal' => array(
+				'title'         => esc_html__( 'Header with site title and a horizontal menu. This is the default header in the theme.', 'tove' ),
+				'categories'    => array( 'tove-header' ),
 				'viewportWidth' => 1440,
-				'content'       => tove_get_block_pattern_markup( 'block-pattern' ),
-			)
+				'content'       => tove_get_block_pattern_markup( 'header-horizontal' ),
+			),
+			'tove/header-centered-stacked' => array(
+				'title'         => esc_html__( 'Header with site title, horizontal menu and social icons stacked vertically.', 'tove' ),
+				'categories'    => array( 'tove-header' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'header-centered-stacked' ),
+			),
 		) );
 
 		// Register block patterns.

@@ -204,7 +204,7 @@
 				},
 				{
 					"slug": "huge",
-					"size": "96px",
+					"size": "64px",
 					"name": "Huge"
 				},
 				{
@@ -385,7 +385,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-1)",
 					"fontWeight": "var(--wp--custom--font-weight--bold)",
-					"letterSpacing": "var(--wp--custom--letter-spacing--heading)",
+					"letterSpacing": "var(--wp--custom--letter-spacing--gigantic)",
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				}
 			},

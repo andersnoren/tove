@@ -7,8 +7,22 @@ body {
 	padding: 0;
 }
 
-.editor-styles-wrapper > .is-root-container > .wp-block:not([data-align="full"]):not(.block-editor-block-list__layout) {
+ > .is-root-container:not(.wp-site-blocks) > .wp-block:not([data-align="full"]) {
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
+}
+
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	max-width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
+	text-align: center;
+}
+
+@media ( min-width: 700px ) {
+
+	.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+	}
+
 }
 
 
