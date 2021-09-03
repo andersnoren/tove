@@ -156,17 +156,23 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'header-horizontal' ),
 			),
-			'tove/header-horizontal-double' => array(
-				'title'         => esc_html__( 'Header with opening hours, phone number, site title and a menu.', 'tove' ),
+			'tove/header-horizontal-button' => array(
+				'title'         => esc_html__( 'Header with site title, a menu and buttons.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
 				'viewportWidth' => 1440,
-				'content'       => tove_get_block_pattern_markup( 'header-horizontal-double' ),
+				'content'       => tove_get_block_pattern_markup( 'header-horizontal-button' ),
 			),
 			'tove/header-horizontal-social' => array(
 				'title'         => esc_html__( 'Header with site title, a menu and social icons.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'header-horizontal-social' ),
+			),
+			'tove/header-horizontal-double' => array(
+				'title'         => esc_html__( 'Header with opening hours, phone number, site title and a menu.', 'tove' ),
+				'categories'    => array( 'tove-header' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'header-horizontal-double' ),
 			),
 			'tove/header-centered-stacked' => array(
 				'title'         => esc_html__( 'Header with site title, a menu and social icons stacked vertically.', 'tove' ),
