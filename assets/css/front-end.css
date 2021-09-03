@@ -65,7 +65,7 @@ html, body {
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
-[class*="wp-container-"] [class*="wp-container-"] > *:not([class*="align"]) {
+[class*="wp-container-"] [class*="wp-container-"] > *:not([class^="align"]):not([class*=" align"]) {
 	width: 100%;
 }
 
@@ -374,6 +374,8 @@ input[type="submit"]:focus {
 
 @media ( min-width: 700px ) {
 
+	:root .alignnone,
+	:root .aligncenter,
 	:root .alignwide,
 	:root .alignfull {
 		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );

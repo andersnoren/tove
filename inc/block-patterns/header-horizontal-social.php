@@ -20,7 +20,7 @@
 	<!-- /wp:column -->
 
 	<!-- wp:column {"verticalAlignment":"center"} -->
-	<div class="wp-block-column is-vertically-aligned-center"><!-- wp:navigation {"orientation":"horizontal","itemsJustification":"right","isResponsive":true,"fontSize":"large"} /--></div>
+	<div class="wp-block-column is-vertically-aligned-center"><!-- wp:navigation {"orientation":"horizontal","itemsJustification":"right","isResponsive":true,"fontSize":"large","__unstableLocation":"primary"} /--></div>
 	<!-- /wp:column -->
 
 </div>

@@ -165,7 +165,7 @@
 		},
 		"layout": {
 			"contentSize": "640px",
-			"wideSize": "2560px"
+			"wideSize": "1920px"
 		},
 		"spacing": {
 			"blockGap": true,
@@ -424,7 +424,7 @@
 			"h6": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-6)",
-					"fontWeight": "var(--wp--custom--font-weight--normal)",
+					"fontWeight": "var(--wp--custom--font-weight--bold)",
 					"letterSpacing": "var(--wp--custom--letter-spacing--uppercase )",
 					"lineHeight": "var(--wp--custom--line-height--heading)",
 					"textTransform": "uppercase"

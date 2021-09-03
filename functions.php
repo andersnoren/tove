@@ -169,10 +169,16 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'content'       => tove_get_block_pattern_markup( 'header-horizontal-social' ),
 			),
 			'tove/header-horizontal-double' => array(
-				'title'         => esc_html__( 'Header with opening hours, phone number, site title and a menu.', 'tove' ),
+				'title'         => esc_html__( 'Header with opening hours, button, site title and a menu.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'header-horizontal-double' ),
+			),
+			'tove/header-horizontal-double-deluxe' => array(
+				'title'         => esc_html__( 'Header with opening hours, site title, social icons, a menu and a "Call us" button.', 'tove' ),
+				'categories'    => array( 'tove-header' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'header-horizontal-double-deluxe' ),
 			),
 			'tove/header-centered-stacked' => array(
 				'title'         => esc_html__( 'Header with site title, a menu and social icons stacked vertically.', 'tove' ),
@@ -231,6 +237,12 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 				'label' 	=> esc_html__( 'Shaded', 'tove' ),
 			) );
 		}
+
+		// Table: Vertical borders
+		register_block_style( 'core/table', array(
+			'name'  	=> 'tove-vertical-borders',
+			'label' 	=> esc_html__( 'Vertical Borders', 'tove' ),
+		) );
 
 		// Query Pagination: Vertical separators
 		register_block_style( 'core/query-pagination', array(
