@@ -37,7 +37,7 @@
 					<h6>Navigation</h6>
 					<!-- /wp:heading -->
 
-					<!-- wp:navigation {"orientation":"vertical","className":"no-margin-top"} /-->
+					<!-- wp:navigation {"orientation":"vertical","className":"no-margin-top","__unstableLocation":"primary"} /-->
 
 				</div>
 				<!-- /wp:column -->

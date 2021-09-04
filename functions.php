@@ -174,6 +174,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'footer-horizontal-columns-2' ),
 			),
+			'tove/footer-horizontal-columns-3' => array(
+				'title'         => esc_html__( 'Footer with site title, information blocks for two locations, menu and social icons.', 'tove' ),
+				'categories'    => array( 'tove-footer' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'footer-horizontal-columns-3' ),
+			),
 			'tove/footer-stacked-centered' => array(
 				'title'         => esc_html__( 'Footer with site title, theme credit and social icons stacked and centered.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
