@@ -175,7 +175,7 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'content'       => tove_get_block_pattern_markup( 'footer-horizontal-columns-2' ),
 			),
 			'tove/footer-horizontal-columns-3' => array(
-				'title'         => esc_html__( 'Footer with site title, information blocks for two locations, menu and social icons.', 'tove' ),
+				'title'         => esc_html__( 'Footer with site title, information blocks for two business locations, menu and social icons.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'footer-horizontal-columns-3' ),
