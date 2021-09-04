@@ -1,9 +1,8 @@
-<!-- wp:group {"align":"wide"} -->
-<div class="wp-block-group alignwide">
+<?php 
 
-	<!-- wp:paragraph {"align":"center","fontSize":"tiny"} -->
-	<p class="has-text-align-center has-tiny-font-size"><strong>© 2021 Site Title.</strong> Theme by <a href="https://andersnoren.se">Anders Norén</a>.</p>
-	<!-- /wp:paragraph -->
-	
-</div>
-<!-- /wp:group -->
+/*
+ * This is the default footer. Instead of including the HTML for it twice,
+ * we include the HTML in the footer.html block template part file.
+ */
+
+include( locate_template( 'block-template-parts/footer.html' ) );
