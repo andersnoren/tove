@@ -71,12 +71,10 @@ figure.wp-block-table {
 
 @media ( min-width: 700px ) {
 
-	.wp-block[data-align="none"],
-	.wp-block[data-align="center"],
 	.wp-block[data-align="wide"],
 	.wp-block[data-align="full"] {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
 	}
 
 }

@@ -8,7 +8,7 @@ body {
 	--wp--custom--shaded-style--border: var( --wp--custom--shaded-style--border--width ) var( --wp--custom--shaded-style--border--style ) var( --wp--custom--shaded-style--border--color );
 }
 
-@media ( min-width: 370px ) {
+@media ( min-width: 400px ) {
 	body {
 		--wp--custom--gutter: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	}
@@ -77,6 +77,36 @@ a:hover {
 /* ------------------------------------------- */
 
 
+/* Lists --------------------------- */
+
+ul,
+ol {
+	margin: calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0;
+	padding: 0;
+}
+
+li {
+	margin: calc( .5 * var( --wp--custom--spacing--baseline ) ) 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 1.25em;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: calc( .5 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( .5 * var( --wp--custom--spacing--baseline ) );
+}
+
+dt,
+dd {
+	line-height: var( --wp--custom--line-height--body );
+}
+
+dt {
+	font-weight: var( --wp--custom--font-weight--bold );
+}
+
+dt + dd { margin-top: 5px; }
+dd + dt { margin-top: 15px; }
+
 /* Quotes -------------------------- */
 
 blockquote {
@@ -125,6 +155,7 @@ hr {
 /*	X. Structure
 /* ------------------------------------------- */
 
+
 .wp-block-template-part > *:not([data-align="full"]),
 .wp-block.entry-content > *:not([data-align="full"]) {
 	margin-left: auto;
@@ -146,6 +177,7 @@ hr {
 /* ------------------------------------------- */
 /*	X. Helper Classes
 /* ------------------------------------------- */
+
 
 /* Hiding and Showing -------------- */
 
@@ -199,5 +231,14 @@ hr {
 
 
 /* ------------------------------------------- */
-/*	X. Media Queries
+/*	Site Footer
 /* ------------------------------------------- */
+
+.site-footer a[href*="andersnoren.se"] {
+	text-decoration: none;
+}
+
+.site-footer a[href*="andersnoren.se"]:hover,
+.site-footer a[href*="andersnoren.se"]:focus {
+	text-decoration: underline;
+}

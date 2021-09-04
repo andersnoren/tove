@@ -77,49 +77,6 @@ html, body {
 
 /* Lists --------------------------- */
 
-ul,
-ol {
-	margin: calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0;
-	padding: 0;
-}
-
-li {
-	line-height: inherit;
-	margin: calc( .5 * var( --wp--custom--spacing--baseline ) ) 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 1.25em;
-}
-
-li:first-child { margin-top: 0; }
-li:last-child { margin-bottom: 0; }
-
-li > ul,
-li > ol {
-	margin-bottom: calc( .5 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( .5 * var( --wp--custom--spacing--baseline ) );
-}
-
-.reset-list-style,
-.reset-list-style ul,
-.reset-list-style ol {
-	list-style: none;
-	margin: 0;
-}
-
-.reset-list-style li {
-	margin: 0;
-}
-
-dt,
-dd {
-	line-height: var( --wp--custom--line-height--body );
-}
-
-dt {
-	font-weight: var( --wp--custom--font-weight--bold );
-}
-
-dt + dd { margin-top: 5px; }
-dd + dt { margin-top: 15px; }
-
 /* Media --------------------------- */
 
 figure {
@@ -374,12 +331,10 @@ input[type="submit"]:focus {
 
 @media ( min-width: 700px ) {
 
-	:root .alignnone,
-	:root .aligncenter,
 	:root .alignwide,
 	:root .alignfull {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
 	}
 
 }
