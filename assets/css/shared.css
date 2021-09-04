@@ -51,8 +51,6 @@ body {
 
 
 body {
-	font-family: var( --wp--custom--font-primary );
-	letter-spacing: var( --wp--custom--letter-spacing--body );
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }

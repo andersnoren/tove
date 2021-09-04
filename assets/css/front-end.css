@@ -15,9 +15,6 @@ html, body {
 		-webkit-box-sizing: inherit;
 		-moz-box-sizing: inherit;
 	box-sizing: inherit;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	letter-spacing: inherit;
 	word-break: break-word;
 }
 
