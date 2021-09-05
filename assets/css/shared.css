@@ -214,10 +214,20 @@ table tfoot {
 	border: none;
 }
 
+tr {
+	vertical-align: baseline;
+}
+
+th:not([class*="has-text-align-"]),
+td:not([class*="has-text-align-"]) {
+	text-align: left;
+}
+
 th,
 td {
 	border-style: solid;
 	border-width: 2px;
+	min-width: 50px;
 }
 
 th,

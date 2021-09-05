@@ -1,6 +1,6 @@
 <!-- wp:group {"align":"wide"} -->
 <div class="wp-block-group alignwide">
-	
+
 	<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"2"}},"className":"no-margin-bottom"} -->
 	<p class="has-text-align-center no-margin-bottom" style="line-height:2"><strong>© 2021 Tove</strong></p>
 	<!-- /wp:paragraph -->
@@ -10,7 +10,7 @@
 	<!-- /wp:paragraph -->
 
 	<!-- wp:separator {"align":"center"} -->
-	<hr class="wp-block-separator aligncenter"/>
+	<hr class="wp-block-separator aligncenter" />
 	<!-- /wp:separator -->
 
 	<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#374AC8","className":"items-justified-center is-style-logos-only"} -->

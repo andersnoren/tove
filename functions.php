@@ -127,14 +127,17 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove-footer' => array(
 				'label'			=> esc_html__( 'Tove Footer', 'tove' ),
 			),
-			'tove-query' => array(
-				'label'			=> esc_html__( 'Tove Post Template', 'tove' ),
-			),
 			'tove-header' => array(
 				'label'			=> esc_html__( 'Tove Header', 'tove' ),
 			),
 			'tove-hero' => array(
 				'label'			=> esc_html__( 'Tove Hero', 'tove' ),
+			),
+			'tove-query' => array(
+				'label'			=> esc_html__( 'Tove Post Template', 'tove' ),
+			),
+			'tove-restaurant' => array(
+				'label'			=> esc_html__( 'Tove Restaurant', 'tove' ),
 			),
 		) );
 
@@ -222,6 +225,18 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'header-stacked-centered' ),
 			),
+			'tove/opening-hours-table' => array(
+				'title'         => esc_html__( 'A table with opening hours.', 'tove' ),
+				'categories'    => array( 'tove-restaurant' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'opening-hours-table' ),
+			),
+			'tove/restaurant-menu' => array(
+				'title'         => esc_html__( 'Restaurant menu with a header and columns for three different menu sections.', 'tove' ),
+				'categories'    => array( 'tove-restaurant' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'restaurant-menu' ),
+			)
 		) );
 
 		// Register block patterns.

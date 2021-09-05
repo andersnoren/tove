@@ -1,9 +1,9 @@
 <!-- wp:group {"align":"wide"} -->
 <div class="wp-block-group alignwide">
-	
+
 	<!-- wp:columns {"isStackedOnMobile":false} -->
 	<div class="wp-block-columns is-not-stacked-on-mobile">
-		
+
 		<!-- wp:column {"verticalAlignment":"center","width":"","className":"hide-mobile"} -->
 		<div class="wp-block-column is-vertically-aligned-center hide-mobile">
 			<!-- wp:paragraph {"fontSize":"small"} -->
@@ -13,12 +13,14 @@
 		<!-- /wp:column -->
 
 		<!-- wp:column {"verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center"><!-- wp:site-logo {"align":"center","width":148} /--></div>
+		<div class="wp-block-column is-vertically-aligned-center">
+			<!-- wp:site-logo {"align":"center","width":148} /-->
+		</div>
 		<!-- /wp:column -->
 
 		<!-- wp:column {"verticalAlignment":"center","className":"hide-mobile"} -->
 		<div class="wp-block-column is-vertically-aligned-center hide-mobile">
-			
+
 			<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#374AC8","size":"has-normal-icon-size","className":"items-justified-right items-justified-center is-style-logos-only"} -->
 			<ul class="wp-block-social-links has-normal-icon-size has-icon-color items-justified-right items-justified-center is-style-logos-only">
 				<!-- wp:social-link {"url":"https://facebook.com","service":"facebook"} /-->
@@ -29,19 +31,21 @@
 
 		</div>
 		<!-- /wp:column -->
-	
+
 	</div>
 	<!-- /wp:columns -->
 
 	<!-- wp:separator -->
-	<hr class="wp-block-separator"/>
+	<hr class="wp-block-separator" />
 	<!-- /wp:separator -->
 
 	<!-- wp:columns {"isStackedOnMobile":false} -->
 	<div class="wp-block-columns is-not-stacked-on-mobile">
-		
+
 		<!-- wp:column {"verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center"><!-- wp:navigation {"orientation":"horizontal","itemsJustification":"left","isResponsive":true,"__unstableLocation":"primary","__unstableLocation":"primary"} /--></div>
+		<div class="wp-block-column is-vertically-aligned-center">
+			<!-- wp:navigation {"orientation":"horizontal","itemsJustification":"left","isResponsive":true,"__unstableLocation":"primary","__unstableLocation":"primary"} /-->
+		</div>
 		<!-- /wp:column -->
 
 		<!-- wp:column {"verticalAlignment":"center","width":"80px","className":"hide-tablet-landscape"} -->
@@ -68,7 +72,7 @@
 	<!-- /wp:columns -->
 
 	<!-- wp:separator -->
-	<hr class="wp-block-separator"/>
+	<hr class="wp-block-separator" />
 	<!-- /wp:separator -->
 
 </div>

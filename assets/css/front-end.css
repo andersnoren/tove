@@ -188,7 +188,7 @@ input[type="submit"]:focus,
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
-[class*="wp-container-"] [class*="wp-container-"] > *:not([class^="align"]):not([class*=" align"]) {
+[class*="wp-container-"] [class*="wp-container-"] > *:not([class^="align"]):not([class*=" align"]):not(.wp-block-separator.is-style-default) {
 	width: 100%;
 }
 

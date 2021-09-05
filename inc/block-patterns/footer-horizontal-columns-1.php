@@ -1,8 +1,8 @@
 <!-- wp:group {"align":"wide"} -->
 <div class="wp-block-group alignwide">
-	
+
 	<!-- wp:separator -->
-	<hr class="wp-block-separator"/>
+	<hr class="wp-block-separator" />
 	<!-- /wp:separator -->
 
 	<!-- wp:spacer {"height":1,"className":"hide-mobile"} -->
@@ -20,13 +20,13 @@
 			<!-- wp:spacer {"height":1} -->
 			<div style="height:1px" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
-			
+
 		</div>
 		<!-- /wp:column -->
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			
+
 			<!-- wp:heading {"level":6} -->
 			<h6>Navigation</h6>
 			<!-- /wp:heading -->
@@ -38,7 +38,7 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			
+
 			<!-- wp:heading {"level":6} -->
 			<h6>Our Hours</h6>
 			<!-- /wp:heading -->
@@ -61,7 +61,7 @@
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
-				
+
 			</div>
 			<!-- /wp:columns -->
 

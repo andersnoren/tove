@@ -1,6 +1,6 @@
 <!-- wp:columns {"verticalAlignment":null,"isStackedOnMobile":false,"align":"wide"} -->
 <div class="wp-block-columns alignwide is-not-stacked-on-mobile">
-	
+
 	<!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center">
 		<!-- wp:site-title {"level":0,"textAlign":"left","fontSize":"large"} /-->
@@ -22,7 +22,9 @@
 	<!-- /wp:column -->
 
 	<!-- wp:column {"verticalAlignment":"center"} -->
-	<div class="wp-block-column is-vertically-aligned-center"><!-- wp:navigation {"orientation":"horizontal","itemsJustification":"right","isResponsive":true,"fontSize":"large","__unstableLocation":"primary"} /--></div>
+	<div class="wp-block-column is-vertically-aligned-center">
+		<!-- wp:navigation {"orientation":"horizontal","itemsJustification":"right","isResponsive":true,"fontSize":"large","__unstableLocation":"primary"} /-->
+	</div>
 	<!-- /wp:column -->
 
 </div>
