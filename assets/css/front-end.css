@@ -15,7 +15,6 @@ html, body {
 		-webkit-box-sizing: inherit;
 		-moz-box-sizing: inherit;
 	box-sizing: inherit;
-	word-break: break-word;
 }
 
 *:focus:not(:focus-visible) {
@@ -61,24 +60,6 @@ html, body {
 /*	Alignments
 /* ------------------------------------------- */
 
-
-.alignfull > figcaption {
-	padding-left: var( --wp--custom--gutter );
-	padding-right: var( --wp--custom--gutter );
-}
-
-.alignnone,
-.aligncenter,
-.alignleft,
-.alignright {
-	max-width: 100%;
-}
-
-.aligncenter,
-.aligncenter img {
-	margin-left: auto;
-	margin-right: auto;
-}
 
 :root .alignleft { margin: 3px calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0; }
 :root .alignright { margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ); }

@@ -57,6 +57,7 @@ body {
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
 }
 
 * {
@@ -291,7 +292,7 @@ blockquote {
 }
 
 cite {
-	font-size: 14px;
+	font-weight: var( --wp--custom--font-size--tiny );
 	font-weight: var( --wp--custom--font-weight--bold );
 	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
 	text-transform: uppercase;
@@ -314,13 +315,6 @@ hr {
 	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 	opacity: 1;
-}
-
-@media ( min-width: 700px ) {
-	hr {
-		margin-bottom: calc( 3 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
-	}
 }
 
 /* Tables -------------------------- */
@@ -380,12 +374,6 @@ caption {
 	width: 100%;
 }
 
-:root .wp-block[data-align="full"] > * > figcaption,
-:root .alignfull > figcaption {
-	padding-left: var( --wp--custom--gutter );
-	padding-right: var( --wp--custom--gutter );
-}
-
 
 /* ------------------------------------------- */
 /*	Helper Classes
@@ -413,6 +401,18 @@ caption {
 :root .no-margin-left.no-margin-left, :root .no-margin-horizontal.no-margin-horizontal { margin-left: 0 !important; }
 :root .no-margin-right.no-margin-right, :root .no-margin-horizontal.no-margin-horizontal { margin-right: 0 !important; }
 :root .no-margin-top.no-margin-top, :root .no-margin-vertical.no-margin-vertical { margin-top: 0 !important; }
+
+
+/* ------------------------------------------- */
+/*	Alignments
+/* ------------------------------------------- */
+
+
+:root .wp-block[data-align="full"] > * > figcaption,
+:root .alignfull > figcaption {
+	padding-left: var( --wp--custom--spacing--baseline );
+	padding-right: var( --wp--custom--spacing--baseline );
+}
 
 
 /* ------------------------------------------- */
