@@ -7,7 +7,7 @@ body {
 	padding: 0;
 }
 
- > .is-root-container:not(.wp-site-blocks) > .wp-block:not([data-align="full"]) {
+ > .is-root-container:not(.wp-site-blocks) > .wp-block:not([data-align="full"]):not([data-align="left"]):not([data-align="right"]) {
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 
