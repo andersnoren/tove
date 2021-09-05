@@ -109,6 +109,22 @@ dt {
 dt + dd { margin-top: 5px; }
 dd + dt { margin-top: 15px; }
 
+/* Media --------------------------- */
+
+figcaption {
+	color: inherit;
+	display: block;
+	font-size: var( --wp--preset--font-size--small );
+	line-height: inherit;
+	margin-bottom: 0;
+	margin-top: calc( .75 * var( --wp--custom--spacing--baseline ) );
+	text-align: left;
+}
+
+figcaption a {
+	color: inherit;
+}
+
 /* Quotes -------------------------- */
 
 blockquote {
@@ -132,6 +148,46 @@ cite {
 		padding: 0 0 0 calc( 2 * var( --wp--custom--spacing--baseline ) );
 	}
 
+}
+
+/* Tables -------------------------- */
+
+table {
+	font-size: var( --wp--preset--font-size--small );
+	margin: calc( 2 * var( --wp--custom--spacing--baseline ) ) auto;
+}
+
+table * {
+	border-color: currentColor;
+	line-height: inherit;
+}
+
+table thead,
+table tfoot {
+	border: none;
+}
+
+th,
+td {
+	border-style: solid;
+	border-width: 2px;
+}
+
+th,
+td,
+caption {
+	padding: var( --wp--custom--spacing--baseline );
+}
+
+th,
+caption {
+	font-weight: var( --wp--custom--font-weight--bold );
+}
+
+caption {
+	background-color: var( --wp--preset--color--foreground );
+	color: var( --wp--preset--color--senary );
+	text-align: center;
 }
 
 /* Separator ----------------------- */

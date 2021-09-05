@@ -72,8 +72,6 @@ html, body {
 /* ------------------------------------------- */
 
 
-/* Lists --------------------------- */
-
 /* Media --------------------------- */
 
 figure {
@@ -96,18 +94,6 @@ object {
 
 svg {
 	display: block;
-}
-
-figcaption {
-	display: block;
-	font-size: var( --wp--preset--font-size--small );
-	line-height: inherit;
-	margin-bottom: 0;
-	margin-top: calc( .75 * var( --wp--custom--spacing--baseline ) );
-}
-
-figcaption a {
-	color: inherit;
 }
 
 /* Preformatted Text --------------- */
@@ -203,78 +189,24 @@ input[type="search"]::-webkit-search-results-decoration {
 	display: none;
 }
 
-/* Tables -------------------------- */
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	empty-cells: show;
-	font-size: var( --wp--preset--font-size--small );
-	margin: calc( 2 * var( --wp--custom--spacing--baseline ) ) auto;
-	max-width: 100%;
-	overflow: hidden;
-	width: 100%;
-}
-
-caption,
-thead,
-th,
-td,
-tfoot {
-	border-color: var( --wp--preset--color--foreground );
-}
-
-th,
-td,
-caption {
-	line-height: var( --wp--custom--line-height--body );
-	padding: var( --wp--custom--spacing--baseline );
-}
-
-th,
-td {
-	border: 2px solid var( --wp--preset--color--foreground );
-	margin: 0;
-	overflow: visible;
-}
-
-th {
-	font-weight: var( --wp--custom--font-weight--bold );
-}
-
-caption {
-	background-color: var( --wp--preset--color--foreground );
-	font-weight: var( --wp--custom--font-weight--bold );
-	text-align: center;
-}
-
-thead {
-	border-bottom: 2px solid var( --wp--preset--color--foreground );
-	white-space: nowrap;
-}
-
-tfoot {
-	border-top: 2px solid var( --wp--preset--color--foreground );
-	font-style: italic;
-}
-
 /* Buttons ------------------------- */
 
 button,
 .button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+:root .wp-block-file__button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: var( --wp--preset--color--senary );
-	border: 2px solid currentColor;
-	box-shadow: 4px 4px 0 currentColor;
+	background: var( --wp--preset--color--primary );
+	border: currentColor var( --wp--custom--shaded-style--border--style ) var( --wp--custom--shaded-style--border--width );
+	box-shadow: var( --wp--custom--shaded-style--box-shadow--x ) var( --wp--custom--shaded-style--box-shadow--y ) var( --wp--custom--shaded-style--box-shadow--blur ) currentColor;
 	border-radius: 0;
 	color: var( --wp--preset--color--foreground );
 	cursor: pointer;
 	display: inline-flex;
-	font-size: 18px;
+	font-size: var( --wp--custom--font-size--small );
 	font-weight: var( --wp--custom--font-weight--bold );
 	justify-content: center;
 	line-height: 1.25;
@@ -291,11 +223,13 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
+:root .wp-block-file__button:hover,
 button:focus,
 .button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
-input[type="submit"]:focus {
+input[type="submit"]:focus,
+:root .wp-block-file__button:focus {
 	text-decoration: underline;
 }
 
