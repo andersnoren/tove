@@ -87,6 +87,15 @@
 	padding: 15px 24px;
 }
 
+/* STYLE: PLAIN */
+
+.wp-block-button.is-style-tove-plain .wp-block-button__link,
+.wp-block-button__link.is-style-tove-plain {
+	border: none;
+	box-shadow: none;
+	padding: 17px 26px;
+}
+
 
 /* ------------------------------------------- */
 /* Block: Calendar

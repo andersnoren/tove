@@ -274,10 +274,16 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 			) );
 		}
 
-		// Table: Vertical borders
-		register_block_style( 'core/table', array(
-			'name'  	=> 'tove-vertical-borders',
-			'label' 	=> esc_html__( 'Vertical Borders', 'tove' ),
+		// Button: Plain
+		register_block_style( 'core/button', array(
+			'name'  	=> 'tove-plain',
+			'label' 	=> esc_html__( 'Plain', 'tove' ),
+		) );
+
+		// Columns: Separators
+		register_block_style( 'core/columns', array(
+			'name'  	=> 'tove-horizontal-separators',
+			'label' 	=> esc_html__( 'Horizontal Separators', 'tove' ),
 		) );
 
 		// Query Pagination: Vertical separators
@@ -286,10 +292,10 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 			'label' 	=> esc_html__( 'Vertical Separators', 'tove' ),
 		) );
 
-		// Columns: Separators
-		register_block_style( 'core/columns', array(
-			'name'  	=> 'tove-horizontal-separators',
-			'label' 	=> esc_html__( 'Horizontal Separators', 'tove' ),
+		// Table: Vertical borders
+		register_block_style( 'core/table', array(
+			'name'  	=> 'tove-vertical-borders',
+			'label' 	=> esc_html__( 'Vertical Borders', 'tove' ),
 		) );
 		
 	}
