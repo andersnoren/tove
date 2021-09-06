@@ -1,16 +1,12 @@
 <!-- wp:group {"align":"wide"} -->
 <div class="wp-block-group alignwide">
 
-	<!-- wp:separator {"className":"is-style-wide"} -->
-	<hr class="wp-block-separator is-style-wide"/>
+	<!-- wp:separator {"className":"is-style-wide","align":"wide"} -->
+	<hr class="wp-block-separator is-style-wide alignwide"/>
 	<!-- /wp:separator -->
 
-	<!-- wp:spacer {"height":1,"className":"hide-mobile"} -->
-	<div style="height:1px" aria-hidden="true" class="wp-block-spacer hide-mobile"></div>
-	<!-- /wp:spacer -->
-
-	<!-- wp:columns -->
-	<div class="wp-block-columns">
+	<!-- wp:columns {"align":"wide"} -->
+	<div class="wp-block-columns alignwide">
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
@@ -71,20 +67,12 @@
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:spacer {"height":1,"className":"hide-mobile"} -->
-	<div style="height:1px" aria-hidden="true" class="wp-block-spacer hide-mobile"></div>
-	<!-- /wp:spacer -->
-
-	<!-- wp:separator {"className":"is-style-wide"} -->
-	<hr class="wp-block-separator is-style-wide"/>
+	<!-- wp:separator {"className":"is-style-wide","align":"wide"} -->
+	<hr class="wp-block-separator is-style-wide alignwide"/>
 	<!-- /wp:separator -->
 
-	<!-- wp:spacer {"height":1,"className":"hide-mobile"} -->
-	<div style="height:1px" aria-hidden="true" class="wp-block-spacer hide-mobile"></div>
-	<!-- /wp:spacer -->
-
-	<!-- wp:columns -->
-	<div class="wp-block-columns">
+	<!-- wp:columns {"align":"wide"} -->
+	<div class="wp-block-columns alignwide">
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
