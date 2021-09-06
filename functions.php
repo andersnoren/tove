@@ -225,18 +225,24 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'header-stacked-centered' ),
 			),
-			'tove/opening-hours-table' => array(
-				'title'         => esc_html__( 'A table with opening hours.', 'tove' ),
+			'tove/restaurant-location' => array(
+				'title'         => esc_html__( 'Information block for a restaurant or café location, with the restaurant name, contact information, opening hours and button.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
 				'viewportWidth' => 1440,
-				'content'       => tove_get_block_pattern_markup( 'opening-hours-table' ),
+				'content'       => tove_get_block_pattern_markup( 'restaurant-location' ),
 			),
 			'tove/restaurant-menu' => array(
 				'title'         => esc_html__( 'Restaurant menu with a header and columns for three different menu sections.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'restaurant-menu' ),
-			)
+			),
+			'tove/restaurant-opening-hours-table' => array(
+				'title'         => esc_html__( 'A table with opening hours.', 'tove' ),
+				'categories'    => array( 'tove-restaurant' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'restaurant-opening-hours-table' ),
+			),
 		) );
 
 		// Register block patterns.
