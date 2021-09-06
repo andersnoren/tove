@@ -43,8 +43,8 @@
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:separator -->
-	<hr class="wp-block-separator" />
+	<!-- wp:separator {"className":"is-style-wide"} -->
+	<hr class="wp-block-separator is-style-wide"/>
 	<!-- /wp:separator -->
 
 	<!-- wp:columns {"isStackedOnMobile":false} -->
@@ -65,8 +65,8 @@
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:separator -->
-	<hr class="wp-block-separator" />
+	<!-- wp:separator {"className":"is-style-wide"} -->
+	<hr class="wp-block-separator is-style-wide"/>
 	<!-- /wp:separator -->
 
 </div>

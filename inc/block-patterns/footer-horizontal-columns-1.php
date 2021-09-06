@@ -1,8 +1,8 @@
 <!-- wp:group {"align":"wide"} -->
 <div class="wp-block-group alignwide">
 
-	<!-- wp:separator -->
-	<hr class="wp-block-separator" />
+	<!-- wp:separator {"className":"is-style-wide"} -->
+	<hr class="wp-block-separator is-style-wide"/>
 	<!-- /wp:separator -->
 
 	<!-- wp:spacer {"height":1,"className":"hide-mobile"} -->
