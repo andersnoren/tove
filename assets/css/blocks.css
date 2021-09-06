@@ -52,7 +52,7 @@
 /* STRUCTURE */
 
 :root .wp-block-buttons {
-	column-gap: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	column-gap: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
 }
 
 :root .wp-block-buttons > .wp-block-button {
@@ -61,6 +61,12 @@
 
 :root .wp-block-buttons > .wp-block-button:only-child {
 	margin: 0;
+}
+
+@media ( min-width: 700px ) {
+	:root .wp-block-buttons {
+		column-gap: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	}
 }
 
 /* BUTTON STYLES */
@@ -722,23 +728,8 @@ h6 {
 }
 
 h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background {
-	padding: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
-}
-
-@media ( min-width: 700px ) {
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5 {
-		margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	}
-
-	h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background {
-		padding: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	}
-
+	display: inline-block;
+	padding: min( .5em, var( --wp--custom--spacing--baseline ) ) min( .65em, var( --wp--custom--spacing--baseline ) );
 }
 
 
@@ -838,6 +829,10 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 	padding-right: var( --wp--custom--gutter );
 }
 
+.wp-block-media-text.has-background .wp-block-media-text__content {
+	padding: var( --wp--custom--gutter );
+}
+
 :root .wp-block-media-text__content > *:first-child { margin-top: 0; }
 :root .wp-block-media-text__content > *:last-child { margin-bottom: 0; }
 
@@ -847,6 +842,7 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 	border: var( --wp--custom--shaded-style--border );
 	box-shadow: var( --wp--custom--shaded-style--box-shadow );
 }
+
 
 /* ------------------------------------------- */
 /* Block: Navigation
@@ -1399,12 +1395,17 @@ ul.wp-block-post-template > li {
 
 
 :root hr.wp-block-separator {
+	background-color: currentColor;
 	width: 128px;
 }
 
 :root .wp-block-separator.is-style-wide,
 :root .wp-block-separator.is-style-dots {
 	width: 100%;
+}
+
+.wp-block-separator.has-background:not(.is-style-dots) {
+	height: 2px;
 }
 
 
