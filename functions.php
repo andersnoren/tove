@@ -280,7 +280,7 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 		if ( ! function_exists( 'register_block_style' ) ) return;
 
 		// Shared: Shaded.
-		$supports_shaded_block_style = apply_filters( 'tove_supports_shaded_block_style', array( 'core/group', 'core/image', 'core/social-links' ) );
+		$supports_shaded_block_style = apply_filters( 'tove_supports_shaded_block_style', array( 'core/group', 'core/image', 'core/social-links', 'core/media-text' ) );
 
 		foreach ( $supports_shaded_block_style as $block_name ) {
 			register_block_style( $block_name, array(

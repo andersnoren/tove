@@ -841,6 +841,12 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 :root .wp-block-media-text__content > *:first-child { margin-top: 0; }
 :root .wp-block-media-text__content > *:last-child { margin-bottom: 0; }
 
+/* Style: Shaded ------------------- */
+
+.wp-block-media-text.is-style-tove-shaded {
+	border: var( --wp--custom--shaded-style--border );
+	box-shadow: var( --wp--custom--shaded-style--box-shadow );
+}
 
 /* ------------------------------------------- */
 /* Block: Navigation
