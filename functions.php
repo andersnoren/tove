@@ -190,13 +190,13 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'content'       => tove_get_block_pattern_markup( 'footer-stacked-centered' ),
 			),
 			'tove/cta-horizontal' => array(
-				'title'         => esc_html__( 'Horizontal call to action with a heading and buttons.', 'tove' ),
+				'title'         => esc_html__( 'Horizontal call to action.', 'tove' ),
 				'categories'    => array( 'tove-cta' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'cta-horizontal' ),
 			),
 			'tove/cta-vertical' => array(
-				'title'         => esc_html__( 'Vertical call to action with a heading, paragraph of text, and buttons.', 'tove' ),
+				'title'         => esc_html__( 'Vertical call to action.', 'tove' ),
 				'categories'    => array( 'tove-cta' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'cta-vertical' ),
@@ -236,6 +236,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'categories'    => array( 'tove-header' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'header-stacked-centered' ),
+			),
+			'tove/hero-cover' => array(
+				'title'         => esc_html__( 'Hero with a background image and a heading, paragraph of text, and buttons.', 'tove' ),
+				'categories'    => array( 'tove-hero' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'hero-cover' ),
 			),
 			'tove/restaurant-location' => array(
 				'title'         => esc_html__( 'Information block for a restaurant or café location, with the restaurant name, contact information, opening hours and button.', 'tove' ),

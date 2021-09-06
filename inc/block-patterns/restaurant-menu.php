@@ -111,7 +111,7 @@
 							<td class="has-text-align-right" data-align="right">165</td>
 						</tr>
 						<tr>
-							<td class="has-text-align-left" data-align="left"><strong>Steak Tartare</strong><br>Egg creme, chimichurriemulsion, onion, cress, potato crunch</td>
+							<td class="has-text-align-left" data-align="left"><strong>Steak Tartare</strong><br>Egg creme, chimichurri emulsion, onion, cress, potato crunch</td>
 							<td class="has-text-align-right" data-align="right">165 </td>
 						</tr>
 						<tr>
