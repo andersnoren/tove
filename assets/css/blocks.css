@@ -672,6 +672,11 @@
 /* ------------------------------------------- */
 
 
+main.wp-block-group {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
 .wp-block-group > *:first-child { margin-top: 0; }
 .wp-block-group > *:last-child { margin-bottom: 0; }
 
@@ -1073,6 +1078,17 @@ p.has-background {
 
 
 /* ------------------------------------------- */
+/* Block: Post Template
+/* ------------------------------------------- */
+
+
+.wp-block-post-template, 
+.wp-block-query-loop {
+	margin: 0;
+}
+
+
+/* ------------------------------------------- */
 /* Block: Post Title
 /* ------------------------------------------- */
 
@@ -1207,12 +1223,8 @@ p.has-background {
 
 
 ul.wp-block-post-template > li {
-	margin-bottom: 0;
-	margin-top: 0;
+	margin: 0;
 }
-
-ul.wp-block-post-template > li > *:first-child { margin-top: 0; }
-ul.wp-block-post-template > li > *:last-child { margin-bottom: 0; }
 
 
 /* ------------------------------------------- */
