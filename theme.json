@@ -179,7 +179,7 @@
 			"fontSizes": [
 				{
 					"slug": "tiny",
-					"size": "16px",
+					"size": "16.0px",
 					"name": "Tiny"
 				},
 				{
@@ -199,12 +199,12 @@
 				},
 				{
 					"slug": "extra-large",
-					"size": "32px",
+					"size": "32.0px",
 					"name": "Extra large"
 				},
 				{
 					"slug": "huge",
-					"size": "64px",
+					"size": "64.0px",
 					"name": "Huge"
 				},
 				{
