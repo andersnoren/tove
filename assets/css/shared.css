@@ -249,31 +249,6 @@ caption {
 
 
 /* ------------------------------------------- */
-/*	Structure
-/* ------------------------------------------- */
-
-
-*[class*="wp-container-"] {
-	padding-left: var( --wp--custom--gutter );
-	padding-right: var( --wp--custom--gutter );
-}
-
-*[class*="wp-container-"] *[class*="wp-container-"],
-*[class*="wp-container-"] > .alignfull {
-	width: calc( 100% + ( 2 * var( --wp--custom--gutter ) ) ) !important;
-}
-
-*[class*="wp-container-"] *[class*="wp-container-"]:not(.alignfull) {
-	transform: translateX( calc( -1 * var( --wp--custom--gutter ) ) ) !important;
-}
-
-*[class*="wp-container-"] > .alignfull {
-	margin-left: calc( -1 * var( --wp--custom--gutter ) ) !important;
-	margin-right: calc( -1 * var( --wp--custom--gutter ) ) !important;
-}
-
-
-/* ------------------------------------------- */
 /*	Helper Classes
 /* ------------------------------------------- */
 
