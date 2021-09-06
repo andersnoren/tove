@@ -283,10 +283,10 @@
 				},
 				"spacing": {
 					"padding": {
-						"bottom": "15px",
-						"left": "24px",
-						"right": "24px",
-						"top": "15px"
+						"bottom": "0.833em",
+						"left": "1.33em",
+						"right": "1.33em",
+						"top": "0.833em"
 					}
 				},
 				"typography": {

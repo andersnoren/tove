@@ -154,7 +154,7 @@ input[type="submit"],
 	justify-content: center;
 	line-height: 1.25;
 	margin: 0;
-	padding: 15px 24px;
+	padding: .833em 1.33em;
 	text-align: center;
 	text-decoration: none;
 	text-underline-offset: .25em;

@@ -83,7 +83,7 @@
 
 .is-style-outline > .wp-block-button__link, 
 .wp-block-button__link.is-style-outline {
-	padding: 15px 24px;
+	padding: .833em 1.33em;
 }
 
 /* STYLE: PLAIN */
@@ -92,7 +92,7 @@
 .wp-block-button__link.is-style-tove-plain {
 	border: none;
 	box-shadow: none;
-	padding: 17px 26px;
+	padding: calc( .833em + 2px ) calc( 1.33em + 2px );
 }
 
 
