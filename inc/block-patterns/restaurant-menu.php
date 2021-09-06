@@ -1,16 +1,12 @@
-<!-- wp:group {"align":"wide","layout":{"inherit":false}} -->
-<div class="wp-block-group alignwide">
-	<!-- wp:group {"layout":{"contentSize":"420px"}} -->
-	<div class="wp-block-group">
-		<!-- wp:heading {"textAlign":"center"} -->
-		<h2 class="has-text-align-center">Our Menu</h2>
-		<!-- /wp:heading -->
+<!-- wp:group {"align":"wide","backgroundColor":"senary","className":"is-style-tove-shaded","layout":{"inherit":false}} -->
+<div class="wp-block-group alignwide is-style-tove-shaded has-senary-background-color has-background">
+	<!-- wp:heading {"textAlign":"center"} -->
+	<h2 class="has-text-align-center">Our Menu</h2>
+	<!-- /wp:heading -->
 
-		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center">Allergies? Talk to our staff about them! They’ll help you navigate the menu.</p>
-		<!-- /wp:paragraph -->
-	</div>
-	<!-- /wp:group -->
+	<!-- wp:paragraph {"align":"center"} -->
+	<p class="has-text-align-center">Allergies? Talk to our staff! They’ll help you navigate the menu.</p>
+	<!-- /wp:paragraph -->
 
 	<!-- wp:separator {"className":"is-style-default"} -->
 	<hr class="wp-block-separator is-style-default" />
@@ -20,12 +16,12 @@
 	<div class="wp-block-columns">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"textAlign":"left","level":3} -->
-			<h3 class="has-text-align-left">Coffee</h3>
+			<!-- wp:heading {"textAlign":"left","level":6,"backgroundColor":"secondary"} -->
+			<h6 class="has-text-align-left has-secondary-background-color has-background">Coffee</h6>
 			<!-- /wp:heading -->
 
-			<!-- wp:table {"className":"is-style-tove-vertical-borders"} -->
-			<figure class="wp-block-table is-style-tove-vertical-borders">
+			<!-- wp:table {"className":"is-style-tove-vertical-borders no-margin-top"} -->
+			<figure class="wp-block-table is-style-tove-vertical-borders no-margin-top">
 				<table>
 					<tbody>
 						<tr>
@@ -60,18 +56,17 @@
 				</table>
 			</figure>
 			<!-- /wp:table -->
-
 		</div>
 		<!-- /wp:column -->
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"textAlign":"left","level":3} -->
-			<h3 class="has-text-align-left">Snacks</h3>
+			<!-- wp:heading {"textAlign":"left","level":6,"backgroundColor":"secondary"} -->
+			<h6 class="has-text-align-left has-secondary-background-color has-background">Snacks</h6>
 			<!-- /wp:heading -->
 
-			<!-- wp:table {"className":"is-style-tove-vertical-borders"} -->
-			<figure class="wp-block-table is-style-tove-vertical-borders">
+			<!-- wp:table {"className":"is-style-tove-vertical-borders  no-margin-top"} -->
+			<figure class="wp-block-table is-style-tove-vertical-borders  no-margin-top">
 				<table>
 					<tbody>
 						<tr>
@@ -103,12 +98,12 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"textAlign":"left","level":3} -->
-			<h3 class="has-text-align-left">Food</h3>
+			<!-- wp:heading {"textAlign":"left","level":6,"backgroundColor":"secondary"} -->
+			<h6 class="has-text-align-left has-secondary-background-color has-background">Food</h6>
 			<!-- /wp:heading -->
 
-			<!-- wp:table {"className":"is-style-tove-vertical-borders"} -->
-			<figure class="wp-block-table is-style-tove-vertical-borders">
+			<!-- wp:table {"className":"is-style-tove-vertical-borders  no-margin-top"} -->
+			<figure class="wp-block-table is-style-tove-vertical-borders  no-margin-top">
 				<table>
 					<tbody>
 						<tr>

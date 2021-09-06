@@ -285,6 +285,7 @@ caption {
 /* ------------------------------------------- */
 
 
+.has-heading-1-font-size,
 .has-gigantic-font-size {
 	letter-spacing: var( --wp--custom--letter-spacing--gigantic );
 }

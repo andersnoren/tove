@@ -189,6 +189,18 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'footer-stacked-centered' ),
 			),
+			'tove/cta-horizontal' => array(
+				'title'         => esc_html__( 'Horizontal call to action with a heading and buttons.', 'tove' ),
+				'categories'    => array( 'tove-cta' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'cta-horizontal' ),
+			),
+			'tove/cta-vertical' => array(
+				'title'         => esc_html__( 'Vertical call to action with a heading, paragraph of text, and buttons.', 'tove' ),
+				'categories'    => array( 'tove-cta' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'cta-vertical' ),
+			),
 			'tove/header-horizontal' => array(
 				'title'         => esc_html__( 'Header with site title and a menu. This is the default header in the theme.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
@@ -236,6 +248,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'categories'    => array( 'tove-restaurant' ),
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'restaurant-menu' ),
+			),
+			'tove/restaurant-menu-row' => array(
+				'title'         => esc_html__( 'A row with three columns for the restaurant menu.', 'tove' ),
+				'categories'    => array( 'tove-restaurant' ),
+				'viewportWidth' => 1440,
+				'content'       => tove_get_block_pattern_markup( 'restaurant-menu-row' ),
 			),
 			'tove/restaurant-opening-hours-table' => array(
 				'title'         => esc_html__( 'A table with opening hours.', 'tove' ),

@@ -15,7 +15,7 @@
 			<!-- wp:column -->
 			<div class="wp-block-column">
 				<!-- wp:heading {"level":6,"style":{"typography":{"fontSize":"14px"}},"backgroundColor":"secondary","textColor":"foreground"} -->
-				<h6 class="has-foreground-color has-secondary-background-color has-text-color has-background" style="font-size:14px">Our Details</h6>
+				<h6 class="has-foreground-color has-secondary-background-color has-text-color has-background" style="font-size:14px">The Details</h6>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
@@ -31,7 +31,7 @@
 			<!-- wp:column -->
 			<div class="wp-block-column">
 				<!-- wp:heading {"level":6,"style":{"typography":{"fontSize":"14px"}},"backgroundColor":"secondary","textColor":"foreground"} -->
-				<h6 class="has-foreground-color has-secondary-background-color has-text-color has-background" style="font-size:14px">Our Hours</h6>
+				<h6 class="has-foreground-color has-secondary-background-color has-text-color has-background" style="font-size:14px">The Hours</h6>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
