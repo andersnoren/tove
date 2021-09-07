@@ -708,7 +708,7 @@ main.wp-block-group {
 .wp-block-group > *:last-child { margin-bottom: 0; }
 
 :root .wp-block-group.has-background {
-	padding: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	padding: var( --wp--custom--inner-container-spacing );
 }
 
 /* Style: Shaded ------------------- */
@@ -716,14 +716,6 @@ main.wp-block-group {
 .wp-block-group.is-style-tove-shaded {
 	border: var( --wp--custom--shaded-style--border );
 	box-shadow: var( --wp--custom--shaded-style--box-shadow );
-}
-
-@media ( min-width: 700px ) {
-
-	:root .wp-block-group.has-background {
-		padding: calc( 4 * var( --wp--custom--spacing--baseline ) );
-	}
-
 }
 
 
@@ -840,12 +832,12 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 
 
 .wp-block-media-text .wp-block-media-text__content {
-	padding-left: var( --wp--custom--gutter );
-	padding-right: var( --wp--custom--gutter );
+	padding: var( --wp--custom--inner-container-spacing );
 }
 
-.wp-block-media-text.has-background .wp-block-media-text__content {
-	padding: var( --wp--custom--gutter );
+.wp-block-media-text:not(.has-background) .wp-block-media-text__content {
+	padding-bottom: 0;
+	padding-top: 0;
 }
 
 :root .wp-block-media-text__content > *:first-child { margin-top: 0; }
@@ -1045,7 +1037,7 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 
 
 p.has-background {
-	padding: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
+	padding: var( --wp--custom--inner-container-spacing );
 }
 
 /* Drop Cap ------------------------ */
@@ -1060,14 +1052,6 @@ p.has-background {
 	min-width: .6875em;
 	padding: 0.3em;
 	text-align: center;
-}
-
-@media ( min-width: 700px ) {
-
-	p.has-background {
-		padding: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	}
-
 }
 
 
@@ -1536,7 +1520,7 @@ figure.wp-block-table table {
 :root .wp-block-template-part.has-background {
 	margin-bottom: 0;
 	margin-top: 0;
-	padding: var( --wp--custom--gutter ) 0;
+	padding: var( --wp--custom--inner-container-spacing ) 0;
 }
 
 :root .wp-block-template-part.has-background > *:first-child,
