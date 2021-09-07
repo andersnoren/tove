@@ -835,13 +835,20 @@ h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.h
 	padding: var( --wp--custom--inner-container-spacing );
 }
 
-.wp-block-media-text:not(.has-background) .wp-block-media-text__content {
+.wp-block-media-text:not(.has-background):not(.is-stacked-on-mobile) .wp-block-media-text__content {
 	padding-bottom: 0;
 	padding-top: 0;
 }
 
 :root .wp-block-media-text__content > *:first-child { margin-top: 0; }
 :root .wp-block-media-text__content > *:last-child { margin-bottom: 0; }
+
+@media ( max-width: 600px ) {
+	.wp-block-media-text.is-stacked-on-mobile:not(.has-background) .wp-block-media-text__content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
 
 /* Style: Shaded ------------------- */
 
