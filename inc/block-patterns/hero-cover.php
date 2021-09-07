@@ -1,5 +1,5 @@
-<!-- wp:cover {"url":"http://localhost:8888/utsikt/wp-content/uploads/2021/09/sallad-scaled.jpg","id":23924,"hasParallax":true,"dimRatio":10,"minHeight":75,"minHeightUnit":"vh","contentPosition":"center center","align":"full"} -->
-<div class="wp-block-cover alignfull has-background-dim-10 has-background-dim has-parallax" style="background-image:url(http://localhost:8888/utsikt/wp-content/uploads/2021/09/sallad-scaled.jpg);min-height:75vh">
+<!-- wp:cover {"url":"<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/smile-square.png","id":23924,"hasParallax":true,"dimRatio":10,"minHeight":75,"minHeightUnit":"vh","contentPosition":"center center","align":"full"} -->
+<div class="wp-block-cover alignfull has-background-dim-10 has-background-dim has-parallax" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/smile-square.png);min-height:75vh">
 	<div class="wp-block-cover__inner-container">
 		<!-- wp:group {"layout":{"inherit":true}} -->
 		<div class="wp-block-group">

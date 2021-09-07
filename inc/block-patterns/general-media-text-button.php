@@ -1,22 +1,18 @@
-<!-- wp:media-text {"imageFill":true,"backgroundColor":"senary"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill has-senary-background-color has-background">
-	<figure class="wp-block-media-text__media"></figure>
+<!-- wp:media-text {"mediaPosition":"right","mediaLink":"<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png","mediaType":"image","mediaSizeSlug":"full","imageFill":true,"focalPoint":{"x":0,"y":"0.50"},"backgroundColor":"senary","className":"is-style-default"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-image-fill is-style-default has-senary-background-color has-background">
+	<figure class="wp-block-media-text__media" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png);background-position:0% 50%"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png" alt="" /></figure>
 	<div class="wp-block-media-text__content">
 		<!-- wp:heading {"level":6,"backgroundColor":"secondary","className":"no-margin-bottom"} -->
 		<h6 class="no-margin-bottom has-secondary-background-color has-background">Hammarby Kaj 10</h6>
 		<!-- /wp:heading -->
 
-		<!-- wp:heading {"style":{"typography":{"fontWeight":"500"}},"fontSize":"gigantic"} -->
-		<h2 class="has-gigantic-font-size" style="font-weight:500">Our Specials</h2>
+		<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"500"}}} -->
+		<h1 style="font-weight:500">Our Specials</h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"fontSize":"large"} -->
 		<p class="has-large-font-size">See our recommendations for the best experiences at Niofika in Hammarby Sjöstad.</p>
 		<!-- /wp:paragraph -->
-
-		<!-- wp:spacer {"height":1} -->
-		<div style="height:1px" aria-hidden="true" class="wp-block-spacer"></div>
-		<!-- /wp:spacer -->
 
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">

@@ -286,6 +286,10 @@ caption {
 /* ------------------------------------------- */
 
 
+*[class*="has-heading-"][class*="-font-size"] {
+	letter-spacing: var( --wp--custom--letter-spacing--heading );
+}
+
 .has-gigantic-font-size {
 	letter-spacing: var( --wp--custom--letter-spacing--gigantic );
 	line-height: var( --wp--custom--line-height--gigantic );
