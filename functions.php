@@ -302,6 +302,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 			/* RESTAURANT */
 
+			'tove/restaurant-featured-dish' => array(
+				'title'         => esc_html__( 'Promotional section for a featured dish.', 'tove' ),
+				'categories'    => array( 'tove-restaurant' ),
+				'viewportWidth' => $viewport_inner,
+				'content'       => tove_get_block_pattern_markup( 'restaurant-featured-dish' ),
+			),
 			'tove/restaurant-location' => array(
 				'title'         => esc_html__( 'Information block for a restaurant or café location, with the restaurant name, contact information, opening hours and button.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),

@@ -1,6 +1,6 @@
-<!-- wp:media-text {"mediaType":"image","imageFill":true,"backgroundColor":"senary","className":"is-style-default"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill is-style-default has-senary-background-color has-background">
-	<figure class="wp-block-media-text__media"><img alt="" /></figure>
+<!-- wp:media-text {"mediaPosition":"right","mediaLink":"<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png","mediaType":"image","mediaSizeSlug":"full","imageFill":true,"focalPoint":{"x":0,"y":"0.50"},"backgroundColor":"senary","className":"is-style-default"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-image-fill is-style-default has-senary-background-color has-background">
+	<figure class="wp-block-media-text__media" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png);background-position:0% 50%"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png" alt="" /></figure>
 	<div class="wp-block-media-text__content">
 		<!-- wp:heading {"level":3} -->
 		<h3>Hammarby Kaj 10</h3>
