@@ -144,7 +144,8 @@
 			},
 			"line-height": {
 				"body": 1.5,
-				"heading": 1.25
+				"heading": 1.25,
+				"gigantic": 1
 			},
 			"shaded-style": {
 				"border": {
@@ -209,7 +210,7 @@
 				},
 				{
 					"slug": "gigantic",
-					"size": "128px",
+					"size": "96px",
 					"name": "Gigantic"
 				},
 				{
@@ -396,13 +397,13 @@
 				"spacing": {
 					"margin": {
 						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 3 * var( --wp--custom--spacing--baseline ) )"
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-1)",
 					"fontWeight": "var(--wp--custom--font-weight--bold)",
-					"letterSpacing": "var(--wp--custom--letter-spacing--gigantic)",
+					"letterSpacing": "var(--wp--custom--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				}
 			},
@@ -410,7 +411,7 @@
 				"spacing": {
 					"margin": {
 						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 3 * var( --wp--custom--spacing--baseline ) )"
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
 				},
 				"typography": {
@@ -424,7 +425,7 @@
 				"spacing": {
 					"margin": {
 						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 3 * var( --wp--custom--spacing--baseline ) )"
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
 				},
 				"typography": {
@@ -438,7 +439,7 @@
 				"spacing": {
 					"margin": {
 						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 3 * var( --wp--custom--spacing--baseline ) )"
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
 				},
 				"typography": {
@@ -452,7 +453,7 @@
 				"spacing": {
 					"margin": {
 						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 3 * var( --wp--custom--spacing--baseline ) )"
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
 				},
 				"typography": {
@@ -466,7 +467,7 @@
 				"spacing": {
 					"margin": {
 						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 3 * var( --wp--custom--spacing--baseline ) )"
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
 				},
 				"typography": {
