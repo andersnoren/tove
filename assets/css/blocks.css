@@ -728,12 +728,6 @@ h5,
 h6 {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-	margin-bottom: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( 3 * var( --wp--custom--spacing--baseline ) );
-}
-
-h6 {
-	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
 }
 
 h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background {
