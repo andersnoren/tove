@@ -743,8 +743,27 @@ h6 {
 }
 
 h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background {
-	display: inline-block;
 	padding: min( .5em, var( --wp--custom--spacing--baseline ) ) min( .65em, var( --wp--custom--spacing--baseline ) );
+	width: intrinsic;
+}
+
+h1.has-background.has-text-align-center, 
+h2.has-background.has-text-align-center, 
+h3.has-background.has-text-align-center, 
+h4.has-background.has-text-align-center, 
+h5.has-background.has-text-align-center, 
+h6.has-background.has-text-align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1.has-background.has-text-align-right, 
+h2.has-background.has-text-align-right, 
+h3.has-background.has-text-align-right, 
+h4.has-background.has-text-align-right, 
+h5.has-background.has-text-align-right, 
+h6.has-background.has-text-align-right {
+	margin-left: auto;
 }
 
 

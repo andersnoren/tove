@@ -293,6 +293,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => $viewport_full,
 				'content'       => tove_get_block_pattern_markup( 'hero-cover-group-bg' ),
 			),
+			'tove/hero-text' => array(
+				'title'         => esc_html__( 'Hero with headings, a paragraph of text, and buttons.', 'tove' ),
+				'categories'    => array( 'tove-hero' ),
+				'viewportWidth' => 710,
+				'content'       => tove_get_block_pattern_markup( 'hero-text' ),
+			),
 
 			/* RESTAURANT */
 

@@ -8,6 +8,8 @@ body {
 }
 
  > .is-root-container:not(.wp-site-blocks) > .wp-block:not([data-align="full"]):not([data-align="left"]):not([data-align="right"]) {
+	margin-left: auto;
+	margin-right: auto;
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
 }
 

@@ -145,7 +145,7 @@
 			"line-height": {
 				"body": 1.5,
 				"heading": 1.25,
-				"gigantic": 1
+				"gigantic": 1.05
 			},
 			"shaded-style": {
 				"border": {
