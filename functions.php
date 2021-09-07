@@ -316,7 +316,7 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 		if ( ! function_exists( 'register_block_style' ) ) return;
 
 		// Shared: Shaded.
-		$supports_shaded_block_style = apply_filters( 'tove_supports_shaded_block_style', array( 'core/group', 'core/image', 'core/social-links', 'core/media-text' ) );
+		$supports_shaded_block_style = apply_filters( 'tove_supports_shaded_block_style', array( 'core/columns', 'core/group', 'core/image', 'core/media-text', 'core/social-links' ) );
 
 		foreach ( $supports_shaded_block_style as $block_name ) {
 			register_block_style( $block_name, array(
@@ -329,6 +329,12 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 		register_block_style( 'core/button', array(
 			'name'  	=> 'tove-plain',
 			'label' 	=> esc_html__( 'Plain', 'tove' ),
+		) );
+
+		// Columns: No Gutters
+		register_block_style( 'core/columns', array(
+			'name'  	=> 'tove-no-gutters',
+			'label' 	=> esc_html__( 'No Gutters', 'tove' ),
 		) );
 
 		// Columns: Separators

@@ -178,8 +178,17 @@
 	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
 
-.wp-block-column > [class*="wp-container-"] > * {
-	margin-left: 0 !important;
+/* Style: Shaded ------------------- */
+
+.wp-block-columns.is-style-tove-shaded > .wp-block-column {
+	border: var( --wp--custom--shaded-style--border );
+	box-shadow: var( --wp--custom--shaded-style--box-shadow );
+}
+
+/* Style: No Gutters --------------- */
+
+.wp-block-columns.is-style-tove-no-gutters > .wp-block-column {
+	margin: 0 !important;
 }
 
 /* Style: Horizontal Separators ---- */
