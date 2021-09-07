@@ -267,6 +267,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => 1440,
 				'content'       => tove_get_block_pattern_markup( 'restaurant-opening-hours-table' ),
 			),
+			'tove/restaurant-pricing-table' => array(
+				'title'         => esc_html__( 'Pricing table with three tiers.', 'tove' ),
+				'categories'    => array( 'tove-restaurant' ),
+				'viewportWidth' => 1312,
+				'content'       => tove_get_block_pattern_markup( 'restaurant-pricing-table' ),
+			),
 		) );
 
 		// Register block patterns.
