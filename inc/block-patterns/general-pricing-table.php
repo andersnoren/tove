@@ -1,5 +1,5 @@
-<!-- wp:columns {"align":"wide","className":"is-style-tove-shaded"} -->
-<div class="wp-block-columns alignwide is-style-tove-shaded">
+<!-- wp:columns {"align":"wide","className":"is-style-default"} -->
+<div class="wp-block-columns alignwide is-style-default">
 	<!-- wp:column {"backgroundColor":"senary"} -->
 	<div class="wp-block-column has-senary-background-color has-background">
 		<!-- wp:group {"backgroundColor":"tertiary","className":"no-margin"} -->
@@ -22,7 +22,7 @@
 		<div class="wp-block-group no-margin has-senary-background-color has-background">
 			<!-- wp:list -->
 			<ul>
-				<li>5 percent discount on everything</li>
+				<li><span style="color: var(--wp--preset--color--foreground); font-size: var(--wp--preset--font-size--normal);">5 percent discount on everything</span></li>
 				<li>Free shipping in the online store</li>
 				<li>Invitations to special events</li>
 			</ul>
