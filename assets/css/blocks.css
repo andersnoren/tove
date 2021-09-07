@@ -211,6 +211,14 @@
 
 @media ( max-width: 599px ) {
 
+	:root .wp-block-columns.is-not-stacked-on-mobile > .wp-block-column {
+		margin-left: calc( var( --wp--columns--gutter ) * .5 );
+		margin-right: calc( var( --wp--columns--gutter ) * .5 );
+	}
+
+	.wp-block-columns.is-not-stacked-on-mobile > .wp-block-column:first-child { margin-left: 0; }
+	.wp-block-columns.is-not-stacked-on-mobile > .wp-block-column:last-child { margin-right: 0; }
+
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:last-child) {
 		margin-bottom: var( --wp--columns--gutter );
 	}
