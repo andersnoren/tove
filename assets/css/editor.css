@@ -59,6 +59,13 @@ body {
 	margin-top: 0;
 }
 
+/* Block: Post Featured Image ------ */
+
+:root .wp-block-post-featured-image.wp-block-post-featured-image {
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
+}
+
 /* Block: Table -------------------- */
 
 figure.wp-block-table {

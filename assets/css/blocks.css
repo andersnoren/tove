@@ -3,11 +3,6 @@
 /* ------------------------------------------- */
 
 
-.wp-block-post-excerpt {
-	margin-bottom: var( --wp--custom--spacing--baseline );
-	margin-top: var( --wp--custom--spacing--baseline );
-}
-
 .wp-block-archives,
 .wp-block-button,
 .wp-block-calendar,
@@ -25,8 +20,11 @@
 .wp-block-latest-posts,
 .wp-block-media-text,
 .wp-block-navigation,
+.wp-block-post-excerpt,
+.wp-block-post-featured-image,
 .wp-block-preformatted,
 .wp-block-pullquote,
+.wp-block-query,
 .wp-block-quote,
 .wp-block-quote.is-style-large,
 .wp-block-search,
@@ -1123,6 +1121,14 @@ p.has-background {
 	margin: 0;
 }
 
+:root .wp-block-post > *:first-child { margin-top: 0; }
+:root .wp-block-post > *:last-child { margin-bottom: 0; }
+
+.wp-block-post-template.is-flex-container li, 
+.wp-block-query-loop.is-flex-container li {
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+}
+
 
 /* ------------------------------------------- */
 /* Block: Post Title
@@ -1258,7 +1264,7 @@ p.has-background {
 /* ------------------------------------------- */
 
 
-ul.wp-block-post-template > li {
+.wp-block-post-template:not([class*="columns-"]) > li {
 	margin: 0;
 }
 

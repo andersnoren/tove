@@ -133,7 +133,7 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove-hero' => array(
 				'label'			=> esc_html__( 'Tove Hero', 'tove' ),
 			),
-			'tove-post-template' => array(
+			'tove-query' => array(
 				'label'			=> esc_html__( 'Tove Post Template', 'tove' ),
 			),
 			'tove-restaurant' => array(
@@ -355,6 +355,15 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'categories'    => array( 'tove-restaurant' ),
 				'viewportWidth' => $viewport_inner,
 				'content'       => tove_get_block_pattern_markup( 'restaurant-reservation-big' ),
+			),
+
+			/* QUERY */
+
+			'tove/query-previews-columns' => array(
+				'title'         => esc_html__( 'Latest news section with three posts in columns.', 'tove' ),
+				'categories'    => array( 'tove-query' ),
+				'viewportWidth' => $viewport_inner,
+				'content'       => tove_get_block_pattern_markup( 'query-previews-columns' ),
 			),
 
 		) );

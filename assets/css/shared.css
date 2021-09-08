@@ -286,13 +286,19 @@ caption {
 /* ------------------------------------------- */
 
 
-*[class*="has-heading-"][class*="-font-size"] {
+*[class*="has-heading-"][class*="-font-size"]:not(.has-heading-6-font-size) {
 	letter-spacing: var( --wp--custom--letter-spacing--heading );
 }
 
 .has-gigantic-font-size {
 	letter-spacing: var( --wp--custom--letter-spacing--gigantic );
 	line-height: var( --wp--custom--line-height--gigantic );
+}
+
+.has-heading-6-font-size {
+	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
+	line-height: var( --wp--custom--line-height--heading );
+	text-transform: uppercase;
 }
 
 

@@ -325,6 +325,9 @@
 						"bottom": "1em",
 						"top": "0px"
 					}
+				},
+				"typography": {
+					"lineHeight": "calc( 1em + 10px )"
 				}
 			},
 			"core/preformatted": {
