@@ -239,6 +239,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => $viewport_inner,
 				'content'       => tove_get_block_pattern_markup( 'general-pricing-table' ),
 			),
+			'tove/general-testimonials-columns' => array(
+				'title'         => esc_html__( 'Testimonials section with three quotes.', 'tove' ),
+				'categories'    => array( 'tove-general', 'tove-restaurant' ),
+				'viewportWidth' => $viewport_inner,
+				'content'       => tove_get_block_pattern_markup( 'general-testimonials-columns' ),
+			),
 
 			/* HEADER */
 
