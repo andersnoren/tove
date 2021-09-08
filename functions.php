@@ -365,6 +365,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => $viewport_inner,
 				'content'       => tove_get_block_pattern_markup( 'query-previews-columns' ),
 			),
+			'tove/query-previews-columns-small' => array(
+				'title'         => esc_html__( 'Compact latest news section with three posts in columns.', 'tove' ),
+				'categories'    => array( 'tove-query' ),
+				'viewportWidth' => $viewport_inner,
+				'content'       => tove_get_block_pattern_markup( 'query-previews-columns-small' ),
+			),
 
 		) );
 
