@@ -12,7 +12,7 @@
 
 			<!-- wp:quote {"align":"center","className":"is-style-default"} -->
 			<blockquote class="wp-block-quote has-text-align-center is-style-default">
-				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Anders Norén</cite>
+				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Coffee Snob</cite>
 			</blockquote>
 			<!-- /wp:quote -->
 		</div>
@@ -32,7 +32,7 @@
 
 			<!-- wp:quote {"align":"center","className":"is-style-default"} -->
 			<blockquote class="wp-block-quote has-text-align-center is-style-default">
-				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Anders Norén</cite>
+				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Coffee Snob</cite>
 			</blockquote>
 			<!-- /wp:quote -->
 		</div>
@@ -52,7 +52,7 @@
 
 			<!-- wp:quote {"align":"center","className":"is-style-default"} -->
 			<blockquote class="wp-block-quote has-text-align-center is-style-default">
-				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Anders Norén</cite>
+				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Coffee Snob</cite>
 			</blockquote>
 			<!-- /wp:quote -->
 		</div>

@@ -221,6 +221,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 			/* GENERAL */
 
+			'tove/general-feature-large' => array(
+				'title'         => esc_html__( 'Full-width feature section with headings, text, and buttons.', 'tove' ),
+				'categories'    => array( 'tove-general' ),
+				'viewportWidth' => $viewport_inner,
+				'content'       => tove_get_block_pattern_markup( 'general-feature-large' ),
+			),
 			'tove/general-information-banner' => array(
 				'title'         => esc_html__( 'Information banner.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
@@ -304,6 +310,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'categories'    => array( 'tove-hero' ),
 				'viewportWidth' => 710,
 				'content'       => tove_get_block_pattern_markup( 'hero-text' ),
+			),
+			'tove/hero-text-displaced' => array(
+				'title'         => esc_html__( 'Hero with a large heading to the left and text to the right.', 'tove' ),
+				'categories'    => array( 'tove-hero' ),
+				'viewportWidth' => 710,
+				'content'       => tove_get_block_pattern_markup( 'hero-text-displaced' ),
 			),
 
 			/* RESTAURANT */
