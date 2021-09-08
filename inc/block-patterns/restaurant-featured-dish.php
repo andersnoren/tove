@@ -1,6 +1,6 @@
-<!-- wp:media-text {"mediaPosition":"right","mediaLink":"<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png","mediaType":"image","mediaSizeSlug":"full","backgroundColor":"secondary"} -->
+<!-- wp:media-text {"mediaPosition":"right","mediaLink":"<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square.png","mediaType":"image","mediaSizeSlug":"full","backgroundColor":"secondary"} -->
 <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile has-secondary-background-color has-background">
-	<figure class="wp-block-media-text__media"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square-2.png" alt="" /></figure>
+	<figure class="wp-block-media-text__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/cup-illustration-square.png" alt="" /></figure>
 	<div class="wp-block-media-text__content">
 		<!-- wp:group {"layout":{"inherit":false,"contentSize":"500px"}} -->
 		<div class="wp-block-group">

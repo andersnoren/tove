@@ -1339,7 +1339,7 @@ ul.wp-block-post-template > li {
 }
 
 :root .wp-block-quote cite {
-	font-size: var( --wp--preset--font-size--tiny );
+	font-size: var( --wp--preset--font-size--heading-6 );
 	text-align: inherit;
 }
 

@@ -23,9 +23,12 @@ TT1 Blocks is distributed under the terms of the GNU GPL version 2.0.
 Coffee cup logo in the screenshot by Anders Norén
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
 
-Coffee cup logo typeface: Bubblegum Sans
+All placeholder illustrations (in /assets/images/illustrations/ ) by Anders Norén
+License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
+
+Coffee cup logo typeface: DM Mono
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
-Source: https://fonts.google.com/specimen/Bubblegum+Sans/
+Source: https://fonts.google.com/specimen/DM+Mono/
 
 Tove bundles the following third-party resources:
 
@@ -39,6 +42,16 @@ License: GPLv2, https://www.gnu.org/licenses/gpl-2.0.html
 Source: https://wordpress.org/themes/blockbase/
 Included as part of:
 	- tove_get_google_fonts_url(), for building a Google Fonts request URL from fonts set in theme.json
+
+== Special Thanks ==
+
+To theme.json trailblazers helping Tove find her way, including:
+
+– Carolina Nymark
+– Ellen and Manuel at Elma Studio
+– Ana at Anariel Design
+– Rich Tabor
+– The Automattic theme wranglers
 
 == Changelog ==
 

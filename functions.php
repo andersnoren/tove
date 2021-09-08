@@ -335,13 +335,13 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/restaurant-opening-hours-table' => array(
 				'title'         => esc_html__( 'A table with opening hours.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => 288,
+				'viewportWidth' => 480,
 				'content'       => tove_get_block_pattern_markup( 'restaurant-opening-hours-table' ),
 			),
 			'tove/restaurant-reservation-big' => array(
-				'title'         => esc_html__( 'A really big "Make a Reservation" button.', 'tove' ),
+				'title'         => esc_html__( 'A really big Make a Reservation button.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => 288,
+				'viewportWidth' => $viewport_inner,
 				'content'       => tove_get_block_pattern_markup( 'restaurant-reservation-big' ),
 			),
 
