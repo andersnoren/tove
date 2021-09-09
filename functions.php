@@ -230,11 +230,17 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-feature-large' ),
 			),
-			'tove/general-follow-us' => array(
-				'title'         => esc_html__( 'Follow us section with a heading and social icons.', 'tove' ),
+			'tove/general-follow-us-vertical' => array(
+				'title'         => esc_html__( 'Follow us section with a vertical layout.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
 				'viewportWidth' => $viewport['wide'],
-				'content'       => tove_get_block_pattern_markup( 'general/general-follow-us' ),
+				'content'       => tove_get_block_pattern_markup( 'general/general-follow-us-vertical' ),
+			),
+			'tove/general-follow-us-horizontal' => array(
+				'title'         => esc_html__( 'Follow us section with a wide, horizontal layout.', 'tove' ),
+				'categories'    => array( 'tove-general' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'general/general-follow-us-horizontal' ),
 			),
 			'tove/general-information-banner' => array(
 				'title'         => esc_html__( 'Information banner.', 'tove' ),
