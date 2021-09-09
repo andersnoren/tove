@@ -151,10 +151,13 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			register_block_pattern_category( $slug, $settings );
 		}
 
-		// viewportWidth variables
-		$viewport_full 			= 1440;
-		$viewport_inner 		= 1312;
-		$viewport_inner_group 	= 1180;
+		// viewportWidth values, determining the width of the preview in the Block Patterns drawer.
+		$viewport = apply_filters( 'tove_block_patterns_viewport', array(
+			'full'			=> 1440,
+			'wide'			=> 1312,
+			'wide_grouped'	=> 1180,
+			'content'		=> 640
+		) );
 
 		// The block patterns included in Tove.
 		$tove_block_patterns = apply_filters( 'tove_block_patterns', array(
@@ -164,13 +167,13 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/cta-horizontal' => array(
 				'title'         => esc_html__( 'Horizontal call to action.', 'tove' ),
 				'categories'    => array( 'tove-cta' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'cta/cta-horizontal' ),
 			),
 			'tove/cta-vertical' => array(
 				'title'         => esc_html__( 'Vertical call to action.', 'tove' ),
 				'categories'    => array( 'tove-cta' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'cta/cta-vertical' ),
 			),
 
@@ -179,43 +182,43 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/footer-horizontal' => array(
 				'title'         => esc_html__( 'Footer with site title and theme credit in a centered paragraph.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-horizontal' ),
 			),
 			'tove/footer-horizontal-social' => array(
 				'title'         => esc_html__( 'Footer with site title, theme credit and social icons.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-horizontal-social' ),
 			),
 			'tove/footer-horizontal-columns-1' => array(
 				'title'         => esc_html__( 'Footer with site title, menu, opening hours and contact information in four columns.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-horizontal-columns-1' ),
 			),
 			'tove/footer-horizontal-columns-2' => array(
 				'title'         => esc_html__( 'Footer with site title, menu, opening hours, contact information and social icons in two columns.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-horizontal-columns-2' ),
 			),
 			'tove/footer-horizontal-columns-3' => array(
 				'title'         => esc_html__( 'Footer with site title, information blocks for two business locations, menu and social icons.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-horizontal-columns-3' ),
 			),
 			'tove/footer-horizontal-columns-4' => array(
 				'title'         => esc_html__( 'Footer with site title, contact information, and two menus.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-horizontal-columns-4' ),
 			),
 			'tove/footer-stacked-centered' => array(
 				'title'         => esc_html__( 'Footer with site title, theme credit and social icons stacked and centered.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-stacked-centered' ),
 			),
 
@@ -224,37 +227,37 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/general-feature-large' => array(
 				'title'         => esc_html__( 'Full-width feature section with headings, text, and buttons.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-feature-large' ),
 			),
 			'tove/general-follow-us' => array(
-				'title'         => esc_html__( 'Follow Us section with a header and social icons.', 'tove' ),
+				'title'         => esc_html__( 'Follow us section with a heading and social icons.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-follow-us' ),
 			),
 			'tove/general-information-banner' => array(
 				'title'         => esc_html__( 'Information banner.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-information-banner' ),
 			),
 			'tove/general-media-text-button' => array(
 				'title'         => esc_html__( 'Media and text with button.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-media-text-button' ),
 			),
 			'tove/general-pricing-table' => array(
 				'title'         => esc_html__( 'Pricing table with three tiers.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-pricing-table' ),
 			),
 			'tove/general-testimonials-columns' => array(
 				'title'         => esc_html__( 'Testimonials section with three quotes.', 'tove' ),
 				'categories'    => array( 'tove-general', 'tove-restaurant' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-testimonials-columns' ),
 			),
 
@@ -263,37 +266,37 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/header-horizontal' => array(
 				'title'         => esc_html__( 'Header with site title and a menu. This is the default header in the theme.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'header/header-horizontal' ),
 			),
 			'tove/header-horizontal-button' => array(
 				'title'         => esc_html__( 'Header with site title, a menu and buttons.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'header/header-horizontal-button' ),
 			),
 			'tove/header-horizontal-social' => array(
 				'title'         => esc_html__( 'Header with site title, a menu and social icons.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'header/header-horizontal-social' ),
 			),
 			'tove/header-horizontal-double' => array(
 				'title'         => esc_html__( 'Header with opening hours, button, site title and a menu.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'header/header-horizontal-double' ),
 			),
 			'tove/header-horizontal-double-deluxe' => array(
 				'title'         => esc_html__( 'Header with opening hours, site title, social icons, a menu and a "Call us" button.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'header/header-horizontal-double-deluxe' ),
 			),
 			'tove/header-stacked-centered' => array(
 				'title'         => esc_html__( 'Header with site title, a menu and social icons stacked and centered.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'header/header-stacked-centered' ),
 			),
 
@@ -302,25 +305,25 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/hero-cover' => array(
 				'title'         => esc_html__( 'Hero with a background image, a heading and buttons.', 'tove' ),
 				'categories'    => array( 'tove-hero' ),
-				'viewportWidth' => $viewport_full,
+				'viewportWidth' => $viewport['full'],
 				'content'       => tove_get_block_pattern_markup( 'hero/hero-cover' ),
 			),
 			'tove/hero-cover-group-bg' => array(
 				'title'         => esc_html__( 'Hero with a background image and a group with a solid background color containing a heading, paragraph of text, and buttons.', 'tove' ),
 				'categories'    => array( 'tove-hero' ),
-				'viewportWidth' => $viewport_full,
+				'viewportWidth' => $viewport['full'],
 				'content'       => tove_get_block_pattern_markup( 'hero/hero-cover-group-bg' ),
 			),
 			'tove/hero-text' => array(
 				'title'         => esc_html__( 'Hero with headings, a paragraph of text, and buttons.', 'tove' ),
 				'categories'    => array( 'tove-hero' ),
-				'viewportWidth' => 710,
+				'viewportWidth' => $viewport['content'],
 				'content'       => tove_get_block_pattern_markup( 'hero/hero-text' ),
 			),
 			'tove/hero-text-displaced' => array(
 				'title'         => esc_html__( 'Hero with a large heading to the left and text to the right.', 'tove' ),
 				'categories'    => array( 'tove-hero' ),
-				'viewportWidth' => 710,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'hero/hero-text-displaced' ),
 			),
 
@@ -329,19 +332,19 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/query-featured-post' => array(
 				'title'         => esc_html__( 'A large featured section for the latest sticky post on the site.', 'tove' ),
 				'categories'    => array( 'tove-query' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'query/query-featured-post' ),
 			),
 			'tove/query-previews-columns' => array(
 				'title'         => esc_html__( 'Latest news section with three posts in columns.', 'tove' ),
 				'categories'    => array( 'tove-query' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'query/query-previews-columns' ),
 			),
 			'tove/query-previews-columns-small' => array(
 				'title'         => esc_html__( 'Compact latest news section with three posts in columns.', 'tove' ),
 				'categories'    => array( 'tove-query' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'query/query-previews-columns-small' ),
 			),
 
@@ -350,37 +353,37 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/restaurant-featured-dish' => array(
 				'title'         => esc_html__( 'Promotional section for a featured dish.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-featured-dish' ),
 			),
 			'tove/restaurant-location' => array(
 				'title'         => esc_html__( 'Information block for a restaurant or café location, with the restaurant name, contact information, opening hours and button.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-location' ),
 			),
 			'tove/restaurant-menu' => array(
-				'title'         => esc_html__( 'Restaurant menu with a header and columns for three different menu sections.', 'tove' ),
+				'title'         => esc_html__( 'Restaurant menu with a heading and columns for three different menu sections.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-menu' ),
 			),
 			'tove/restaurant-menu-row' => array(
 				'title'         => esc_html__( 'A row with three columns for the restaurant menu.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => $viewport_inner_group,
+				'viewportWidth' => $viewport['wide_grouped'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-menu-row' ),
 			),
 			'tove/restaurant-opening-hours-table' => array(
 				'title'         => esc_html__( 'A table with opening hours.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => 480,
+				'viewportWidth' => $viewport['content'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-opening-hours-table' ),
 			),
 			'tove/restaurant-reservation-big' => array(
-				'title'         => esc_html__( 'A really big Make a Reservation button.', 'tove' ),
+				'title'         => esc_html__( 'A really big button for reservations.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
-				'viewportWidth' => $viewport_inner,
+				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-reservation-big' ),
 			),
 
