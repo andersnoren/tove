@@ -180,7 +180,7 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			/* FOOTER */
 
 			'tove/footer-horizontal' => array(
-				'title'         => esc_html__( 'Footer with site title and theme credit in a centered paragraph.', 'tove' ),
+				'title'         => esc_html__( 'Footer with site title and theme credit in a centered paragraph. This is the default footer in the theme.', 'tove' ),
 				'categories'    => array( 'tove-footer' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'footer/footer-horizontal' ),
@@ -309,7 +309,7 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'content'       => tove_get_block_pattern_markup( 'hero/hero-cover' ),
 			),
 			'tove/hero-cover-group-bg' => array(
-				'title'         => esc_html__( 'Hero with a background image and a group with a solid background color containing a heading, paragraph of text, and buttons.', 'tove' ),
+				'title'         => esc_html__( 'Hero with a background image and a heading, paragraph of text, and buttons.', 'tove' ),
 				'categories'    => array( 'tove-hero' ),
 				'viewportWidth' => $viewport['full'],
 				'content'       => tove_get_block_pattern_markup( 'hero/hero-cover-group-bg' ),
@@ -330,19 +330,19 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			/* QUERY */
 
 			'tove/query-featured-post' => array(
-				'title'         => esc_html__( 'A large featured section for the latest sticky post on the site.', 'tove' ),
+				'title'         => esc_html__( 'Large featured section for the latest sticky post on the site.', 'tove' ),
 				'categories'    => array( 'tove-query' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'query/query-featured-post' ),
 			),
 			'tove/query-previews-columns' => array(
-				'title'         => esc_html__( 'Latest news section with three posts in columns.', 'tove' ),
+				'title'         => esc_html__( 'Latest news section with three posts.', 'tove' ),
 				'categories'    => array( 'tove-query' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'query/query-previews-columns' ),
 			),
 			'tove/query-previews-columns-small' => array(
-				'title'         => esc_html__( 'Compact latest news section with three posts in columns.', 'tove' ),
+				'title'         => esc_html__( 'Compact latest news section with three posts.', 'tove' ),
 				'categories'    => array( 'tove-query' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'query/query-previews-columns-small' ),
@@ -357,13 +357,13 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-featured-dish' ),
 			),
 			'tove/restaurant-location' => array(
-				'title'         => esc_html__( 'Information block for a restaurant or café location, with the restaurant name, contact information, opening hours and button.', 'tove' ),
+				'title'         => esc_html__( 'Information block for a restaurant or café location.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-location' ),
 			),
 			'tove/restaurant-menu' => array(
-				'title'         => esc_html__( 'Restaurant menu with a heading and columns for three different menu sections.', 'tove' ),
+				'title'         => esc_html__( 'Restaurant menu with columns for three different menu sections.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-menu' ),
