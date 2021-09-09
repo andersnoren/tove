@@ -21,11 +21,15 @@
 				<div class="wp-block-column">
 					<!-- wp:post-date {"style":{"typography":{"fontWeight":"700"}},"fontSize":"heading-6"} /-->
 
-					<!-- wp:spacer {"height":16} -->
-					<div style="height:16px" aria-hidden="true" class="wp-block-spacer"></div>
+					<!-- wp:spacer {"height":15} -->
+					<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:post-title {"level":5,"isLink":true,"className":"no-margin-top"} /-->
+					<!-- wp:post-title {"level":5,"isLink":true,"className":"no-margin"} /-->
+
+					<!-- wp:spacer {"height":15} -->
+					<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+					<!-- /wp:spacer -->
 
 					<!-- wp:post-excerpt {"className":"no-margin","fontSize":"small"} /-->
 				</div>
