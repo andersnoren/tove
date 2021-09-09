@@ -359,6 +359,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 			/* QUERY */
 
+			'tove/query-featured-post' => array(
+				'title'         => esc_html__( 'A large featured section for the latest sticky post on the site.', 'tove' ),
+				'categories'    => array( 'tove-query' ),
+				'viewportWidth' => $viewport_inner,
+				'content'       => tove_get_block_pattern_markup( 'query-featured-post' ),
+			),
 			'tove/query-previews-columns' => array(
 				'title'         => esc_html__( 'Latest news section with three posts in columns.', 'tove' ),
 				'categories'    => array( 'tove-query' ),

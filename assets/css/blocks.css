@@ -1114,8 +1114,8 @@ p.has-background {
 	margin: 0;
 }
 
-.wp-block-post-template.is-flex-container li {
-	margin: 0 var( --wp--custom--columns--gutter ) var( --wp--custom--columns--gutter ) 0;
+.wp-block-post-template.is-flex-container > li {
+	margin: 0 0 var( --wp--custom--columns--gutter ) 0;
 }
 
 :root .wp-block-post > *:first-child { margin-top: 0; }
@@ -1124,7 +1124,7 @@ p.has-background {
 @media ( min-width: 600px ) {
 
 	.wp-block-post-template.is-flex-container > li {
-		margin-bottom: 0;
+		margin: 0 var( --wp--custom--columns--gutter ) 0 0;
 	}
 
     :root .wp-block-post-template.is-flex-container.columns-2 > li { width: calc( 50% 			- ( ( var( --wp--custom--columns--gutter ) * 1 ) / 2 ) ); }
