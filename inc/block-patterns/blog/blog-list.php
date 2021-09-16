@@ -19,21 +19,13 @@
 <!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group">
 
-	<!-- wp:separator {"align":"wide","className":"is-style-wide"} -->
-	<hr class="wp-block-separator alignwide is-style-wide" />
-	<!-- /wp:separator -->
-
-	<!-- wp:query-pagination {"align":"wide","className":"alignwide is-style-default"} -->
-	<div class="wp-block-query-pagination alignwide is-style-default">
+	<!-- wp:query-pagination {"align":"wide","className":"alignwide is-style-tove-vertical-separators"} -->
+	<div class="wp-block-query-pagination alignwide is-style-tove-vertical-separators">
 		<!-- wp:query-pagination-previous {"fontSize":"large"} /-->
 
 		<!-- wp:query-pagination-next {"fontSize":"large"} /-->
 	</div>
 	<!-- /wp:query-pagination -->
-
-	<!-- wp:separator {"align":"wide","className":"is-style-wide"} -->
-	<hr class="wp-block-separator alignwide is-style-wide" />
-	<!-- /wp:separator -->
 
 </div>
 <!-- /wp:group -->

@@ -499,6 +499,12 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 			'label' 	=> esc_html__( 'Horizontal Separators', 'tove' ),
 		) );
 
+		// Query Pagination: Vertical separators
+		register_block_style( 'core/query-pagination', array(
+			'name'  	=> 'tove-vertical-separators',
+			'label' 	=> esc_html__( 'Vertical Separators', 'tove' ),
+		) );
+
 		// Table: Vertical borders
 		register_block_style( 'core/table', array(
 			'name'  	=> 'tove-vertical-borders',
