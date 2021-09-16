@@ -14,7 +14,7 @@
 
 		<!-- wp:column {"verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center">
-			<!-- wp:site-logo {"align":"center","width":148} /-->
+			<!-- wp:site-title {"level":0,"textAlign":"center","fontSize":"large"} /-->
 		</div>
 		<!-- /wp:column -->
 

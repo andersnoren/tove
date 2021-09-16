@@ -224,6 +224,12 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 			/* GENERAL */
 
+			'tove/general-faq' => array(
+				'title'         => esc_html__( 'Frequently Asked Questions (FAQ) section.', 'tove' ),
+				'categories'    => array( 'tove-general' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'general/general-faq' ),
+			),
 			'tove/general-feature-large' => array(
 				'title'         => esc_html__( 'Full-width feature section with headings, text, and buttons.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
@@ -233,11 +239,11 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/general-follow-us-vertical' => array(
 				'title'         => esc_html__( 'Follow us section with a vertical layout.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
-				'viewportWidth' => $viewport['wide'],
+				'viewportWidth' => $viewport['content'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-follow-us-vertical' ),
 			),
 			'tove/general-follow-us-horizontal' => array(
-				'title'         => esc_html__( 'Follow us section with a wide, horizontal layout.', 'tove' ),
+				'title'         => esc_html__( 'Follow us section with a horizontal layout.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-follow-us-horizontal' ),
@@ -294,7 +300,7 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'content'       => tove_get_block_pattern_markup( 'header/header-horizontal-double' ),
 			),
 			'tove/header-horizontal-double-deluxe' => array(
-				'title'         => esc_html__( 'Header with opening hours, site title, social icons, a menu and a "Call us" button.', 'tove' ),
+				'title'         => esc_html__( 'Header with opening hours, site title, social icons, a menu and a Call us button.', 'tove' ),
 				'categories'    => array( 'tove-header' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'header/header-horizontal-double-deluxe' ),

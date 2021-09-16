@@ -1118,6 +1118,10 @@ p.has-background {
 	margin: 0 0 var( --wp--custom--columns--gutter ) 0;
 }
 
+.wp-block-post-template.is-flex-container > li:last-child {
+	margin-bottom: 0;
+}
+
 :root .wp-block-post > *:first-child { margin-top: 0; }
 :root .wp-block-post > *:last-child { margin-bottom: 0; }
 
