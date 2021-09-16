@@ -119,7 +119,7 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 		// The block pattern categories included in Tove.
 		$tove_block_pattern_categories = apply_filters( 'tove_block_pattern_categories', array(
 			'tove-blog' => array(
-				'label'			=> esc_html__( 'Tove Post Template', 'tove' ),
+				'label'			=> esc_html__( 'Tove Blog', 'tove' ),
 			),
 			'tove-cta'  => array(
 				'label'			=> esc_html__( 'Tove Call to Action', 'tove' ),
@@ -164,11 +164,29 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 			/* BLOG */
 
-			'tove/blog-archive-list' => array(
-				'title'         => esc_html__( 'Post Archive: Stacked list with featured image, title, excerpt and post date.', 'tove' ),
+			'tove/blog-grid-compact-cols-3' => array(
+				'title'         => esc_html__( 'Three column grid with featured image, title, and post date', 'tove' ),
 				'categories'    => array( 'tove-blog' ),
 				'viewportWidth' => $viewport['wide'],
-				'content'       => tove_get_block_pattern_markup( 'blog/blog-archive-list' ),
+				'content'       => tove_get_block_pattern_markup( 'blog/blog-grid-compact-cols-3' ),
+			),
+			'tove/blog-list' => array(
+				'title'         => esc_html__( 'List with featured image, title, excerpt, and post date.', 'tove' ),
+				'categories'    => array( 'tove-blog' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'blog/blog-list' ),
+			),
+			'tove/blog-list-compact' => array(
+				'title'         => esc_html__( 'Compact list with title and post date.', 'tove' ),
+				'categories'    => array( 'tove-blog' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'blog/blog-list-compact' ),
+			),
+			'tove/blog-list-compact-media' => array(
+				'title'         => esc_html__( 'Compact list with featured image, title, and post date.', 'tove' ),
+				'categories'    => array( 'tove-blog' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'blog/blog-list-compact-media' ),
 			),
 
 			/* CALL TO ACTION */
@@ -473,12 +491,6 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 		register_block_style( 'core/columns', array(
 			'name'  	=> 'tove-horizontal-separators',
 			'label' 	=> esc_html__( 'Horizontal Separators', 'tove' ),
-		) );
-
-		// Query Pagination: Vertical separators
-		register_block_style( 'core/query-pagination', array(
-			'name'  	=> 'tove-vertical-separators',
-			'label' 	=> esc_html__( 'Vertical Separators', 'tove' ),
 		) );
 
 		// Table: Vertical borders
