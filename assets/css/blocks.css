@@ -1275,7 +1275,13 @@ p.has-background {
 
 
 .wp-block-post-template:not([class*="columns-"]) > li {
-	margin: 0;
+	margin: 0 0 var( --wp--custom--columns--gutter );
+}
+
+@media ( min-width: 700px ) {
+	.wp-block-post-template:not([class*="columns-"]) > li {
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+	}
 }
 
 

@@ -118,6 +118,9 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 		// The block pattern categories included in Tove.
 		$tove_block_pattern_categories = apply_filters( 'tove_block_pattern_categories', array(
+			'tove-blog' => array(
+				'label'			=> esc_html__( 'Tove Post Template', 'tove' ),
+			),
 			'tove-cta'  => array(
 				'label'			=> esc_html__( 'Tove Call to Action', 'tove' ),
 			),
@@ -132,9 +135,6 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			),
 			'tove-hero' => array(
 				'label'			=> esc_html__( 'Tove Hero', 'tove' ),
-			),
-			'tove-query' => array(
-				'label'			=> esc_html__( 'Tove Post Template', 'tove' ),
 			),
 			'tove-restaurant' => array(
 				'label'			=> esc_html__( 'Tove Restaurant', 'tove' ),
@@ -161,6 +161,15 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 		// The block patterns included in Tove.
 		$tove_block_patterns = apply_filters( 'tove_block_patterns', array(
+
+			/* BLOG */
+
+			'tove/blog-archive-list' => array(
+				'title'         => esc_html__( 'Post Archive: Stacked list with featured image, title, excerpt and post date.', 'tove' ),
+				'categories'    => array( 'tove-blog' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'blog/blog-archive-list' ),
+			),
 
 			/* CALL TO ACTION */
 
@@ -260,6 +269,24 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-media-text-button' ),
 			),
+			'tove/general-previews-featured' => array(
+				'title'         => esc_html__( 'Large featured section for the latest sticky post on the site.', 'tove' ),
+				'categories'    => array( 'tove-general' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'general/general-previews-featured' ),
+			),
+			'tove/general-previews-columns' => array(
+				'title'         => esc_html__( 'Latest news section with three posts.', 'tove' ),
+				'categories'    => array( 'tove-general' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'general/general-previews-columns' ),
+			),
+			'tove/general-previews-columns-small' => array(
+				'title'         => esc_html__( 'Compact latest news section with three posts.', 'tove' ),
+				'categories'    => array( 'tove-general' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'general/general-previews-columns-small' ),
+			),
 			'tove/general-pricing-table' => array(
 				'title'         => esc_html__( 'Pricing table with three tiers.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
@@ -337,27 +364,6 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'categories'    => array( 'tove-hero' ),
 				'viewportWidth' => $viewport['wide'],
 				'content'       => tove_get_block_pattern_markup( 'hero/hero-text-displaced' ),
-			),
-
-			/* QUERY */
-
-			'tove/query-featured-post' => array(
-				'title'         => esc_html__( 'Large featured section for the latest sticky post on the site.', 'tove' ),
-				'categories'    => array( 'tove-query' ),
-				'viewportWidth' => $viewport['wide'],
-				'content'       => tove_get_block_pattern_markup( 'query/query-featured-post' ),
-			),
-			'tove/query-previews-columns' => array(
-				'title'         => esc_html__( 'Latest news section with three posts.', 'tove' ),
-				'categories'    => array( 'tove-query' ),
-				'viewportWidth' => $viewport['wide'],
-				'content'       => tove_get_block_pattern_markup( 'query/query-previews-columns' ),
-			),
-			'tove/query-previews-columns-small' => array(
-				'title'         => esc_html__( 'Compact latest news section with three posts.', 'tove' ),
-				'categories'    => array( 'tove-query' ),
-				'viewportWidth' => $viewport['wide'],
-				'content'       => tove_get_block_pattern_markup( 'query/query-previews-columns-small' ),
 			),
 
 			/* RESTAURANT */
