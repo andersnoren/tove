@@ -164,11 +164,17 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 
 			/* BLOG */
 
-			'tove/blog-grid-compact-cols-3' => array(
+			'tove/blog-grid-cols-2' => array(
+				'title'         => esc_html__( 'Two column grid with featured image, title, and post date', 'tove' ),
+				'categories'    => array( 'tove-blog' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'blog/blog-grid-cols-2' ),
+			),
+			'tove/blog-grid-cols-3' => array(
 				'title'         => esc_html__( 'Three column grid with featured image, title, and post date', 'tove' ),
 				'categories'    => array( 'tove-blog' ),
 				'viewportWidth' => $viewport['wide'],
-				'content'       => tove_get_block_pattern_markup( 'blog/blog-grid-compact-cols-3' ),
+				'content'       => tove_get_block_pattern_markup( 'blog/blog-grid-cols-3' ),
 			),
 			'tove/blog-list' => array(
 				'title'         => esc_html__( 'List with featured image, title, excerpt, and post date.', 'tove' ),
