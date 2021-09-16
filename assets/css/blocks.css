@@ -1471,7 +1471,7 @@ p.has-background {
 
 :root hr.wp-block-separator {
 	background-color: currentColor;
-	width: 128px;
+	width: 100px;
 }
 
 :root .wp-block-separator.is-style-wide,

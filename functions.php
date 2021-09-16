@@ -260,7 +260,7 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 			'tove/general-faq' => array(
 				'title'         => esc_html__( 'Frequently Asked Questions (FAQ) section.', 'tove' ),
 				'categories'    => array( 'tove-general' ),
-				'viewportWidth' => $viewport['wide'],
+				'viewportWidth' => $viewport['full'],
 				'content'       => tove_get_block_pattern_markup( 'general/general-faq' ),
 			),
 			'tove/general-feature-large' => array(
@@ -416,11 +416,17 @@ if ( ! function_exists( 'tove_register_block_patterns' ) ) :
 				'viewportWidth' => $viewport['wide_grouped'],
 				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-menu-row' ),
 			),
-			'tove/restaurant-opening-hours-table' => array(
+			'tove/restaurant-opening-hours' => array(
 				'title'         => esc_html__( 'A table with opening hours.', 'tove' ),
 				'categories'    => array( 'tove-restaurant' ),
 				'viewportWidth' => $viewport['content'],
-				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-opening-hours-table' ),
+				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-opening-hours' ),
+			),
+			'tove/restaurant-opening-hours-big' => array(
+				'title'         => esc_html__( 'A large section with opening hours.', 'tove' ),
+				'categories'    => array( 'tove-restaurant' ),
+				'viewportWidth' => $viewport['wide'],
+				'content'       => tove_get_block_pattern_markup( 'restaurant/restaurant-opening-hours-big' ),
 			),
 			'tove/restaurant-reservation-big' => array(
 				'title'         => esc_html__( 'A really big button for reservations.', 'tove' ),
