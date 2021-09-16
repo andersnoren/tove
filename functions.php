@@ -505,6 +505,12 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 			'label' 	=> esc_html__( 'Vertical Separators', 'tove' ),
 		) );
 
+		// Query Pagination: Top separator
+		register_block_style( 'core/query-pagination', array(
+			'name'  	=> 'tove-top-separator',
+			'label' 	=> esc_html__( 'Top Separator', 'tove' ),
+		) );
+
 		// Table: Vertical borders
 		register_block_style( 'core/table', array(
 			'name'  	=> 'tove-vertical-borders',

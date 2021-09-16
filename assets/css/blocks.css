@@ -1325,7 +1325,20 @@ p.has-background {
 	margin-left: auto;
 }
 
-/* Style: Vertical Border ---------- */
+/* Style: Top Separator ------------ */
+
+.wp-block-query-pagination.is-style-tove-top-separator {
+	border-top: 2px solid currentColor;
+	padding: calc( 2 * var( --wp--custom--spacing--baseline ) ) 0 0;
+}
+
+@media ( min-width: 700px ) {
+	.wp-block-query-pagination.is-style-tove-top-separator {
+		padding: calc( 3 * var( --wp--custom--spacing--baseline ) ) 0 0;
+	}
+}
+
+/* Style: Vertical Separators ------ */
 
 .wp-block-query-pagination.is-style-tove-vertical-separators {
 	border-bottom: 2px solid currentColor;
