@@ -41,7 +41,7 @@
 				<div class="wp-block-column is-vertically-aligned-center">
 					<!-- wp:image {"align":"center","width":256,"height":308,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
 					<div class="wp-block-image is-style-default">
-						<figure class="aligncenter size-large is-resized"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/logo.png" alt="" width="256" height="308" /></figure>
+						<figure class="aligncenter size-large is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/illustrations/logo.png" alt="" width="256" height="308" /></figure>
 					</div>
 					<!-- /wp:image -->
 				</div>
