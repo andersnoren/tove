@@ -2,7 +2,7 @@
 <div class="wp-block-group alignwide">
 
 	<!-- wp:separator {"className":"is-style-wide"} -->
-	<hr class="wp-block-separator is-style-wide"/>
+	<hr class="wp-block-separator is-style-wide" />
 	<!-- /wp:separator -->
 
 	<!-- wp:spacer {"height":1,"className":"hide-mobile"} -->
@@ -134,9 +134,15 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:paragraph {"align":"left","fontSize":"tiny"} -->
-			<p class="has-text-align-left has-tiny-font-size"><strong>© 2021 Site Title</strong></p>
-			<!-- /wp:paragraph -->
+			<!-- wp:group {"className":"theme-credits-row","layout":{"type":"flex"}} -->
+			<div class="wp-block-group theme-credits-row">
+				<!-- wp:paragraph {"fontSize":"tiny"} -->
+				<p class="has-tiny-font-size"><strong>© 2021</strong> </p>
+				<!-- /wp:paragraph -->
+
+				<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} /-->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:column -->
 

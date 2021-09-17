@@ -1,9 +1,19 @@
 <!-- wp:group {"align":"wide"} -->
 <div class="wp-block-group alignwide">
 
-	<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"2"}},"className":"no-margin-bottom"} -->
-	<p class="has-text-align-center no-margin-bottom" style="line-height:2"><strong>© 2021 Tove</strong></p>
-	<!-- /wp:paragraph -->
+	<!-- wp:group {"className":"theme-credits-row no-margin-bottom","layout":{"type":"flex","justifyContent":"center"}} -->
+	<div class="wp-block-group theme-credits-row no-margin-bottom">
+		<!-- wp:paragraph -->
+		<p><strong>© 2021</strong> </p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:spacer {"height":12} -->
+	<div style="height:12px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
 
 	<!-- wp:paragraph {"align":"center","fontSize":"tiny"} -->
 	<p class="has-text-align-center has-tiny-font-size">Theme by <a href="https://andersnoren.se">Anders Norén</a></p>

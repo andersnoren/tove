@@ -7,9 +7,15 @@
 		<!-- wp:column {"verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center">
 
-			<!-- wp:paragraph -->
-			<p><strong>© 2021 Site Title‎</strong></p>
-			<!-- /wp:paragraph -->
+			<!-- wp:group {"className":"theme-credits-row","layout":{"type":"flex"}} -->
+			<div class="wp-block-group theme-credits-row">
+				<!-- wp:paragraph {"fontSize":"tiny"} -->
+				<p class="has-tiny-font-size"><strong>© 2021</strong> </p>
+				<!-- /wp:paragraph -->
+
+				<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} /-->
+			</div>
+			<!-- /wp:group -->
 
 		</div>
 		<!-- /wp:column -->

@@ -309,6 +309,10 @@ caption {
 /* ------------------------------------------- */
 
 
+.theme-credits-row {
+	gap: .25em !important;
+}
+
 .site-footer a[href*="andersnoren.se"] {
 	text-decoration: none;
 }

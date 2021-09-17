@@ -58,9 +58,15 @@
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size">© 2021 Site Title</p>
-			<!-- /wp:paragraph -->
+			<!-- wp:group {"className":"theme-credits-row","layout":{"type":"flex"}} -->
+			<div class="wp-block-group theme-credits-row">
+				<!-- wp:paragraph {"fontSize":"tiny"} -->
+				<p class="has-tiny-font-size"><strong>© 2021</strong> </p>
+				<!-- /wp:paragraph -->
+
+				<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} /-->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:column -->
 
