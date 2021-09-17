@@ -56,5 +56,9 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
-Version 0.1 (2021-XX-XX)
+Version 0.1.1 (2021-09-17)
+-------------------------
+- Removed non-Full Site Editing code required to pass the automatic upload check.
+
+Version 0.1 (2021-09-17)
 -------------------------
