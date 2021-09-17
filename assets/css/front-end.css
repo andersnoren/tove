@@ -21,6 +21,8 @@ html, body {
 	outline: none;
 }
 
+.screen-reader-text {}
+
 /* Contain Margins ----------------- */
 
 :root .contain-margins > *:first-child,

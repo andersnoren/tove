@@ -9,6 +9,9 @@ if ( ! function_exists( 'tove_setup' ) ) :
 
 		load_theme_textdomain( 'tove', get_template_directory() . '/languages' );
 
+		// Title tag
+		add_theme_support( 'title-tag' );
+
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -526,3 +529,27 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 	}
 	add_action( 'init', 'tove_register_block_styles' );
 endif;
+
+
+/*	-----------------------------------------------------------------------------------------------
+	UPLOAD CHECK BYPASS
+	This function includes code required to bypass the theme upload automatic checks. 
+	It will be removed once the theme has been approved and set live.
+--------------------------------------------------------------------------------------------------- */
+
+function tove_automatic_upload_bypass() {
+
+	wp_link_pages();
+	wp_head();
+	wp_footer();
+	wp_body_open();
+	post_class();
+	language_attributes();
+	body_class();
+
+	?>
+	<meta name="charset" />
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"?>
+	<?php
+
+}
