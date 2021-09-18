@@ -21,7 +21,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tove is derived from the TT1 Blocks theme, Copyright (c) 2020 WordPress.org. 
 TT1 Blocks is distributed under the terms of the GNU GPL version 2.0.
 
-Screenshot assets: Coffee cup logo and illustrations by Anders Norén
+Screenshot assets: Coffee cup logo, hero image and illustrations by Anders Norén
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
 
 Coffee cup logo typeface: DM Mono
@@ -55,6 +55,11 @@ To theme.json trailblazers helping Tove find her way, including:
 – The Automattic theme wranglers
 
 == Changelog ==
+
+Version 0.1.2 (2021-09-17)
+-------------------------
+- Fixes to the blog block patterns and the default blog page template.
+- Tweaked social links logo only style
 
 Version 0.1.1 (2021-09-17)
 -------------------------
