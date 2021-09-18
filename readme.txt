@@ -3,7 +3,7 @@ Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 5.8
 Requires PHP: 5.6
-Tested up to: 5.8.1
+Tested up to: 5.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -59,7 +59,7 @@ To theme.json trailblazers helping Tove find her way, including:
 Version 0.1.2 (2021-09-17)
 -------------------------
 - Fixes to the blog block patterns and the default blog page template.
-- Tweaked social links logo only style
+- Social Links block: Tweaked margins of the "Logos Only" style.
 
 Version 0.1.1 (2021-09-17)
 -------------------------
