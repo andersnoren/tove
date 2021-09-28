@@ -56,6 +56,10 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.1.4 (2021-09-28)
+-------------------------
+- Fixed the Query Pagination block in single.html extending to the edge of the screen.
+
 Version 0.1.3 (2021-09-20)
 -------------------------
 - Added demo link to the style.css theme description.
