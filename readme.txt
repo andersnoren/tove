@@ -56,6 +56,11 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.1.3 (2021-09-20)
+-------------------------
+- Added demo link to the style.css theme description.
+- Removed the enqueue of style.css on the front-end, since it doesn't contain any actual CSS.
+
 Version 0.1.2 (2021-09-17)
 -------------------------
 - Fixes to the blog block patterns and the default blog page template.

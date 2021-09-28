@@ -39,10 +39,10 @@ if ( ! function_exists( 'tove_styles' ) ) :
 		wp_register_style( 'tove-styles-google-fonts', 	tove_get_google_fonts_url() );
 		wp_register_style( 'tove-styles-shared', 		get_template_directory_uri() . '/assets/css/shared.css' );
 		wp_register_style( 'tove-styles-blocks', 		get_template_directory_uri() . '/assets/css/blocks.css' );
-		wp_register_style( 'tove-styles-front-end', 	get_template_directory_uri() . '/assets/css/front-end.css' );
 
-		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-front-end', 'tove-styles-google-fonts' ) );
-		wp_enqueue_style( 'tove-style', get_template_directory_uri() . '/style.css', $dependiences, wp_get_theme( 'Tove' )->get( 'Version' ) );
+		$dependiences = apply_filters( 'tove_style_dependencies', array( 'tove-styles-shared', 'tove-styles-blocks', 'tove-styles-google-fonts' ) );
+
+		wp_enqueue_style( 'tove-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css', $dependiences, wp_get_theme( 'Tove' )->get( 'Version' ) );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'tove_styles' );
