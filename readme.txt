@@ -56,6 +56,10 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.1.5 (2021-09-30)
+-------------------------
+- Query Block: Fixed subsequent list items having a top margin in the editor preview (thanks, Helen!).
+
 Version 0.1.4 (2021-09-28)
 -------------------------
 - Fixed the Query Pagination block in single.html extending to the edge of the screen.
