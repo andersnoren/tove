@@ -178,21 +178,6 @@ input[type="submit"]:focus,
 
 
 /* ------------------------------------------- */
-/*	Structure
-/* ------------------------------------------- */
-
-
-.site-header > :not(.alignfull):not([data-align="full"]),
-main > :not(.alignfull):not([data-align="full"]),
-.wp-block-post-content > :not(.alignfull):not([data-align="full"]),
-.site-footer > :not(.alignfull):not([data-align="full"]) {
-	margin-left: auto;
-	margin-right: auto;
-	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) ) !important;
-}
-
-
-/* ------------------------------------------- */
 /*	Alignments
 /* ------------------------------------------- */
 

@@ -56,6 +56,20 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.2 (2021-10-03)
+-------------------------
+- Reworked the styles setting the base block width and horizontal margins.
+	- Updated them to work with the Site Editor markup and moved them to shared.css.
+	- Updated to work with the template part focus mode in Gutenberg 11.6.
+	- Updated the targeting to work with blocks being added outside of the header, main and footer elements.
+	- Updated the template files to work with the new structure (by setting layout to inherit on main), and simplified some nested groups.
+	- Adjusted handling of .wp-block-template-part with background color.
+- Fixed the $dependencies variable being misspelled when enqueuing styles.
+- Navigation block:
+	- Fixed an issue with excessive vertical margins.
+	- Updated styles to match new markup in 11.6.
+	– Reduced theme navigation styles overall.
+
 Version 0.1.5 (2021-09-30)
 -------------------------
 - Query Block: Fixed subsequent list items having a top margin in the editor preview (thanks, Helen!).

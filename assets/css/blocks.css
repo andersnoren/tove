@@ -882,48 +882,19 @@ h6.has-background.has-text-align-right {
 	margin: 0;
 }
 
-.wp-block-navigation .wp-block-page-list,
-.wp-block-navigation .wp-block-page-list ul, 
-.wp-block-navigation__container,
-.wp-block-navigation__container ul {
-	gap: calc( .5 * var( --wp--custom--spacing--baseline ) ) calc( 1 * var( --wp--custom--spacing--baseline ) )
-}
-
-:root nav.wp-block-navigation > *:not(:only-child),
-:root .wp-block-navigation__responsive-container-content > *:not(:only-child) {
-	margin-bottom: calc( 1 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( 1 * var( --wp--custom--spacing--baseline ) );
-}
-
-@media ( min-width: 700px ) {
-
-	.wp-block-navigation .wp-block-page-list,
-	.wp-block-navigation .wp-block-page-list ul, 
-	.wp-block-navigation__container,
-	.wp-block-navigation__container ul {
-		gap: calc( .75 * var( --wp--custom--spacing--baseline ) ) calc( 2 * var( --wp--custom--spacing--baseline ) )
-	}
-
-	:root nav.wp-block-navigation > *:not(:only-child),
-	:root .wp-block-navigation__responsive-container-content > *:not(:only-child) {
-		margin-bottom: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
-	}
-	
-}
-
 .wp-block-navigation-link.has-child > .wp-block-navigation-link__content {
 	align-items: center;
 	display: flex;
 }
 
-.wp-block-navigation .wp-block-navigation-link__submenu-icon, 
-.wp-block-navigation .wp-block-page-list__submenu-icon {
+.wp-block-navigation .wp-block-navigation__submenu-icon {
+	box-shadow: none;
+	font-size: inherit;
 	margin-left: calc( .5 * var( --wp--custom--spacing--baseline ) );
+	padding: 0 !important;
 }
 
-.wp-block-navigation .wp-block-navigation-link__submenu-icon svg, 
-.wp-block-navigation .wp-block-page-list__submenu-icon svg {
+.wp-block-navigation .wp-block-navigation__submenu-icon svg {
 	height: .66em;
 	width: .66em;
 }
@@ -944,12 +915,12 @@ h6.has-background.has-text-align-right {
 
 /* Sub Level ----------------------- */
 
-.wp-block-navigation .has-child :where( .submenu-container, .wp-block-navigation-link__container ) {
+.wp-block-navigation .has-child :where( .wp-block-navigation__submenu-container ) {
 	margin: 0;
 	padding: calc( .75 * var( --wp--custom--spacing--baseline ) ) 0;
 }
 
-.wp-block-navigation .wp-block-navigation__container > .has-child > :where( .submenu-container, .wp-block-navigation-link__container ) {
+.wp-block-navigation .wp-block-navigation__container > .has-child > :where( .wp-block-navigation__submenu-container ) {
 	left: 0;
 	top: calc( 100% + var( --wp--custom--spacing--baseline ) );
 }
@@ -958,19 +929,17 @@ h6.has-background.has-text-align-right {
 	min-width: 300px;
 }
 
-.wp-block-navigation .has-child :where(.submenu-container:before,
-.wp-block-navigation-link__container):before {
+.wp-block-navigation .has-child :where(.wp-block-navigation__submenu-container):before {
 	content: "";
 	display: block;
-	height: var( --wp--custom--spacing--baseline );
+	height: calc( var( --wp--custom--spacing--baseline ) + 2px );
 	position: absolute;
 		left: 0;
 		right: 0;
 		top: calc( ( -1 * var( --wp--custom--spacing--baseline ) ) - 2px );
 }
 
-.wp-block-navigation:not(.has-background) .submenu-container, 
-.wp-block-navigation:not(.has-background) .wp-block-navigation__container .wp-block-navigation-link__container {
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
 	background-color: var( --wp--preset--color--senary );
 	border: 2px solid currentColor;
 	color: var( --wp--preset--color--foreground );
@@ -1023,11 +992,6 @@ h6.has-background.has-text-align-right {
 .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open li.has-child > a {
 	margin-bottom: calc( .5 * var( --wp--custom--spacing--baseline ) );
 }
-
-.wp-block-navigation__responsive-container.is-menu-open :where(.submenu-container, .wp-block-navigation__responsive-container .wp-block-navigation-link__container) a {
-	padding: 0;
-}
-
 
 /* Nested Blocks ------------------- */
 
@@ -1574,9 +1538,8 @@ figure.wp-block-table table {
 
 
 :root .wp-block-template-part.has-background {
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: var( --wp--custom--inner-container-spacing ) 0;
+	margin: 0;
+	padding: var( --wp--custom--inner-container-spacing ) var( --wp--custom--gutter );
 }
 
 :root .wp-block-template-part.has-background > *:first-child,
