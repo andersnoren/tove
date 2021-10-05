@@ -56,6 +56,10 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.2.1 (2021-10-05)
+-------------------------
+- single.html and page.html: Fixed the alignment of the post header and featured image after 2.0.0 style updates.
+
 Version 0.2 (2021-10-03)
 -------------------------
 - Reworked the styles setting the base block width and horizontal margins.
