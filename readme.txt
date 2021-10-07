@@ -56,9 +56,15 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.2.2 (2021-10-06)
+-------------------------
+- Post Content block:
+	- Only give children a width attribute when the Post Content block is set to full alignment, preventing extra margins when the block is used outside of the singular content context.
+	- Added a base vertical margin to the block.
+
 Version 0.2.1 (2021-10-05)
 -------------------------
-- single.html and page.html: Fixed the alignment of the post header and featured image after 2.0.0 style updates. 
+- single.html and page.html: Fixed the alignment of the post header and featured image after 2.0.0 style updates.
 
 Version 0.2 (2021-10-03)
 -------------------------

@@ -83,7 +83,7 @@ a:hover {
 /* ------------------------------------------- */
 
 
-.wp-block-post-content > :not(.alignfull):not([data-align="full"]),
+.wp-block-post-content.alignfull > :not(.alignfull):not([data-align="full"]),
 .wp-site-blocks:not(.is-outline-mode) > [class*="wp-container-"] > :not(.alignfull):not([data-align="full"]),
 .wp-site-blocks.is-outline-mode > :not(.alignfull):not([data-align="full"]) {
 	margin-left: auto;
