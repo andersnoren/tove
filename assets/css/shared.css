@@ -84,8 +84,7 @@ a:hover {
 
 
 .wp-block-post-content.alignfull > :not(.alignfull):not([data-align="full"]),
-.wp-site-blocks:not(.is-outline-mode) > [class*="wp-container-"] > :not(.alignfull):not([data-align="full"]),
-.wp-site-blocks.is-outline-mode > :not(.alignfull):not([data-align="full"]) {
+.wp-site-blocks > [class*="wp-container-"] > :not(.alignfull):not([data-align="full"]) {
 	margin-left: auto;
 	margin-right: auto;
 	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) ) !important;

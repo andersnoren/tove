@@ -56,6 +56,10 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.2.3 (2021-10-07)
+-------------------------
+- Fixed alignfull sections having a horizontal margin in the Site Editor preview since 0.2.
+
 Version 0.2.2 (2021-10-06)
 -------------------------
 - Post Content block:
