@@ -56,6 +56,11 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.2.4 (2021-10-XX)
+-------------------------
+- Fixed non-alignfull sections missing a horizontal margin in the Site Editor preview since 0.2.3.
+- Fixed the navigation button being styled incorrectly in the Site Editor preview after style updates in Gutenberg 11.6.
+
 Version 0.2.3 (2021-10-07)
 -------------------------
 - Fixed alignfull sections having a horizontal margin in the Site Editor preview since 0.2.

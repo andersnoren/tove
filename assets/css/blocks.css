@@ -953,18 +953,19 @@ h6.has-background.has-text-align-right {
 
 /* Navigation Button --------------- */
 
-.wp-block-navigation__responsive-container-close, 
-.wp-block-navigation__responsive-container-open {
+.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close, 
+.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open {
 	align-items: center;
 	background-color: var( --wp--preset--color--senary );
 	border-radius: 50%;
 	box-shadow: none;
 	color: var( --wp--preset--color--foreground );
 	height: 36px;
+	justify-content: center;
 	width: 36px;
 }
 
-.wp-block-navigation__responsive-container-close {
+.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close {
 	right: var( --wp--custom--gutter );
 	top: calc( 2 * var( --wp--custom--spacing--baseline ) );
 }
