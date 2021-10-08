@@ -128,7 +128,7 @@
 	background-color: var( --wp--preset--color--primary );
 	border-bottom: none;
 	font-size: var( --wp--preset--font-size--small );
-	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
 	text-transform: uppercase;
 }
 
@@ -138,7 +138,7 @@
 
 :root .wp-block-calendar table th {
 	background-color: transparent;
-	font-weight: var( --wp--custom--font-weight--bold );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
 }
 
 .wp-block-calendar nav {
@@ -372,8 +372,8 @@
 	border: 1px solid currentColor;
 	box-shadow: 2px 2px 0 currentColor;
 	font-size: 12px;
-	font-weight: var( --wp--custom--font-weight--bold );
-	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
 	padding: .2em .6em .225em;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -427,7 +427,7 @@
 
 .comment-reply-title small {
 	font-size: 1rem;
-	letter-spacing: var( --wp--custom--letter-spacing--body );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--body );
 	margin-left: var( --wp--custom--spacing--baseline );
 	white-space: nowrap;
 }
@@ -814,7 +814,7 @@ h6.has-background.has-text-align-right {
 }
 
 .wp-block-latest-comments__comment-excerpt p {
-	line-height: var( --wp--custom--line-height--body );
+	line-height: var( --wp--custom--typography--line-height--body );
 	margin: 0 0 1em;
 }
 
@@ -1019,7 +1019,7 @@ p.has-background {
 	border: var( --wp--custom--shaded-style--border--width ) var( --wp--custom--shaded-style--border--style ) currentColor;
 	box-shadow: var( --wp--custom--shaded-style--box-shadow--x ) var( --wp--custom--shaded-style--box-shadow--y ) var( --wp--custom--shaded-style--box-shadow--blur ) currentColor;
     font-size: 2.75em;
-    font-weight: var( --wp--custom--font-weight--bold );
+    font-weight: var( --wp--custom--typography--font-weight--bold );
 	margin: .09em 1rem .5rem 0;
 	min-width: .6875em;
 	padding: 0.3em;
@@ -1118,7 +1118,7 @@ p.has-background {
 
 .wp-block-pullquote blockquote p {
 	font-size: inherit;
-	letter-spacing: var( --wp--custom--letter-spacing--heading );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
 	line-height: inherit;
 }
 
@@ -1131,8 +1131,8 @@ p.has-background {
 	display: block;
 	font-size: 14px;
 	font-style: normal;
-	font-weight: var( --wp--custom--font-weight--bold );
-	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
 	margin-top: var( --wp--custom--spacing--baseline );
 	text-transform: uppercase;
 }
@@ -1353,7 +1353,7 @@ p.has-background {
 .wp-block-search .wp-block-search__label {
 	display: block;
 	font-size: var( --wp--preset--font-size--small );
-	font-weight: var( --wp--custom--font-weight--normal );
+	font-weight: var( --wp--custom--typography--font-weight--normal );
 	margin: 0 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 0;
 }
 
@@ -1376,7 +1376,7 @@ p.has-background {
 	color: inherit;
 	display: flex;
 	flex-shrink: 0;
-	font-weight: var( --wp--custom--font-weight--bold );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
 	justify-content: center;
 	margin-left: var( --wp--custom--spacing--baseline );
 	min-width: 58px;

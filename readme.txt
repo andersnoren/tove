@@ -56,8 +56,11 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
-Version 0.2.4 (2021-10-XX)
+Version 0.3 (2021-10-08)
 -------------------------
+- Typography:
+	- In theme.json, moved all typography related custom properties to the new typography key.
+	- Updated font sizes to use clamp(), based on the approach [suggested by Rich Tabor](https://richtabor.com/fluid-type-scale-theme-json/), and removed the CSS for it from shared.css.
 - Fixed non-alignfull sections missing a horizontal margin in the Site Editor preview since 0.2.3.
 - Fixed the navigation button being styled incorrectly in the Site Editor preview after style updates in Gutenberg 11.6.
 

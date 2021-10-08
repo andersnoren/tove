@@ -29,24 +29,6 @@ body {
 	}
 }
 
-@media ( max-width: 700px ) {
-	body {
-		--wp--preset--font-size--tiny:			14px !important;
-		--wp--preset--font-size--small: 		16px !important;
-		--wp--preset--font-size--normal: 		17px !important;
-		--wp--preset--font-size--large: 		21px !important;
-		--wp--preset--font-size--extra-large: 	24px !important;
-		--wp--preset--font-size--huge: 			36px !important;
-		--wp--preset--font-size--gigantic: 		64px !important;
-		--wp--preset--font-size--heading-1: 	36px !important;
-		--wp--preset--font-size--heading-2: 	32px !important;
-		--wp--preset--font-size--heading-3: 	28px !important;
-		--wp--preset--font-size--heading-4: 	24px !important;
-		--wp--preset--font-size--heading-5: 	21px !important;
-		--wp--preset--font-size--heading-6: 	14px !important;
-	}
-}
-
 
 /* ------------------------------------------- */
 /*	Document Setup
@@ -117,11 +99,11 @@ li > ol {
 
 dt,
 dd {
-	line-height: var( --wp--custom--line-height--body );
+	line-height: var( --wp--custom--typography--line-height--body );
 }
 
 dt {
-	font-weight: var( --wp--custom--font-weight--bold );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
 }
 
 dt + dd { margin-top: 5px; }
@@ -180,8 +162,8 @@ blockquote {
 cite {
 	font-size: var( --wp--preset--font-size--heading-6 );
 	font-style: normal;
-	font-weight: var( --wp--custom--font-weight--bold );
-	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
 	text-align: inherit;
 	text-transform: uppercase;
 }
@@ -255,7 +237,7 @@ caption {
 
 th,
 caption {
-	font-weight: var( --wp--custom--font-weight--bold );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
 }
 
 caption {
@@ -303,17 +285,17 @@ caption {
 
 
 *[class*="has-heading-"][class*="-font-size"]:not(.has-heading-6-font-size) {
-	letter-spacing: var( --wp--custom--letter-spacing--heading );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
 }
 
 .has-gigantic-font-size {
-	letter-spacing: var( --wp--custom--letter-spacing--gigantic );
-	line-height: var( --wp--custom--line-height--gigantic );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--gigantic );
+	line-height: var( --wp--custom--typography--line-height--gigantic );
 }
 
 .has-heading-6-font-size {
-	letter-spacing: var( --wp--custom--letter-spacing--uppercase );
-	line-height: var( --wp--custom--line-height--heading );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
+	line-height: var( --wp--custom--typography--line-height--heading );
 	text-transform: uppercase;
 }
 

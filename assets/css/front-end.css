@@ -116,7 +116,7 @@ textarea {
 
 textarea {
 	height: 120px;
-	line-height: var( --wp--custom--line-height--body );
+	line-height: var( --wp--custom--typography--line-height--body );
 	width: 100%;
 }
 
@@ -150,7 +150,7 @@ input[type="submit"],
 	cursor: pointer;
 	display: inline-flex;
 	font-size: var( --wp--preset--font-size--small );
-	font-weight: var( --wp--custom--font-weight--bold );
+	font-weight: var( --wp--custom--typography--font-weight--bold );
 	justify-content: center;
 	line-height: 1.25;
 	margin: 0;
