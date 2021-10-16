@@ -56,6 +56,25 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.4 (2021-10-16)
+-------------------------
+- Gutenberg 11.7:
+	- Navigation block: Updated spacing in the modal to work with new Core styles.
+	- Query Pagination block: Updated to match new markup structure.
+	- Opted into blockGap to get support for the "Block Spacing" setting for columns and other blocks.
+		- Removed the "No Gutter" columns block style, since columns now support the "Block Spacing" setting.
+		- Moved the --wp--style--block-gap CSS variable overwrite for the block from blocks.css to theme.json.
+- Dumped the entire Base Margins code block in blocks.css, since blockGap and theme.json margins will handle that instead.
+- Post thumbnail block: Added a base vertical margin in theme.json.
+- Separator block: Moved margins to theme.json.
+- Query Loop block: Dumped a bunch of structural columns styles in blocks.css in anticipation of blockGap support here as well. 
+- Buttons block: Added blockGap variable in theme.json, and changed blocks.css to use it until the Site Editor controls for it are in place in Core.
+- Navigation block: Fixed the sub menu hover helper pseudo being visible on mobile.
+- Paragraph block: Switched to blockGap.
+- Updated theme description to mention requirement of Gutenberg 11.7.
+- Block Patterns:
+	- restaurant-opening-hours-big.php: Removed no margin classes to handle changes caused by blockGap support.
+
 Version 0.3 (2021-10-08)
 -------------------------
 - Typography:

@@ -18,8 +18,8 @@
 				<hr class="wp-block-separator aligncenter has-text-color has-background has-primary-background-color has-primary-color" />
 				<!-- /wp:separator -->
 
-				<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin"} -->
-				<h3 class="has-text-align-center no-margin">07 – 18</h3>
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="has-text-align-center">07 – 18</h3>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
@@ -38,8 +38,8 @@
 				<hr class="wp-block-separator aligncenter has-text-color has-background has-primary-background-color has-primary-color" />
 				<!-- /wp:separator -->
 
-				<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin"} -->
-				<h3 class="has-text-align-center no-margin">07 – 19</h3>
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="has-text-align-center">07 – 19</h3>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
@@ -58,8 +58,8 @@
 				<hr class="wp-block-separator aligncenter has-text-color has-background has-primary-background-color has-primary-color" />
 				<!-- /wp:separator -->
 
-				<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin"} -->
-				<h3 class="has-text-align-center no-margin">07 – 19</h3>
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="has-text-align-center">07 – 19</h3>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->

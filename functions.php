@@ -493,12 +493,6 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 			'label' 	=> esc_html__( 'Plain', 'tove' ),
 		) );
 
-		// Columns: No Gutters
-		register_block_style( 'core/columns', array(
-			'name'  	=> 'tove-no-gutters',
-			'label' 	=> esc_html__( 'No Gutters', 'tove' ),
-		) );
-
 		// Columns: Separators
 		register_block_style( 'core/columns', array(
 			'name'  	=> 'tove-horizontal-separators',

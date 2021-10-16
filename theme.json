@@ -145,7 +145,10 @@
 				}
 			},
 			"spacing": {
-				"baseline": "16px"
+				"baseline": "16px",
+				"columns": {
+					"gutter": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+				}
 			},
 			"typography": {
 				"font-primary": "var( --wp--preset--font-family--dm-sans )",
@@ -238,7 +241,7 @@
 			"wideSize": "1920px"
 		},
 		"spacing": {
-			"blockGap": null,
+			"blockGap": true,
 			"customPadding": true,
 			"customMargin": true,
 			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
@@ -340,6 +343,11 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/buttons": {
+				"spacing": {
+					"blockGap": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )"
+				}
+			},
 			"core/button": {
 				"border": {
 					"color": "currentColor",
@@ -373,6 +381,15 @@
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
+			"core/columns": {
+				"spacing": {
+					"blockGap": "var( --wp--custom--spacing--columns--gutter )",
+					"margin": {
+						"bottom": "calc( 2 * var( --wp--custom--spacing--baseline ) )",
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+					}
+				}
+			},
 			"core/cover": {
 				"color": {
 					"text": "#ffffff"
@@ -388,12 +405,17 @@
 					"lineHeight": "var(--wp--custom--typography--line-height--heading)"
 				}
 			},
-			"core/paragraph": {
+			"core/group": {
 				"spacing": {
 					"margin": {
-						"bottom": "1em",
-						"top": "0px"
+						"bottom": "calc( 2 * var( --wp--custom--spacing--baseline ) )",
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
+				}
+			},
+			"core/paragraph": {
+				"spacing": {
+					"blockGap": "1em"
 				},
 				"typography": {
 					"lineHeight": "calc( 1em + 10px )"
@@ -407,8 +429,8 @@
 			"core/post-featured-image": {
 				"spacing": {
 					"margin": {
-						"bottom": "0px",
-						"top": "0px"
+						"bottom": "1em",
+						"top": "1em"
 					}
 				}
 			},
@@ -419,6 +441,14 @@
 						"left": "0px",
 						"right": "0px",
 						"top": "0px"
+					}
+				}
+			},
+			"core/separator": {
+				"spacing": {
+					"margin": {
+						"bottom": "calc( 2 * var( --wp--custom--spacing--baseline ) )",
+						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
 					}
 				}
 			},
@@ -555,6 +585,9 @@
 					"text": "inherit"
 				}
 			}
+		},
+		"spacing": {
+			"blockGap": "1.5rem"
 		},
 		"typography": {
 			"fontFamily": "var(--wp--custom--typography--font-primary)",
