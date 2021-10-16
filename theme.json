@@ -383,7 +383,6 @@
 			},
 			"core/columns": {
 				"spacing": {
-					"blockGap": "var( --wp--custom--spacing--columns--gutter )",
 					"margin": {
 						"bottom": "calc( 2 * var( --wp--custom--spacing--baseline ) )",
 						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
