@@ -56,6 +56,11 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.4.1 (2021-10-XX)
+-------------------------
+- tove_setup(): Removed add_theme_support() calls no longer needed thanks to Gutenberg updates.
+- Cleaned up the CSS a bit.
+
 Version 0.4 (2021-10-16)
 -------------------------
 - Gutenberg 11.7:

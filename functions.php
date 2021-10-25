@@ -8,21 +8,9 @@ if ( ! function_exists( 'tove_setup' ) ) :
 	function tove_setup() {
 
 		load_theme_textdomain( 'tove', get_template_directory() . '/languages' );
-
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
-
-		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1792, 9999 );
 
-		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
-
-		// HTML5 semantic markup.
-		add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
-
-		// Add support for responsive embedded content.
-		add_theme_support( 'responsive-embeds' );
 
 	}
 	add_action( 'after_setup_theme', 'tove_setup' );
