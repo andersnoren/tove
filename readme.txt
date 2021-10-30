@@ -12,7 +12,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 == Installation ==
 
 1. Upload the theme
-2. Make sure the Gutenberg plugin (version 11.5 or newer) is active
+2. Make sure the Gutenberg plugin (version 11.8 or newer) is active
 3. Activate the theme
 
 
@@ -56,9 +56,12 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
-Version 0.4.1 (2021-10-XX)
+Version 0.4.1 (2021-10-30)
 -------------------------
-- tove_setup(): Removed add_theme_support() calls no longer needed thanks to Gutenberg updates.
+- Gutenberg 11.8:
+	- tove_setup(): Removed add_theme_support() calls no longer needed thanks to Gutenberg updates.
+	- Fixed an issue with centered Site Logo block in Gutenberg 11.8 (thanks, @kense20xx).
+	- Updated theme description to mention requirement of Gutenberg 11.8.
 - Cleaned up the CSS a bit.
 
 Version 0.4 (2021-10-16)

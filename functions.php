@@ -10,8 +10,6 @@ if ( ! function_exists( 'tove_setup' ) ) :
 		load_theme_textdomain( 'tove', get_template_directory() . '/languages' );
 		set_post_thumbnail_size( 1792, 9999 );
 
-		add_theme_support( 'editor-styles' );
-
 	}
 	add_action( 'after_setup_theme', 'tove_setup' );
 endif;

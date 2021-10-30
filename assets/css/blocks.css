@@ -33,7 +33,6 @@
 :root .wp-block-button__link:focus,
 :root .wp-block-file__button:hover,
 :root .wp-block-file__button:focus {
-	color: var( --wp--preset--color--foreground );
 	text-decoration: underline;
 }
 
@@ -1346,6 +1345,7 @@ p.has-background {
 
 
 .wp-block-site-logo.aligncenter {
+	display: block;
 	text-align: center;
 }
 
