@@ -25,8 +25,8 @@
 				<!-- wp:column -->
 				<div class="wp-block-column">
 
-					<!-- wp:heading {"level":5,"style":{"typography":{"lineHeight":"2"}},"className":"no-margin-bottom"} -->
-					<h5 class="no-margin-bottom" style="line-height:2">Hammarby Kaj 10</h5>
+					<!-- wp:heading {"level":5,"style":{"typography":{"lineHeight":"2"},"spacing":{"margin":{"bottom":"0"}}}} -->
+					<h5 style="line-height:2;margin-bottom:0;">Hammarby Kaj 10</h5>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph -->
@@ -43,8 +43,8 @@
 				<!-- wp:column -->
 				<div class="wp-block-column">
 
-					<!-- wp:heading {"level":5,"style":{"typography":{"lineHeight":"2"}},"className":"no-margin-bottom"} -->
-					<h5 class="no-margin-bottom" style="line-height:2">Odengatan 80</h5>
+					<!-- wp:heading {"level":5,"style":{"typography":{"lineHeight":"2"},"spacing":{"margin":{"bottom":"0"}}}} -->
+					<h5 style="line-height:2;margin-bottom:0;">Odengatan 80</h5>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph -->

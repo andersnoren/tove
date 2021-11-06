@@ -10,8 +10,8 @@
 		<div class="wp-block-column has-senary-background-color has-background">
 			<!-- wp:group {"backgroundColor":"senary"} -->
 			<div class="wp-block-group has-senary-background-color has-background">
-				<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin"} -->
-				<h3 class="has-text-align-center no-margin">Weekdays</h3>
+				<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"bottom":"0em","top":"0em"}}}} -->
+				<h3 class="has-text-align-center" style="margin-bottom:0em;margin-top:0em;">Weekdays</h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:separator {"color":"primary","align":"center"} -->
@@ -30,8 +30,8 @@
 		<div class="wp-block-column has-senary-background-color has-background">
 			<!-- wp:group {"backgroundColor":"senary"} -->
 			<div class="wp-block-group has-senary-background-color has-background">
-				<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin"} -->
-				<h3 class="has-text-align-center no-margin">Saturday</h3>
+				<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"bottom":"0em","top":"0em"}}}} -->
+				<h3 class="has-text-align-center" style="margin-bottom:0em;margin-top:0em;">Saturday</h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:separator {"color":"primary","align":"center"} -->
@@ -50,8 +50,8 @@
 		<div class="wp-block-column has-senary-background-color has-background">
 			<!-- wp:group {"backgroundColor":"senary"} -->
 			<div class="wp-block-group has-senary-background-color has-background">
-				<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin"} -->
-				<h3 class="has-text-align-center no-margin">Sunday</h3>
+				<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"bottom":"0em","top":"0em"}}}} -->
+				<h3 class="has-text-align-center" style="margin-bottom:0em;margin-top:0em;">Sunday</h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:separator {"color":"primary","align":"center"} -->

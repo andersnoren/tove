@@ -13,8 +13,8 @@
 				<div style="height:1px" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 
-				<!-- wp:heading {"level":1,"textColor":"background","className":"no-margin-top","fontSize":"gigantic"} -->
-				<h1 class="no-margin-top has-background-color has-text-color has-gigantic-font-size">Epic Menu,<br>Epic Fall</h1>
+				<!-- wp:heading {"level":1,"textColor":"background","fontSize":"gigantic","style":{"spacing":{"margin":{"top":"0em"}}}} -->
+				<h1 class="has-background-color has-text-color has-gigantic-font-size" style="margin-top:0;">Epic Menu,<br>Epic Fall</h1>
 				<!-- /wp:heading -->
 
 				<!-- wp:spacer {"height":1} -->

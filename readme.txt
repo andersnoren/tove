@@ -56,6 +56,14 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.4.2 (2021-11-06)
+-------------------------
+- Gutenberg 11.8:
+	- Updated block patterns and template files to use the new margin controls instead of theme specific margin classes, where possible.
+	- Comments block: Updated to work with the new markup structure and the new Gutenberg styles.
+	- Query Pagination block: Updated in index.html and bundled patterns to use flex controls, added arrows by default.
+- Patterns: Improved spacing settings after adding blockGap in 0.4.
+
 Version 0.4.1 (2021-10-30)
 -------------------------
 - Gutenberg 11.8:

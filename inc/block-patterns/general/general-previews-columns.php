@@ -31,7 +31,7 @@
 		<div style="height:16px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
-		<!-- wp:post-title {"level":3,"isLink":true,"className":"no-margin"} /-->
+		<!-- wp:post-title {"level":3,"isLink":true,"style":{"spacing":{"margin":{"bottom":"0em","top":"0em"}}}} /-->
 
 		<!-- wp:spacer {"height":21} -->
 		<div style="height:21px" aria-hidden="true" class="wp-block-spacer"></div>

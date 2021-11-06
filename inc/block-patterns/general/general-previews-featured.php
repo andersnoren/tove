@@ -21,15 +21,7 @@
 				<div class="wp-block-column" style="flex-basis:50%">
 					<!-- wp:post-date {"style":{"typography":{"fontWeight":"700"}},"fontSize":"heading-6"} /-->
 
-					<!-- wp:spacer {"height":15} -->
-					<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
-					<!-- /wp:spacer -->
-
-					<!-- wp:post-title {"level":3,"isLink":true,"className":"no-margin"} /-->
-
-					<!-- wp:spacer {"height":16} -->
-					<div style="height:16px" aria-hidden="true" class="wp-block-spacer"></div>
-					<!-- /wp:spacer -->
+					<!-- wp:post-title {"level":3,"isLink":true,"style":{"spacing":{"margin":{"bottom":"0.75em","top":"0.75em"}}}} /-->
 
 					<!-- wp:post-excerpt {"moreText":"Read More →","className":"no-margin"} /-->
 				</div>

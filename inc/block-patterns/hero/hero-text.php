@@ -4,8 +4,8 @@
 	<h6 class="has-text-align-center has-foreground-color has-primary-background-color has-text-color has-background">Now serving...</h6>
 	<!-- /wp:heading -->
 
-	<!-- wp:heading {"textAlign":"center","level":1,"className":"no-margin-top"} -->
-	<h1 class="has-text-align-center no-margin-top">The Fall Menu</h1>
+	<!-- wp:heading {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"top":"0em"}}}} -->
+	<h1 class="has-text-align-center" style="margin-top:0;">The Fall Menu</h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","fontSize":"large"} -->

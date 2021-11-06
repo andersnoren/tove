@@ -4,8 +4,8 @@
 	<div class="wp-block-column has-senary-background-color has-background">
 		<!-- wp:group {"backgroundColor":"tertiary","className":"no-margin"} -->
 		<div class="wp-block-group no-margin has-tertiary-background-color has-background">
-			<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin-vertical"} -->
-			<h3 class="has-text-align-center no-margin-vertical">Basic</h3>
+			<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"bottom":"0em","top":"0em"}}}} -->
+			<h3 class="has-text-align-center" style="margin-bottom:0em;margin-top:0em;">Basic</h3>
 			<!-- /wp:heading -->
 
 			<!-- wp:separator {"align":"center"} -->
@@ -48,8 +48,8 @@
 	<div class="wp-block-column has-senary-background-color has-background">
 		<!-- wp:group {"backgroundColor":"primary","textColor":"foreground","className":"no-margin"} -->
 		<div class="wp-block-group no-margin has-foreground-color has-primary-background-color has-text-color has-background">
-			<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin-vertical"} -->
-			<h3 class="has-text-align-center no-margin-vertical">Premium</h3>
+			<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"bottom":"0em","top":"0em"}}}} -->
+			<h3 class="has-text-align-center" style="margin-bottom:0em;margin-top:0em;">Premium</h3>
 			<!-- /wp:heading -->
 
 			<!-- wp:separator {"align":"center"} -->
@@ -92,8 +92,8 @@
 	<div class="wp-block-column has-senary-background-color has-background">
 		<!-- wp:group {"backgroundColor":"secondary","className":"no-margin"} -->
 		<div class="wp-block-group no-margin has-secondary-background-color has-background">
-			<!-- wp:heading {"textAlign":"center","level":3,"className":"no-margin-vertical"} -->
-			<h3 class="has-text-align-center no-margin-vertical">Deluxe</h3>
+			<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"bottom":"0em","top":"0em"}}}} -->
+			<h3 class="has-text-align-center" style="margin-bottom:0em;margin-top:0em;">Deluxe</h3>
 			<!-- /wp:heading -->
 
 			<!-- wp:separator {"align":"center"} -->
