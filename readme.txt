@@ -12,7 +12,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 == Installation ==
 
 1. Upload the theme
-2. Make sure the Gutenberg plugin (version 11.8 or newer) is active
+2. Make sure the Gutenberg plugin (version 12.1 or newer) is active
 3. Activate the theme
 
 
@@ -67,6 +67,7 @@ Version 0.5 (2021-12-10)
 	- Updated justification property of navigation block in header block patterns.
 	- Updated header and footer template patterns to work with new Core markup structure and Tove styles.
 	- Updated navigation json in block patterns.
+	- Updated theme description to indicate that Gutenberg 12.1 is required.
 
 Version 0.4.2 (2021-11-06)
 -------------------------
