@@ -56,6 +56,18 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.5 (2021-12-10)
+-------------------------
+- Gutenberg 12.1:
+	- Renamed the block-templates folder to templates, and the block-template-parts folder to parts.
+	- Updated theme.json to v2.
+	- Added the theme.json schema.
+	- Opted in to the new "appearanceTools" theme.json setting.
+	- Updated targeting of alignwide elements outside of the post content.
+	- Updated justification property of navigation block in header block patterns.
+	- Updated header and footer template patterns to work with new Core markup structure and Tove styles.
+	- Updated navigation json in block patterns.
+
 Version 0.4.2 (2021-11-06)
 -------------------------
 - Gutenberg 11.8:
