@@ -2,7 +2,7 @@
 
 Tove is a fun and colorful multi-purpose block theme built entirely around Full Site Editing. It's designed with cafes and restaurants in mind, but thanks to the layout features of Full Site Editing, you can easily adapt it for any type of website. Tove bundles over 40 Block Patterns to get you started, including six different header designs and seven different footer designs.
 
-![Tove](https://github.com/andersnoren/tove/blob/master/screenshot.png)
+![Tove](https://github.com/andersnoren/tove/blob/main/screenshot.png)
 
 You can download the latest stable release of Tove [from WordPress.org](https://wordpress.org/themes/tove/).
 
