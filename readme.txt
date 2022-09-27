@@ -1,7 +1,7 @@
 === Tove ===
 Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Requires at least: 5.8
+Requires at least: 6.0
 Requires PHP: 5.6
 Tested up to: 6.0
 Stable tag: trunk
@@ -55,6 +55,13 @@ To theme.json trailblazers helping Tove find her way, including:
 – The Automattic theme wranglers
 
 == Changelog ==
+
+Version 0.7 (2022-09-27)
+-------------------------
+- Moved the block patterns to the /patterns/ folder, and bumped "Requires at least" to WordPress 6.0.
+- Updated footer.html and header.html to use `<!-- wp:pattern /-->` to include the default pattern for the respective template part.
+- Added the comments.html template part, and replaced `<!-- wp:post-comments /-->` with the new `<!-- wp:comments-query-loop -->` block.
+- Removed comments styling that is no longer needed after this change.
 
 Version 0.6 (2022-06-29)
 -------------------------

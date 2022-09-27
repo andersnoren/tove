@@ -615,14 +615,19 @@
 	},
 	"templateParts": [
 		{
-			"area": "header",
+			"title": "Header",
 			"name": "header",
-			"title": "Header"
+			"area": "header"
 		},
 		{
-			"area": "footer",
+			"title": "Footer",
 			"name": "footer",
-			"title": "Footer"
+			"area": "footer"
+		},
+		{
+			"title": "Comments",
+			"name": "comments",
+			"area": "uncategorized"
 		}
 	]
 }

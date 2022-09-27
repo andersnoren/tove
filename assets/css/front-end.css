@@ -115,7 +115,6 @@ textarea {
 }
 
 textarea {
-	height: 120px;
 	line-height: var( --wp--custom--typography--line-height--body );
 	width: 100%;
 }
