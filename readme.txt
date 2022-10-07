@@ -56,6 +56,10 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.7.1 (2022-10-07)
+-------------------------
+- Removed index.php, since it's no longer needed to pass the WordPress.org automatic theme review.
+
 Version 0.7 (2022-09-27)
 -------------------------
 - Moved the block patterns to the /patterns/ folder, and bumped "Requires at least" to WordPress 6.0.
