@@ -1,9 +1,9 @@
 === Tove ===
 Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Requires at least: 6.0
+Requires at least: 6.1
 Requires PHP: 5.6
-Tested up to: 6.0
+Tested up to: 6.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -55,6 +55,24 @@ To theme.json trailblazers helping Tove find her way, including:
 – The Automattic theme wranglers
 
 == Changelog ==
+
+Version 0.8 (2023-02-22)
+-------------------------
+- Merged all CSS files in /assets/css/ into style.css.
+	- Moved a bunch of styles to theme.json.
+	- Updated the enqueue structure to load style.css as an editor style, and on the front-end.
+	- Unified the shaded block style to remove redundant CSS.
+- Added WordPress 6.1 support.
+	- Theme.json: Added spacingSizes.
+	- Theme.json: Added element styles for button, heading, caption, and link, and removed the CSS it replaces.
+	- Enabled fluid font sizes in theme.json.
+	- Enabled useRootPaddingAwareAlignments in theme.json.
+	- Enabled blockGap in theme.json.
+	- Updated "Requires at least" and "Tested up to" to 6.1.
+- Added the loop.html template part.
+- Simplified the comments, and removed a bunch of custom comments styles.
+- Columns Block: Removed the horizontal separators block style, since it can't be done reliably in WordPress 6.1.
+- Footer patterns: Adjusted spacing for new features.
 
 Version 0.7.1 (2022-10-07)
 -------------------------

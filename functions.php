@@ -7,8 +7,9 @@
 if ( ! function_exists( 'tove_setup' ) ) :
 	function tove_setup() {
 
-		load_theme_textdomain( 'tove', get_template_directory() . '/languages' );
-		set_post_thumbnail_size( 1792, 9999 );
+		add_theme_support( 'wp-block-styles' );
+
+		add_editor_style( 'style.css' );
 
 	}
 	add_action( 'after_setup_theme', 'tove_setup' );
@@ -22,33 +23,10 @@ endif;
 if ( ! function_exists( 'tove_styles' ) ) :
 	function tove_styles() {
 
-		wp_register_style( 'tove-styles-shared', 		get_template_directory_uri() . '/assets/css/shared.css' );
-		wp_register_style( 'tove-styles-blocks', 		get_template_directory_uri() . '/assets/css/blocks.css' );
-
-		$dependencies = apply_filters( 'tove_style_dependencies', array( 'tove-styles-shared', 'tove-styles-blocks' ) );
-
-		wp_enqueue_style( 'tove-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css', $dependencies, wp_get_theme( 'Tove' )->get( 'Version' ) );
+		wp_enqueue_style( 'tove-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'tove' )->get( 'Version' ) );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'tove_styles' );
-endif;
-
-
-/*	-----------------------------------------------------------------------------------------------
-	ENQUEUE EDITOR STYLES
---------------------------------------------------------------------------------------------------- */
-
-if ( ! function_exists( 'tove_editor_styles' ) ) :
-	function tove_editor_styles() {
-
-		add_editor_style( array( 
-			'./assets/css/editor.css',
-			'./assets/css/blocks.css',
-			'./assets/css/shared.css',
-		) );
-
-	}
-	add_action( 'admin_init', 'tove_editor_styles' );
 endif;
 
 
@@ -108,8 +86,6 @@ endif;
 if ( ! function_exists( 'tove_register_block_styles' ) ) :
 	function tove_register_block_styles() {
 
-		if ( ! function_exists( 'register_block_style' ) ) return;
-
 		// Shared: Shaded.
 		$supports_shaded_block_style = apply_filters( 'tove_supports_shaded_block_style', array( 'core/columns', 'core/group', 'core/image', 'core/media-text', 'core/social-links' ) );
 
@@ -124,12 +100,6 @@ if ( ! function_exists( 'tove_register_block_styles' ) ) :
 		register_block_style( 'core/button', array(
 			'name'  	=> 'tove-plain',
 			'label' 	=> esc_html__( 'Plain', 'tove' ),
-		) );
-
-		// Columns: Separators
-		register_block_style( 'core/columns', array(
-			'name'  	=> 'tove-horizontal-separators',
-			'label' 	=> esc_html__( 'Horizontal Separators', 'tove' ),
 		) );
 
 		// Query Pagination: Vertical separators

@@ -14,7 +14,7 @@
 		<!-- wp:group {"className":"theme-credits-row no-margin-bottom","layout":{"type":"flex","justifyContent":"center"}} -->
 		<div class="wp-block-group theme-credits-row no-margin-bottom">
 			<!-- wp:paragraph -->
-			<p><strong>© 2021</strong> </p>
+			<p><strong>© 2023</strong> </p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} /-->
