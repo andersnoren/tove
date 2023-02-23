@@ -5,9 +5,8 @@
  * Categories: tove-general
  */
 ?>
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide">
-	<!-- wp:column {"backgroundColor":"senary"} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"backgroundColor":"senary"} -->
 	<div class="wp-block-column has-senary-background-color has-background">
 		<!-- wp:group {"backgroundColor":"senary"} -->
 		<div class="wp-block-group has-senary-background-color has-background">
@@ -18,8 +17,9 @@
 			<!-- /wp:image -->
 
 			<!-- wp:quote {"align":"center","className":"is-style-default"} -->
-			<blockquote class="wp-block-quote has-text-align-center is-style-default">
-				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Coffee Snob</cite>
+			<blockquote class="wp-block-quote has-text-align-center is-style-default"><!-- wp:paragraph -->
+				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p>
+				<!-- /wp:paragraph --><cite>Coffee Snob</cite>
 			</blockquote>
 			<!-- /wp:quote -->
 		</div>
@@ -38,8 +38,9 @@
 			<!-- /wp:image -->
 
 			<!-- wp:quote {"align":"center","className":"is-style-default"} -->
-			<blockquote class="wp-block-quote has-text-align-center is-style-default">
-				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Coffee Snob</cite>
+			<blockquote class="wp-block-quote has-text-align-center is-style-default"><!-- wp:paragraph -->
+				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p>
+				<!-- /wp:paragraph --><cite>Coffee Snob</cite>
 			</blockquote>
 			<!-- /wp:quote -->
 		</div>
@@ -58,8 +59,9 @@
 			<!-- /wp:image -->
 
 			<!-- wp:quote {"align":"center","className":"is-style-default"} -->
-			<blockquote class="wp-block-quote has-text-align-center is-style-default">
-				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p><cite>Coffee Snob</cite>
+			<blockquote class="wp-block-quote has-text-align-center is-style-default"><!-- wp:paragraph -->
+				<p>“Niofika Café serves the best coffee in Stockholm. It’s not even close.”</p>
+				<!-- /wp:paragraph --><cite>Coffee Snob</cite>
 			</blockquote>
 			<!-- /wp:quote -->
 		</div>

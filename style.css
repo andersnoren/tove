@@ -2,7 +2,7 @@
 
 	Theme Name: Tove
     Text Domain: tove
-	Version: 0.8
+	Version: 0.8.1
 	Description: Tove is a fun and colorful multi-purpose block theme built entirely around Full Site Editing. It's designed with cafes and restaurants in mind, but thanks to the layout features of Full Site Editing, you can easily adapt it for any type of website. Tove bundles over 40 Block Patterns to get you started, including six different header designs and seven different footer designs. Demo: https://andersnoren.se/themes/tove/
 	Tags: blog, portfolio, grid-layout, one-column, two-columns, three-columns, four-columns, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks, full-site-editing
 	Author: Anders Norén
@@ -240,7 +240,7 @@ h6.has-background.has-text-align-right {
 	margin-bottom: 0;
 }
 
-/* Block: Latest Comments ------------- */
+/* Block: Latest Posts ---------------- */
 
 .wp-block-latest-posts > li {
 	margin-left: 0;
@@ -250,6 +250,12 @@ h6.has-background.has-text-align-right {
 .wp-block-latest-posts__post-date {
 	color: inherit;
 	font-size: var( --wp--preset--font-size--small );
+}
+
+/* Block: Media and Text -------------- */
+
+.wp-block-media-text .wp-block-media-text__content {
+ 	padding: var(--wp--preset--spacing--60);
 }
 
 /* Block: Paragraph ------------------- */

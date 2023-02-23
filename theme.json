@@ -462,6 +462,16 @@
 					}
 				}
 			},
+			"core/cover": {
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--60)",
+						"left": "var(--wp--preset--spacing--60)",
+						"right": "var(--wp--preset--spacing--60)",
+						"top": "var(--wp--preset--spacing--60)"
+					}
+				}
+			},
 			"core/file": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)",

@@ -56,6 +56,12 @@ To theme.json trailblazers helping Tove find her way, including:
 
 == Changelog ==
 
+Version 0.8.1 (2023-02-23)
+-------------------------
+- Cover block: Updated padding to match body margin.
+- Media and Text block: Updated padding to match body margin.
+- Patterns: Updated some patterns to work better in 6.1.
+
 Version 0.8 (2023-02-22)
 -------------------------
 - Merged all CSS files in /assets/css/ into style.css.

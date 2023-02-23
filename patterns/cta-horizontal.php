@@ -5,30 +5,19 @@
  * Categories: tove-cta
  */
 ?>
-<!-- wp:group {"align":"wide","backgroundColor":"senary","className":"is-style-tove-shaded"} -->
+<!-- wp:group {"align":"wide","backgroundColor":"senary","className":"is-style-tove-shaded","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide is-style-tove-shaded has-senary-background-color has-background">
-	<!-- wp:columns {"className":"is-style-default"} -->
-	<div class="wp-block-columns is-style-default">
-		<!-- wp:column {"verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center">
-			<!-- wp:heading {"textAlign":"left"} -->
-			<h2 class="has-text-align-left">Be Our Guest!</h2>
-			<!-- /wp:heading -->
-		</div>
-		<!-- /wp:column -->
+	<!-- wp:heading {"textAlign":"center"} -->
+	<h2 class="has-text-align-center">Be Our Guest!</h2>
+	<!-- /wp:heading -->
 
-		<!-- wp:column {"verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center">
-			<!-- wp:buttons {"contentJustification":"right"} -->
-			<div class="wp-block-buttons is-content-justification-right">
-				<!-- wp:button {"backgroundColor":"primary","className":"is-style-fill"} -->
-				<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-primary-background-color has-background">Make a Reservation</a></div>
-				<!-- /wp:button -->
-			</div>
-			<!-- /wp:buttons -->
-		</div>
-		<!-- /wp:column -->
+	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","className":"is-style-fill"} -->
+		<div class="wp-block-button is-style-fill"><a
+				class="wp-block-button__link has-primary-background-color has-background wp-element-button">Make a
+				Reservation</a></div>
+		<!-- /wp:button -->
 	</div>
-	<!-- /wp:columns -->
+	<!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
