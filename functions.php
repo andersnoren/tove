@@ -4,30 +4,20 @@
 	THEME SUPPORTS
 --------------------------------------------------------------------------------------------------- */
 
-if ( ! function_exists( 'tove_setup' ) ) :
-	function tove_setup() {
-
-		add_theme_support( 'wp-block-styles' );
-
-		add_editor_style( 'style.css' );
-
-	}
-	add_action( 'after_setup_theme', 'tove_setup' );
-endif;
+function tove_setup() {
+	add_editor_style( 'style.css' );
+}
+add_action( 'after_setup_theme', 'tove_setup' );
 
 
 /*	-----------------------------------------------------------------------------------------------
 	ENQUEUE STYLES
 --------------------------------------------------------------------------------------------------- */
 
-if ( ! function_exists( 'tove_styles' ) ) :
-	function tove_styles() {
-
-		wp_enqueue_style( 'tove-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'tove' )->get( 'Version' ) );
-
-	}
-	add_action( 'wp_enqueue_scripts', 'tove_styles' );
-endif;
+function tove_styles() {
+	wp_enqueue_style( 'tove-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'tove' )->get( 'Version' ) );
+}
+add_action( 'wp_enqueue_scripts', 'tove_styles' );
 
 
 /*	-----------------------------------------------------------------------------------------------
