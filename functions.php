@@ -15,7 +15,7 @@ add_action( 'after_setup_theme', 'tove_setup' );
 --------------------------------------------------------------------------------------------------- */
 
 function tove_styles() {
-	wp_enqueue_style( 'tove-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'tove' )->get( 'Version' ) );
+	wp_enqueue_style( 'tove-styles', get_template_directory_uri() . '/style.css', array(), wp_get_theme( 'tove' )->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'tove_styles' );
 
