@@ -225,31 +225,17 @@
 					"fontFace": [
 						{
 							"fontFamily": "DM Sans",
-							"fontWeight": "500",
+							"fontWeight": "100 1000",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/dm-sans/dm-sans-v11-latin-500.woff2" ]
+							"src": [ "file:./assets/fonts/dm-sans/dm-sans-variable.woff2" ]
 						},
 						{
 							"fontFamily": "DM Sans",
-							"fontWeight": "500",
+							"fontWeight": "100 1000",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/dm-sans/dm-sans-v11-latin-500italic.woff2" ]
-						},
-						{
-							"fontFamily": "DM Sans",
-							"fontWeight": "700",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/dm-sans/dm-sans-v11-latin-700.woff2" ]
-						},
-						{
-							"fontFamily": "DM Sans",
-							"fontWeight": "700",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/dm-sans/dm-sans-v11-latin-700italic.woff2" ]
+							"src": [ "file:./assets/fonts/dm-sans/dm-sans-variable-italic.woff2" ]
 						}
 					]
 				},
@@ -776,6 +762,7 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--dm-sans)",
 			"fontSize": "var(--wp--preset--font-size--normal)",
+			"fontWeight": "500",
 			"letterSpacing": "var(--wp--custom--typography--letter-spacing--body)",
 			"lineHeight": "var(--wp--custom--typography--line-height--body)"
 		}

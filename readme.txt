@@ -3,17 +3,39 @@ Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 6.2
 Requires PHP: 5.6
-Tested up to: 6.5
+Tested up to: 7.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+A fun and colorful multi-purpose block theme, designed with cafes and restaurants in mind.
+
+
+== Description ==
+
+Tove is a fun and colorful multi-purpose block theme built entirely around Full Site Editing. It's designed with cafes and restaurants in mind, but thanks to the layout features of Full Site Editing, you can easily adapt it for any type of website. Tove bundles over 40 Block Patterns to get you started, including six different header designs and seven different footer designs. Demo: https://tove.andersnoren.se
+
 
 == Installation ==
 
-1. Upload the theme
-2. Make sure the Gutenberg plugin (version 12.1 or newer) is active
-3. Activate the theme
+1. Make sure you're running WordPress 6.2 or later.
+2. Upload the theme.
+3. Activate the theme.
+
+
+== Frequently Asked Questions ==
+
+= Where can I get support? =
+Post your question in the Tove support forum on WordPress.org: https://wordpress.org/support/theme/tove/
+
+= Where can I request a feature or report a bug? =
+Open an issue in the Tove GitHub repository: https://github.com/andersnoren/tove
+
+
+== Copyright ==
+
+Tove WordPress Theme, Copyright 2021-2026 Anders Norén
+Tove is distributed under the terms of the GNU GPL.
 
 
 == Licenses ==
@@ -37,13 +59,6 @@ DM Sans font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://fonts.google.com/specimen/DM+Sans/
 
-Code from Blockbase
-Copyright (c) 2021 Automattic Inc.
-License: GPLv2, https://www.gnu.org/licenses/gpl-2.0.html
-Source: https://wordpress.org/themes/blockbase/
-Included as part of:
-	- tove_get_google_fonts_url(), for building a Google Fonts request URL from fonts set in theme.json
-
 == Special Thanks ==
 
 To theme.json trailblazers helping Tove find her way, including:
@@ -55,6 +70,17 @@ To theme.json trailblazers helping Tove find her way, including:
 – The Automattic theme wranglers
 
 == Changelog ==
+
+Version 1.0.0 (2026-11-03)
+-------------------------
+- Tove is now version 1.0.0, reflecting its status as a stable theme. No breaking changes.
+- Tested with WordPress 7.1.
+- Bumped the copyright year in the footer and the footer patterns to 2026.
+- Switched to the variable version of DM Sans. The default text weight is set to 500 in theme.json, matching how text was displayed before.
+- Kept the previous static DM Sans font files in the theme folder, so sites with saved font settings in Global Styles that reference them keep working.
+- Updated the demo URL.
+- Added the Requires at least header to style.css.
+- Added Description, FAQ, Copyright and Upgrade Notice sections to the readme, updated the outdated installation instructions, and removed the license note for Blockbase code that's no longer included.
 
 Version 0.8.3 (2024-05-03)
 -------------------------
@@ -213,3 +239,9 @@ Version 0.1.1 (2021-09-17)
 
 Version 0.1 (2021-09-17)
 -------------------------
+
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+Tested with WordPress 7.1. Tove is now version 1.0.0, reflecting its status as a stable theme. No breaking changes.

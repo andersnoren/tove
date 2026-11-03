@@ -116,7 +116,7 @@
 			<div class="wp-block-column">
 				<!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"className":"theme-credits-row","layout":{"type":"flex"}} -->
 				<div class="wp-block-group theme-credits-row"><!-- wp:paragraph {"fontSize":"tiny"} -->
-					<p class="has-tiny-font-size"><strong>© 2023</strong> </p>
+					<p class="has-tiny-font-size"><strong>© 2026</strong> </p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} /-->
